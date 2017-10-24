@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['cbrtf',['cbrtf',['../math_8h.html#a396c6a553500a355627741e234045bf4',1,'math.h']]],
-  ['ceil',['ceil',['../math_8h.html#a65b86cc953409a678d94f6db9653fd98',1,'math.h']]],
+  ['cbrt',['cbrt',['../math_8h.html#a8af00e2203928978e0242b4afd1d899f',1,'math.h']]],
+  ['ceil',['ceil',['../math_8h.html#a1ea6d7b591132268abc2e843ababd084',1,'math.h']]],
   ['comms_2eh',['comms.h',['../comms_8h.html',1,'']]],
   ['coroutines_2eh',['coroutines.h',['../coroutines_8h.html',1,'']]],
-  ['cosf',['cosf',['../math_8h.html#ab752a8751977e784e706fdbe0d775a06',1,'math.h']]],
-  ['coshf',['coshf',['../math_8h.html#a03dd6c29776389967972acff72f8c35d',1,'math.h']]]
+  ['cos',['cos',['../math_8h.html#a7a7d08a90f118f85aae24f1ed5a2b04f',1,'math.h']]],
+  ['cosh',['cosh',['../math_8h.html#a9c05c2b1f693fa788a37250c935a9502',1,'math.h']]]
 ];

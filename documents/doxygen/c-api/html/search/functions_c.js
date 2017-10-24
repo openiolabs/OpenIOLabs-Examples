@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tanf',['tanf',['../math_8h.html#ad36d6fbcb92b61a63cf4532b54b31220',1,'math.h']]],
-  ['tanhf',['tanhf',['../math_8h.html#a720857cdebcb9fff103fbec833ea2a7e',1,'math.h']]],
+  ['tan',['tan',['../math_8h.html#a2346ca0f31d1d78226d0941b70b1a5bb',1,'math.h']]],
+  ['tanh',['tanh',['../math_8h.html#a2a794d8587dcbcf55d31d58a5603a004',1,'math.h']]],
   ['time',['time',['../time_8h.html#a99ef1cb2c789827dd5db3886dccf9067',1,'time.h']]]
 ];

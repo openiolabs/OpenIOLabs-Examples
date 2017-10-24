@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['fabsf',['fabsf',['../math_8h.html#a9b02e2f3ebf257ac4f4d3ca1da6147d7',1,'math.h']]],
+  ['fabs',['fabs',['../math_8h.html#a8fb5c0b9b43a108724b355136d29d2f9',1,'math.h']]],
   ['flags',['flags',['../i2c_8h.html#a8633f67b7fb7d6e4b4389d8a5b999e5f',1,'i2c_msg']]],
-  ['floorf',['floorf',['../math_8h.html#a0bcc6aa4b3c37bfa73f06ebdecc0d247',1,'math.h']]],
-  ['fmodf',['fmodf',['../math_8h.html#af17ec425baca2b5f3882a05b5e19dfb5',1,'math.h']]],
+  ['floor',['floor',['../math_8h.html#a6de60a3e907dcf0bfe3ea8d64f1e8873',1,'math.h']]],
+  ['fmod',['fmod',['../math_8h.html#a537296d1a8f9fb621676038b99ba7edf',1,'math.h']]],
   ['free',['free',['../stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'stdlib.h']]]
 ];

@@ -35,5 +35,5 @@ var searchData=
   ['etxtbsy',['ETXTBSY',['../stddef_8h.html#aaed12e82224923d599b6f1939c8e0971',1,'stddef.h']]],
   ['exdev',['EXDEV',['../stddef_8h.html#a3396cf9fb0ff5af3a18dd2a2bbdb21e1',1,'stddef.h']]],
   ['exit',['exit',['../stdlib_8h.html#a55e99c539cf7723ec15e856b7e0a8cee',1,'stdlib.h']]],
-  ['expf',['expf',['../math_8h.html#a0c2bc89b8355a89542ac98d9e2120363',1,'math.h']]]
+  ['exp',['exp',['../math_8h.html#ae09128febbbe6372cde4fa0c65608a42',1,'math.h']]]
 ];
