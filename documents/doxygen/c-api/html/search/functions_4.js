@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['int_5fto_5fbyte',['int_to_byte',['../i2c__regmap_8h.html#ac0bf2e047f6f7a1e5bdd0c6a8430f26c',1,'i2c_regmap.h']]]
+  ['fabsf',['fabsf',['../math_8h.html#a9b02e2f3ebf257ac4f4d3ca1da6147d7',1,'math.h']]],
+  ['floorf',['floorf',['../math_8h.html#a0bcc6aa4b3c37bfa73f06ebdecc0d247',1,'math.h']]],
+  ['fmodf',['fmodf',['../math_8h.html#af17ec425baca2b5f3882a05b5e19dfb5',1,'math.h']]],
+  ['free',['free',['../stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'stdlib.h']]]
 ];

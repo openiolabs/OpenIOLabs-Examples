@@ -4,6 +4,8 @@ var searchData=
   ['len',['len',['../i2c_8h.html#a37325b060739b4bdeac3af344af2117f',1,'i2c_msg']]],
   ['lm75b_2eh',['lm75b.h',['../lm75b_8h.html',1,'']]],
   ['localtime',['localtime',['../time_8h.html#a70311f8aa60fc5ebbd76c55ea10bc899',1,'time.h']]],
+  ['log10f',['log10f',['../math_8h.html#ae207b1eb007a6c23394dcb6fc7f16adf',1,'math.h']]],
+  ['logf',['logf',['../math_8h.html#a8246b3e17a39b137d0c62670d0c6e336',1,'math.h']]],
   ['lwm2m_2eh',['lwm2m.h',['../lwm2m_8h.html',1,'']]],
   ['lwm2m_5fcore_2eh',['lwm2m_core.h',['../lwm2m__core_8h.html',1,'']]],
   ['lwm2m_5fipso_5faccelerometer',['LWM2M_IPSO_Accelerometer',['../lwm2m_8h.html#a65c48f5ae6df290590b89e88712c5eab',1,'lwm2m.h']]],

@@ -104,16 +104,17 @@ Include dependency graph for lm75b.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="lm75b_8h__incl.png" border="0" usemap="#resources_2c_2include_2scriptml_2lm75b_8h" alt=""/></div>
 <map name="resources_2c_2include_2scriptml_2lm75b_8h" id="resources_2c_2include_2scriptml_2lm75b_8h">
-<area shape="rect" id="node2" href="i2c__regmap_8h.html" title="Sub&#45;driver for I2C devices organised as regmaps. " alt="" coords="272,95,372,121"/>
-<area shape="rect" id="node11" href="gpio_8h.html" title="Drive GPIOs using the sysfs interface. " alt="" coords="79,169,136,196"/>
-<area shape="rect" id="node3" href="i2c_8h.html" title="Generic I2C bus driver using /dev and ioctl. " alt="" coords="228,169,328,196"/>
+<area shape="rect" id="node2" href="i2c__regmap_8h.html" title="Sub&#45;driver for I2C devices organised as regmaps. " alt="" coords="235,95,335,121"/>
+<area shape="rect" id="node12" href="gpio_8h.html" title="Drive GPIOs using the sysfs interface. " alt="" coords="79,169,136,196"/>
+<area shape="rect" id="node3" href="i2c_8h.html" title="Generic I2C bus driver using /dev and ioctl. " alt="" coords="279,169,379,196"/>
 <area shape="rect" id="node7" href="stdint_8h.html" title="Standard integer types. " alt="" coords="365,244,431,271"/>
 <area shape="rect" id="node8" href="stdlib_8h.html" title="Standard library. " alt="" coords="455,244,519,271"/>
-<area shape="rect" id="node9" href="string_8h.html" title="Standard string library. " alt="" coords="276,244,341,271"/>
-<area shape="rect" id="node10" href="assert_8h.html" title="C Standard Library assertions. " alt="" coords="182,244,251,271"/>
+<area shape="rect" id="node10" href="string_8h.html" title="Standard string library. " alt="" coords="276,244,341,271"/>
+<area shape="rect" id="node11" href="assert_8h.html" title="C Standard Library assertions. " alt="" coords="182,244,251,271"/>
 <area shape="rect" id="node4" href="devsysfs_8h.html" title="Access to /dev and /sys nodes. " alt="" coords="22,244,158,271"/>
 <area shape="rect" id="node5" href="unistd_8h.html" title="Miscellaneous C definitions. " alt="" coords="56,319,124,345"/>
 <area shape="rect" id="node6" href="stddef_8h.html" title="Standard definitions. " alt="" coords="274,393,343,420"/>
+<area shape="rect" id="node9" href="stdlib__math_8h.html" title="Standard library math functions. " alt="" coords="437,319,537,345"/>
 </map>
 </div>
 </div>
@@ -182,7 +183,7 @@ Functions</h2></td></tr>
 <div class="textblock"><p>LM75B device driver. </p>
 <h1>LM75B Digital Thermometer </h1>
 <p>Program the the <code>conf</code> register then read the <code>temp</code> register</p>
-<p>Auto-generated 04 June 2017; do not edit</p>
+<p>Auto-generated 24 October 2017; do not edit</p>
 <p>Copyright (c) Open IO Labs Ltd 2017 All Rights Reserved </p>
 
 <p>Definition in file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
@@ -197,7 +198,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00024">24</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
+<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00035">35</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for sml_lm75b_t:</div>
 <div class="dyncontent">
@@ -267,11 +268,11 @@ intr_gpio</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Device handle </dd></dl>
 
-<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00038">38</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
+<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00049">49</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
 
 <p>References <a class="el" href="i2c__regmap_8h_source.html#l00049">sml_i2c_regmap_create()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="lm75b_8h.html#structsml__lm75b__t">sml_lm75b_t</a> dev;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    dev.iic = <a class="code" href="i2c__regmap_8h.html#a506d81703ef13a5d99e7bd5d87a39109">sml_i2c_regmap_create</a>( i2c, SML_LM75B_BASE_ADDR + addr_offset, 0x100, 0 );</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    dev.intr_gpio = intr_pin;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> dev;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="ttc" id="i2c__regmap_8h_html_a506d81703ef13a5d99e7bd5d87a39109"><div class="ttname"><a href="i2c__regmap_8h.html#a506d81703ef13a5d99e7bd5d87a39109">sml_i2c_regmap_create</a></div><div class="ttdeci">sml_i2c_regmap_t sml_i2c_regmap_create(sml_i2c_t i2c, int addr, int size, int smbus_api)</div><div class="ttdoc">Create device driver instance. </div><div class="ttdef"><b>Definition:</b> <a href="i2c__regmap_8h_source.html#l00049">i2c_regmap.h:49</a></div></div>
-<div class="ttc" id="lm75b_8h_html_structsml__lm75b__t"><div class="ttname"><a href="lm75b_8h.html#structsml__lm75b__t">sml_lm75b_t</a></div><div class="ttdef"><b>Definition:</b> <a href="lm75b_8h_source.html#l00024">lm75b.h:24</a></div></div>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="lm75b_8h.html#structsml__lm75b__t">sml_lm75b_t</a> dev;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    dev.intr_gpio = intr_pin;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    dev.iic = <a class="code" href="i2c__regmap_8h.html#a506d81703ef13a5d99e7bd5d87a39109">sml_i2c_regmap_create</a>( i2c, SML_LM75B_BASE_ADDR + addr_offset, 0x100, 0 );</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> dev;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} </div><div class="ttc" id="i2c__regmap_8h_html_a506d81703ef13a5d99e7bd5d87a39109"><div class="ttname"><a href="i2c__regmap_8h.html#a506d81703ef13a5d99e7bd5d87a39109">sml_i2c_regmap_create</a></div><div class="ttdeci">sml_i2c_regmap_t sml_i2c_regmap_create(sml_i2c_t i2c, int addr, int size, int smbus_api)</div><div class="ttdoc">Create device driver instance. </div><div class="ttdef"><b>Definition:</b> <a href="i2c__regmap_8h_source.html#l00049">i2c_regmap.h:49</a></div></div>
+<div class="ttc" id="lm75b_8h_html_structsml__lm75b__t"><div class="ttname"><a href="lm75b_8h.html#structsml__lm75b__t">sml_lm75b_t</a></div><div class="ttdef"><b>Definition:</b> <a href="lm75b_8h_source.html#l00035">lm75b.h:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -329,10 +330,10 @@ intr_gpio</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00067">67</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
+<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00066">66</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
 
 <p>References <a class="el" href="i2c__regmap_8h_source.html#l00072">sml_i2c_regmap_write()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    uint8_t _value;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    _value = (shutdown &amp; 0x1) | ((os_comp_int &amp; 0x1) &lt;&lt; 1) | ((os_pol &amp; 0x1) &lt;&lt; 2) | ((os_f_que &amp; 0x3) &lt;&lt; 3);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a>( dev.iic, &amp;_value, 0x1, 1 );</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div><div class="ttc" id="i2c__regmap_8h_html_a49296bb9669d947542cad3945742fef4"><div class="ttname"><a href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a></div><div class="ttdeci">void sml_i2c_regmap_write(sml_i2c_regmap_t dev, const uint8_t *buf, uint8_t reg, size_t count)</div><div class="ttdoc">Write to I2C device registers. </div><div class="ttdef"><b>Definition:</b> <a href="i2c__regmap_8h_source.html#l00072">i2c_regmap.h:72</a></div></div>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    uint8_t _value;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    _value = (shutdown &amp; 0x1) | ((os_comp_int &amp; 0x1) &lt;&lt; 1) | ((os_pol &amp; 0x1) &lt;&lt; 2) | ((os_f_que &amp; 0x3) &lt;&lt; 3);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a>( dev.iic, &amp;_value, 0x1, 1 );</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} </div><div class="ttc" id="i2c__regmap_8h_html_a49296bb9669d947542cad3945742fef4"><div class="ttname"><a href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a></div><div class="ttdeci">void sml_i2c_regmap_write(sml_i2c_regmap_t dev, const uint8_t *buf, uint8_t reg, size_t count)</div><div class="ttdoc">Write to I2C device registers. </div><div class="ttdef"><b>Definition:</b> <a href="i2c__regmap_8h_source.html#l00072">i2c_regmap.h:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -359,10 +360,10 @@ intr_gpio</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>temperature </dd></dl>
 
-<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00080">80</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
+<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00079">79</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
 
 <p>References <a class="el" href="i2c__regmap_8h_source.html#l00123">sml_i2c_regmap_read()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    uint8_t _bytes[2];</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="i2c__regmap_8h.html#a6622b063561f738895ce5e09d9871ef4">sml_i2c_regmap_read</a>( dev.iic, _bytes, 0x0, 2 );</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> (int16_t)(((int)(_bytes[0]) &lt;&lt; 8) | (<span class="keywordtype">int</span>)(_bytes[1]));</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div><div class="ttc" id="i2c__regmap_8h_html_a6622b063561f738895ce5e09d9871ef4"><div class="ttname"><a href="i2c__regmap_8h.html#a6622b063561f738895ce5e09d9871ef4">sml_i2c_regmap_read</a></div><div class="ttdeci">void sml_i2c_regmap_read(sml_i2c_regmap_t dev, uint8_t *buf, uint8_t reg, size_t count)</div><div class="ttdoc">Read from I2C device registers. </div><div class="ttdef"><b>Definition:</b> <a href="i2c__regmap_8h_source.html#l00123">i2c_regmap.h:123</a></div></div>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    uint8_t _bytes[2];</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="i2c__regmap_8h.html#a6622b063561f738895ce5e09d9871ef4">sml_i2c_regmap_read</a>( dev.iic, _bytes, 0x0, 2 );</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> (int16_t)(((int)(_bytes[0]) &lt;&lt; 8) | (<span class="keywordtype">int</span>)(_bytes[1]));</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} </div><div class="ttc" id="i2c__regmap_8h_html_a6622b063561f738895ce5e09d9871ef4"><div class="ttname"><a href="i2c__regmap_8h.html#a6622b063561f738895ce5e09d9871ef4">sml_i2c_regmap_read</a></div><div class="ttdeci">void sml_i2c_regmap_read(sml_i2c_regmap_t dev, uint8_t *buf, uint8_t reg, size_t count)</div><div class="ttdoc">Read from I2C device registers. </div><div class="ttdef"><b>Definition:</b> <a href="i2c__regmap_8h_source.html#l00123">i2c_regmap.h:123</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -399,10 +400,10 @@ intr_gpio</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00093">93</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
+<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00092">92</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
 
 <p>References <a class="el" href="i2c__regmap_8h_source.html#l00072">sml_i2c_regmap_write()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    uint8_t _bytes[2];</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    _bytes[0] = (tos &gt;&gt; 8) &amp; 0xff;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    _bytes[1] = tos &amp; 0xff;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a>( dev.iic, _bytes, 0x3, 2 );</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div><div class="ttc" id="i2c__regmap_8h_html_a49296bb9669d947542cad3945742fef4"><div class="ttname"><a href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a></div><div class="ttdeci">void sml_i2c_regmap_write(sml_i2c_regmap_t dev, const uint8_t *buf, uint8_t reg, size_t count)</div><div class="ttdoc">Write to I2C device registers. </div><div class="ttdef"><b>Definition:</b> <a href="i2c__regmap_8h_source.html#l00072">i2c_regmap.h:72</a></div></div>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    uint8_t _bytes[2];</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    _bytes[0] = (tos &gt;&gt; 8) &amp; 0xff;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    _bytes[1] = tos &amp; 0xff;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a>( dev.iic, _bytes, 0x3, 2 );</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} </div><div class="ttc" id="i2c__regmap_8h_html_a49296bb9669d947542cad3945742fef4"><div class="ttname"><a href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a></div><div class="ttdeci">void sml_i2c_regmap_write(sml_i2c_regmap_t dev, const uint8_t *buf, uint8_t reg, size_t count)</div><div class="ttdoc">Write to I2C device registers. </div><div class="ttdef"><b>Definition:</b> <a href="i2c__regmap_8h_source.html#l00072">i2c_regmap.h:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -439,17 +440,17 @@ intr_gpio</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00107">107</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
+<p>Definition at line <a class="el" href="lm75b_8h_source.html#l00106">106</a> of file <a class="el" href="lm75b_8h_source.html">lm75b.h</a>.</p>
 
 <p>References <a class="el" href="i2c__regmap_8h_source.html#l00072">sml_i2c_regmap_write()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    uint8_t _bytes[2];</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    _bytes[0] = (thyst &gt;&gt; 8) &amp; 0xff;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    _bytes[1] = thyst &amp; 0xff;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a>( dev.iic, _bytes, 0x2, 2 );</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div><div class="ttc" id="i2c__regmap_8h_html_a49296bb9669d947542cad3945742fef4"><div class="ttname"><a href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a></div><div class="ttdeci">void sml_i2c_regmap_write(sml_i2c_regmap_t dev, const uint8_t *buf, uint8_t reg, size_t count)</div><div class="ttdoc">Write to I2C device registers. </div><div class="ttdef"><b>Definition:</b> <a href="i2c__regmap_8h_source.html#l00072">i2c_regmap.h:72</a></div></div>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    uint8_t _bytes[2];</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    _bytes[0] = (thyst &gt;&gt; 8) &amp; 0xff;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    _bytes[1] = thyst &amp; 0xff;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a>( dev.iic, _bytes, 0x2, 2 );</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;} </div><div class="ttc" id="i2c__regmap_8h_html_a49296bb9669d947542cad3945742fef4"><div class="ttname"><a href="i2c__regmap_8h.html#a49296bb9669d947542cad3945742fef4">sml_i2c_regmap_write</a></div><div class="ttdeci">void sml_i2c_regmap_write(sml_i2c_regmap_t dev, const uint8_t *buf, uint8_t reg, size_t count)</div><div class="ttdoc">Write to I2C device registers. </div><div class="ttdef"><b>Definition:</b> <a href="i2c__regmap_8h_source.html#l00072">i2c_regmap.h:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 4 2017 21:19:57 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 24 2017 19:07:36 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

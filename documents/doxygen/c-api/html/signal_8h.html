@@ -225,6 +225,11 @@ Macros</h2></td></tr>
 <tr class="memitem:a27d5dc561093d6243542e6a2465bc0f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27d5dc561093d6243542e6a2465bc0f8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SIG_DFL</b>&#160;&#160;&#160;(&amp;__sig_dfl)</td></tr>
 <tr class="separator:a27d5dc561093d6243542e6a2465bc0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd99dd38a26a41104fed385d18f8ba05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8h.html#afd99dd38a26a41104fed385d18f8ba05">set_exception_handler</a>(TYPE,  HANDLER)&#160;&#160;&#160;___SetExceptionHandler( exception_type:TYPE, handler:*(HANDLER) )</td></tr>
+<tr class="separator:afd99dd38a26a41104fed385d18f8ba05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418675dda6aebb6c8004b99dc5c83c1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a418675dda6aebb6c8004b99dc5c83c1b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>external_error</b>&#160;&#160;&#160;___EnvironmentErrorExceptionType()</td></tr>
+<tr class="separator:a418675dda6aebb6c8004b99dc5c83c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -247,7 +252,40 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>__sig_dfl</b> (int si
 <p>Copyright (c) Open IO Labs Ltd 2016 All Rights Reserved </p>
 
 <p>Definition in file <a class="el" href="signal_8h_source.html">signal.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="afd99dd38a26a41104fed385d18f8ba05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define set_exception_handler</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TYPE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">HANDLER&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;___SetExceptionHandler( exception_type:TYPE, handler:*(HANDLER) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set a handler for script exceptions (used as a substitute for exception handling in C)</p>
+<p>Pass in the exception type (as a type) and a pointer to a handler function.</p>
+<p>Handler will be called as soon as the exception occurs (i.e. at the point of throwing). If it requrns, script execution will continue from the failed operation. Return values and other putputs from the failing operation will be undefined.</p>
+<p>Typically, the script will set an error flag and/or an LWM2M error resource, OR just halt or restart the script. </p>
+
+<p>Definition at line <a class="el" href="signal_8h_source.html#l00092">92</a> of file <a class="el" href="signal_8h_source.html">signal.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="af0f8ed40d30773bdb68e858ef0139b58"></a>
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +328,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>__sig_dfl</b> (int si
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 4 2017 21:19:57 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 24 2017 19:07:36 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

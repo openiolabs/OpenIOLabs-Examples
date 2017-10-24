@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['free',['free',['../stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711',1,'stdlib.h']]]
+  ['exit',['exit',['../stdlib_8h.html#a55e99c539cf7723ec15e856b7e0a8cee',1,'stdlib.h']]],
+  ['expf',['expf',['../math_8h.html#a0c2bc89b8355a89542ac98d9e2120363',1,'math.h']]]
 ];

@@ -109,10 +109,12 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="string_8h__dep__incl.png" border="0" usemap="#resources_2c_2include_2string_8hdep" alt=""/></div>
 <map name="resources_2c_2include_2string_8hdep" id="resources_2c_2include_2string_8hdep">
-<area shape="rect" id="node2" href="i2c__regmap_8h.html" title="Sub&#45;driver for I2C devices organised as regmaps. " alt="" coords="611,184,766,225"/>
-<area shape="rect" id="node12" href="i2c_8h.html" title="Generic I2C bus driver using /dev and ioctl. " alt="" coords="949,95,1084,136"/>
-<area shape="rect" id="node17" href="spi_8h.html" title="Generic SPI bus driver using /dev and ioctl. " alt="" coords="1108,95,1243,136"/>
-<area shape="rect" id="node3" href="ad5627_8h.html" title="AD562 DAC device driver. " alt="" coords="1320,273,1455,315"/>
+<area shape="rect" id="node2" href="i2c__regmap_8h.html" title="Sub&#45;driver for I2C devices organised as regmaps. " alt="" coords="722,184,877,225"/>
+<area shape="rect" id="node12" href="i2c_8h.html" title="Generic I2C bus driver using /dev and ioctl. " alt="" coords="1171,95,1305,136"/>
+<area shape="rect" id="node17" href="osc_8h.html" title="OSC (Open Sound Control) basic API. " alt="" coords="1461,95,1596,136"/>
+<area shape="rect" id="node19" href="persistent_8h.html" title="Special functions for managing persistent flags. " alt="" coords="1621,95,1765,136"/>
+<area shape="rect" id="node21" href="spi_8h.html" title="Generic SPI bus driver using /dev and ioctl. " alt="" coords="1789,95,1924,136"/>
+<area shape="rect" id="node3" href="ad5627_8h.html" title="AD562 DAC device driver. " alt="" coords="1292,273,1427,315"/>
 <area shape="rect" id="node4" href="ad7091_8h.html" title="Quad channel 12 bit ADC. " alt="" coords="5,273,140,315"/>
 <area shape="rect" id="node5" href="isl29023_8h.html" title="ISL29023 device driver. " alt="" coords="164,273,299,315"/>
 <area shape="rect" id="node6" href="lm75b_8h.html" title="LM75B device driver. " alt="" coords="323,273,457,315"/>
@@ -121,10 +123,12 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="rect" id="node9" href="pca9534_8h.html" title="GPIO Extender. " alt="" coords="813,273,949,315"/>
 <area shape="rect" id="node10" href="pca9685_8h.html" title="16&#45;channel, 12&#45;bit PWM Fm+ I2C&#45;bus LED Controller " alt="" coords="973,273,1109,315"/>
 <area shape="rect" id="node11" href="pcf8563_8h.html" title="Real&#45;time clock. " alt="" coords="1133,273,1268,315"/>
-<area shape="rect" id="node13" href="24lc64_8h.html" title="24LC64 EEPROM device driver. " alt="" coords="791,184,925,225"/>
-<area shape="rect" id="node14" href="ad7991_8h.html" title="AD7991 8 bit Analogue to Digital Converter (ADC) " alt="" coords="949,184,1084,225"/>
-<area shape="rect" id="node15" href="max518_8h.html" title="MAX518 DAC device driver. " alt="" coords="1108,184,1243,225"/>
-<area shape="rect" id="node16" href="pcf8574a_8h.html" title="pcf8574a IO extender device driver. " alt="" coords="1267,184,1407,225"/>
+<area shape="rect" id="node13" href="24lc64_8h.html" title="24LC64 EEPROM device driver. " alt="" coords="1276,184,1411,225"/>
+<area shape="rect" id="node14" href="ad7991_8h.html" title="AD7991 8 bit Analogue to Digital Converter (ADC) " alt="" coords="1435,184,1569,225"/>
+<area shape="rect" id="node15" href="max518_8h.html" title="MAX518 DAC device driver. " alt="" coords="901,184,1036,225"/>
+<area shape="rect" id="node16" href="pcf8574a_8h.html" title="pcf8574a IO extender device driver. " alt="" coords="1060,184,1200,225"/>
+<area shape="rect" id="node18" href="ngimu_8h.html" title="X&#45;IO NGIMU (NExt Generation Inertial M&lt;anagement Unit) driver layer. " alt="" coords="1593,184,1728,225"/>
+<area shape="rect" id="node20" href="auto__start_8h.html" title="Enable script to start running automatically when system powers up. " alt="" coords="1752,184,1897,225"/>
 </map>
 </div>
 </div>
@@ -138,15 +142,60 @@ Functions</h2></td></tr>
 <tr class="memitem:a7a82515b5d377be04817715c5465b647"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a7a82515b5d377be04817715c5465b647">strcpy</a> (char *dest, const char *src)</td></tr>
 <tr class="memdesc:a7a82515b5d377be04817715c5465b647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy string.  <a href="#a7a82515b5d377be04817715c5465b647">More...</a><br /></td></tr>
 <tr class="separator:a7a82515b5d377be04817715c5465b647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d54f24198df56da51078a6c540b9ed"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a47d54f24198df56da51078a6c540b9ed">strncpy</a> (char *dest, const char *src, <a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> n)</td></tr>
+<tr class="memdesc:a47d54f24198df56da51078a6c540b9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy string.  <a href="#a47d54f24198df56da51078a6c540b9ed">More...</a><br /></td></tr>
+<tr class="separator:a47d54f24198df56da51078a6c540b9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb8723e585ed29f2370cddf90f6891bc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#adb8723e585ed29f2370cddf90f6891bc">strcat</a> (char *dest, const char *src)</td></tr>
 <tr class="memdesc:adb8723e585ed29f2370cddf90f6891bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenate string.  <a href="#adb8723e585ed29f2370cddf90f6891bc">More...</a><br /></td></tr>
 <tr class="separator:adb8723e585ed29f2370cddf90f6891bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aee928c2844a269966e4832fd2255c5"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a0aee928c2844a269966e4832fd2255c5">strncat</a> (char *dest, const char *src, <a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> n)</td></tr>
+<tr class="memdesc:a0aee928c2844a269966e4832fd2255c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenate string.  <a href="#a0aee928c2844a269966e4832fd2255c5">More...</a><br /></td></tr>
+<tr class="separator:a0aee928c2844a269966e4832fd2255c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11bd144d7d44914099a3aeddf1c8567d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a11bd144d7d44914099a3aeddf1c8567d">strcmp</a> (const char *s1, const char *s2)</td></tr>
 <tr class="memdesc:a11bd144d7d44914099a3aeddf1c8567d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare strings.  <a href="#a11bd144d7d44914099a3aeddf1c8567d">More...</a><br /></td></tr>
 <tr class="separator:a11bd144d7d44914099a3aeddf1c8567d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e17349a30d437d177620bf1a7358ab"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a47e17349a30d437d177620bf1a7358ab">memcpy</a> (char *dest, const char *src, int n)</td></tr>
-<tr class="memdesc:a47e17349a30d437d177620bf1a7358ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy memory.  <a href="#a47e17349a30d437d177620bf1a7358ab">More...</a><br /></td></tr>
-<tr class="separator:a47e17349a30d437d177620bf1a7358ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab745ed93c0024648f33dc1d553e9fdcc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ab745ed93c0024648f33dc1d553e9fdcc">strncmp</a> (const char *s1, const char *s2, int n)</td></tr>
+<tr class="memdesc:ab745ed93c0024648f33dc1d553e9fdcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare sub-strings, upto n characters.  <a href="#ab745ed93c0024648f33dc1d553e9fdcc">More...</a><br /></td></tr>
+<tr class="separator:ab745ed93c0024648f33dc1d553e9fdcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12871ed234858ef0e363d2b8aa572fc1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a12871ed234858ef0e363d2b8aa572fc1">strchr</a> (const char *s, int c)</td></tr>
+<tr class="memdesc:a12871ed234858ef0e363d2b8aa572fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for a character in a string.  <a href="#a12871ed234858ef0e363d2b8aa572fc1">More...</a><br /></td></tr>
+<tr class="separator:a12871ed234858ef0e363d2b8aa572fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c05a458deff028ef4d4e64059098db4"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a0c05a458deff028ef4d4e64059098db4">strrchr</a> (const char *s, int c)</td></tr>
+<tr class="memdesc:a0c05a458deff028ef4d4e64059098db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverse search for a character in a string.  <a href="#a0c05a458deff028ef4d4e64059098db4">More...</a><br /></td></tr>
+<tr class="separator:a0c05a458deff028ef4d4e64059098db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119f23a5dcb4eb5f1c1eed3cbf5cb0ed"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a119f23a5dcb4eb5f1c1eed3cbf5cb0ed">strpbrk</a> (const char *s, const char *accept)</td></tr>
+<tr class="memdesc:a119f23a5dcb4eb5f1c1eed3cbf5cb0ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for one of a set of characters in a string.  <a href="#a119f23a5dcb4eb5f1c1eed3cbf5cb0ed">More...</a><br /></td></tr>
+<tr class="separator:a119f23a5dcb4eb5f1c1eed3cbf5cb0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900a0edfa51f601d479244f7451cedd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a900a0edfa51f601d479244f7451cedd1">strspn</a> (const char *s, const char *accept)</td></tr>
+<tr class="memdesc:a900a0edfa51f601d479244f7451cedd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of contiguous characters at the beginning of a string in the accept set.  <a href="#a900a0edfa51f601d479244f7451cedd1">More...</a><br /></td></tr>
+<tr class="separator:a900a0edfa51f601d479244f7451cedd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6c449e5d77477c057abf00eaaf88fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#aeb6c449e5d77477c057abf00eaaf88fe">strcspn</a> (const char *s, const char *reject)</td></tr>
+<tr class="memdesc:aeb6c449e5d77477c057abf00eaaf88fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of contiguous characters at the beginning of a string not in the reject set.  <a href="#aeb6c449e5d77477c057abf00eaaf88fe">More...</a><br /></td></tr>
+<tr class="separator:aeb6c449e5d77477c057abf00eaaf88fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11d86a2a3af0a355cad2337c6f4e9f7"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ab11d86a2a3af0a355cad2337c6f4e9f7">strtok_r</a> (char *str, const char *delim, char **saveptr)</td></tr>
+<tr class="memdesc:ab11d86a2a3af0a355cad2337c6f4e9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divide a sting into tokens; re-entrant version.  <a href="#ab11d86a2a3af0a355cad2337c6f4e9f7">More...</a><br /></td></tr>
+<tr class="separator:ab11d86a2a3af0a355cad2337c6f4e9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb460f64c449f2a9b9b7a40569ce0fe"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a8cb460f64c449f2a9b9b7a40569ce0fe">strtok</a> (char *str, const char *delim)</td></tr>
+<tr class="memdesc:a8cb460f64c449f2a9b9b7a40569ce0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divide a sting into tokens; unsafe version.  <a href="#a8cb460f64c449f2a9b9b7a40569ce0fe">More...</a><br /></td></tr>
+<tr class="separator:a8cb460f64c449f2a9b9b7a40569ce0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a710d86541afc6b7dafddcdb4b1c94f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a4a710d86541afc6b7dafddcdb4b1c94f">strstr</a> (const char *haystack, const char *needle)</td></tr>
+<tr class="memdesc:a4a710d86541afc6b7dafddcdb4b1c94f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a string within another.  <a href="#a4a710d86541afc6b7dafddcdb4b1c94f">More...</a><br /></td></tr>
+<tr class="separator:a4a710d86541afc6b7dafddcdb4b1c94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6648d2c8dcebe0fbd21f349c5314dc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#abb6648d2c8dcebe0fbd21f349c5314dc">memcpy</a> (char *dest, const char *src, <a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> n)</td></tr>
+<tr class="memdesc:abb6648d2c8dcebe0fbd21f349c5314dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy memory.  <a href="#abb6648d2c8dcebe0fbd21f349c5314dc">More...</a><br /></td></tr>
+<tr class="separator:abb6648d2c8dcebe0fbd21f349c5314dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb42afc8cb8481aa8b41e4d328117a83"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#afb42afc8cb8481aa8b41e4d328117a83">memmove</a> (char *dest, const char *src, <a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> n)</td></tr>
+<tr class="memdesc:afb42afc8cb8481aa8b41e4d328117a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move memory (src and dest buffers may overlap)  <a href="#afb42afc8cb8481aa8b41e4d328117a83">More...</a><br /></td></tr>
+<tr class="separator:afb42afc8cb8481aa8b41e4d328117a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84d761c39eb82ad47de0ab0738b64b2"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ae84d761c39eb82ad47de0ab0738b64b2">memset</a> (char *s, int c, <a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> n)</td></tr>
+<tr class="memdesc:ae84d761c39eb82ad47de0ab0738b64b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a block of memory with a single character.  <a href="#ae84d761c39eb82ad47de0ab0738b64b2">More...</a><br /></td></tr>
+<tr class="separator:ae84d761c39eb82ad47de0ab0738b64b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c8b7e8990ae9291edb0e7f10f6f5e8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a90c8b7e8990ae9291edb0e7f10f6f5e8">memchr</a> (const char *s, int c, <a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> n)</td></tr>
+<tr class="memdesc:a90c8b7e8990ae9291edb0e7f10f6f5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for a character in memory.  <a href="#a90c8b7e8990ae9291edb0e7f10f6f5e8">More...</a><br /></td></tr>
+<tr class="separator:a90c8b7e8990ae9291edb0e7f10f6f5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6fecf7e5b22aa2f9c9fe07565eb91df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ab6fecf7e5b22aa2f9c9fe07565eb91df">memcmp</a> (const char *s1, const char *s2, <a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> n)</td></tr>
+<tr class="memdesc:ab6fecf7e5b22aa2f9c9fe07565eb91df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare memory areas.  <a href="#ab6fecf7e5b22aa2f9c9fe07565eb91df">More...</a><br /></td></tr>
+<tr class="separator:ab6fecf7e5b22aa2f9c9fe07565eb91df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Standard string library. </p>
@@ -180,7 +229,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="string_8h_source.html#l00023">23</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
 
-<p>Referenced by <a class="el" href="devsysfs_8h_source.html#l00124">sml_devsysfs_write()</a>, <a class="el" href="devsysfs_8h_source.html#l00146">sml_devsysfs_write_block()</a>, and <a class="el" href="string_8h_source.html#l00056">strcat()</a>.</p>
+<p>Referenced by <a class="el" href="devsysfs_8h_source.html#l00124">sml_devsysfs_write()</a>, <a class="el" href="devsysfs_8h_source.html#l00146">sml_devsysfs_write_block()</a>, <a class="el" href="string_8h_source.html#l00074">strcat()</a>, <a class="el" href="string_8h_source.html#l00230">strcspn()</a>, <a class="el" href="string_8h_source.html#l00090">strncat()</a>, and <a class="el" href="string_8h_source.html#l00309">strstr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">size_t</span> i=0;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">while</span>( *s++ )</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        i++;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> i;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -220,8 +269,55 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="string_8h_source.html#l00039">39</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
 
-<p>Referenced by <a class="el" href="string_8h_source.html#l00056">strcat()</a>.</p>
+<p>Referenced by <a class="el" href="osc_8h_source.html#l00045">sml_osc_send()</a>, <a class="el" href="persistent_8h_source.html#l00083">sml_persistent_flag_read_str()</a>, and <a class="el" href="string_8h_source.html#l00074">strcat()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">char</span> *dp = dest;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">while</span>( *src ) </div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        *dp++ = *src++;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    *dp++ = (char)0;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> dest;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a47d54f24198df56da51078a6c540b9ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* strncpy </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>Pointer to destination string buffer </td></tr>
+    <tr><td class="paramname">src</td><td>Pointer to source string buffer </td></tr>
+    <tr><td class="paramname">n</td><td>Number of characters to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to destination string buffer </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00057">57</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>Referenced by <a class="el" href="string_8h_source.html#l00090">strncat()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">char</span> *dp = dest;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">for</span>( i=0; i&lt;n &amp;&amp; *src; i++ )     </div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        *dp++ = *src++;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> dest;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="adb8723e585ed29f2370cddf90f6891bc"></a>
@@ -258,11 +354,62 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to target string buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="string_8h_source.html#l00056">56</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+<p>Definition at line <a class="el" href="string_8h_source.html#l00074">74</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
 
 <p>References <a class="el" href="string_8h_source.html#l00039">strcpy()</a>, and <a class="el" href="string_8h_source.html#l00023">strlen()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">size_t</span> dl = <a class="code" href="string_8h.html#aa383452fe445bfae989358c9d7d96f4f">strlen</a>(dest);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="string_8h.html#a7a82515b5d377be04817715c5465b647">strcpy</a>( dest+dl, src );</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> dest;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div><div class="ttc" id="string_8h_html_a7a82515b5d377be04817715c5465b647"><div class="ttname"><a href="string_8h.html#a7a82515b5d377be04817715c5465b647">strcpy</a></div><div class="ttdeci">char * strcpy(char *dest, const char *src)</div><div class="ttdoc">Copy string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00039">string.h:39</a></div></div>
+
+<p>Referenced by <a class="el" href="osc_8h_source.html#l00045">sml_osc_send()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">size_t</span> dl = <a class="code" href="string_8h.html#aa383452fe445bfae989358c9d7d96f4f">strlen</a>(dest);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="string_8h.html#a7a82515b5d377be04817715c5465b647">strcpy</a>( dest+dl, src );</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> dest;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="ttc" id="string_8h_html_a7a82515b5d377be04817715c5465b647"><div class="ttname"><a href="string_8h.html#a7a82515b5d377be04817715c5465b647">strcpy</a></div><div class="ttdeci">char * strcpy(char *dest, const char *src)</div><div class="ttdoc">Copy string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00039">string.h:39</a></div></div>
 <div class="ttc" id="string_8h_html_aa383452fe445bfae989358c9d7d96f4f"><div class="ttname"><a href="string_8h.html#aa383452fe445bfae989358c9d7d96f4f">strlen</a></div><div class="ttdeci">size_t strlen(const char *s)</div><div class="ttdoc">Get length of string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00023">string.h:23</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0aee928c2844a269966e4832fd2255c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* strncat </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Concatenate string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>Pointer to target string buffer </td></tr>
+    <tr><td class="paramname">src</td><td>Pointer to source string buffer </td></tr>
+    <tr><td class="paramname">n</td><td>Number of characters to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to target string buffer (always null-terminated) </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00090">90</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>References <a class="el" href="string_8h_source.html#l00023">strlen()</a>, and <a class="el" href="string_8h_source.html#l00057">strncpy()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">size_t</span> dl = <a class="code" href="string_8h.html#aa383452fe445bfae989358c9d7d96f4f">strlen</a>(dest);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="string_8h.html#a47d54f24198df56da51078a6c540b9ed">strncpy</a>( dest+dl, src, n );</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    dest[dl+n] = 0;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> dest;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div><div class="ttc" id="string_8h_html_aa383452fe445bfae989358c9d7d96f4f"><div class="ttname"><a href="string_8h.html#aa383452fe445bfae989358c9d7d96f4f">strlen</a></div><div class="ttdeci">size_t strlen(const char *s)</div><div class="ttdoc">Get length of string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00023">string.h:23</a></div></div>
+<div class="ttc" id="string_8h_html_a47d54f24198df56da51078a6c540b9ed"><div class="ttname"><a href="string_8h.html#a47d54f24198df56da51078a6c540b9ed">strncpy</a></div><div class="ttdeci">char * strncpy(char *dest, const char *src, size_t n)</div><div class="ttdoc">Copy string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00057">string.h:57</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -300,11 +447,408 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Comparison value: negative when s1&lt;s2, zero when s1==s2 and positive when s1&gt;s2 </dd></dl>
 
-<p>Definition at line <a class="el" href="string_8h_source.html#l00071">71</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">while</span>( *s1 &amp;&amp; *s2 )</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span>( *s1 != *s2 ) </div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">return</span> *s1 - *s2;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        s1++;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        s2++;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// Whichever ended first reads &#39;\0&#39;, which is smaller than other characters</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> *s1 - *s2;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="string_8h_source.html#l00106">106</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">while</span>( *s1 &amp;&amp; *s2 )</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span>( *s1 != *s2 ) </div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">return</span> *s1 - *s2;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        s1++;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        s2++;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// Whichever ended first reads &#39;\0&#39;, which is smaller than other characters</span></div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> *s1 - *s2;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a47e17349a30d437d177620bf1a7358ab"></a>
+<a class="anchor" id="ab745ed93c0024648f33dc1d553e9fdcc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int strncmp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare sub-strings, upto n characters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td>Pointer to first string </td></tr>
+    <tr><td class="paramname">s2</td><td>Pointer to second string </td></tr>
+    <tr><td class="paramname">n</td><td>Maximum number of charaqcters to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Comparison value: negative when s1&lt;s2, zero when s1==s2 and positive when s1&gt;s2 </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00128">128</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>Referenced by <a class="el" href="string_8h_source.html#l00309">strstr()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">for</span>( i=0; i&lt;n &amp;&amp; *s1 &amp;&amp; *s2; i++ )</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    {</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">if</span>( *s1 != *s2 ) </div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">return</span> *s1 - *s2;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        s1++;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        s2++;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// Whichever ended first reads &#39;\0&#39;, which is smaller than other characters</span></div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span>( i&lt;n )</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> *s1 - *s2;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">return</span> 0; <span class="comment">// ran out of characters so call them the same</span></div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a12871ed234858ef0e363d2b8aa572fc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* strchr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Search for a character in a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to first byte of string </td></tr>
+    <tr><td class="paramname">c</td><td>Byte value to search for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to found character or NULL if not found </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00153">153</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>References <a class="el" href="stddef_8h_source.html#l00017">NULL</a>.</p>
+
+<p>Referenced by <a class="el" href="string_8h_source.html#l00193">strpbrk()</a>, <a class="el" href="string_8h_source.html#l00212">strspn()</a>, and <a class="el" href="string_8h_source.html#l00254">strtok_r()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">while</span>( *s )</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span>( *s==c )</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">return</span> s;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        s++;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div><div class="ttc" id="stddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="stddef_8h_source.html#l00017">stddef.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0c05a458deff028ef4d4e64059098db4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* strrchr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reverse search for a character in a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to first byte of string </td></tr>
+    <tr><td class="paramname">c</td><td>Byte value to search for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to found character or NULL if not found </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00172">172</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>References <a class="el" href="stddef_8h_source.html#l00017">NULL</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// One-pass algorithm</span></div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordtype">char</span> *pos = <a class="code" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">while</span>( *s )</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    {</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">if</span>( *s==c )</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            pos = s;</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        s++;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">return</span> pos;</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div><div class="ttc" id="stddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="stddef_8h_source.html#l00017">stddef.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a119f23a5dcb4eb5f1c1eed3cbf5cb0ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* strpbrk </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>accept</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Search for one of a set of characters in a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to first byte of string </td></tr>
+    <tr><td class="paramname">accept</td><td>String containing the set of characters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to found character or NULL if not found </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00193">193</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>References <a class="el" href="stddef_8h_source.html#l00017">NULL</a>, and <a class="el" href="string_8h_source.html#l00153">strchr()</a>.</p>
+
+<p>Referenced by <a class="el" href="string_8h_source.html#l00230">strcspn()</a>, and <a class="el" href="string_8h_source.html#l00254">strtok_r()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;{</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">while</span>( *s )</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    {</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">if</span>( <a class="code" href="string_8h.html#a12871ed234858ef0e363d2b8aa572fc1">strchr</a>(accept, *s) )</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">return</span> s;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        s++;</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div><div class="ttc" id="stddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="stddef_8h_source.html#l00017">stddef.h:17</a></div></div>
+<div class="ttc" id="string_8h_html_a12871ed234858ef0e363d2b8aa572fc1"><div class="ttname"><a href="string_8h.html#a12871ed234858ef0e363d2b8aa572fc1">strchr</a></div><div class="ttdeci">char * strchr(const char *s, int c)</div><div class="ttdoc">Search for a character in a string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00153">string.h:153</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a900a0edfa51f601d479244f7451cedd1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> strspn </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>accept</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of contiguous characters at the beginning of a string in the accept set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to first byte of string </td></tr>
+    <tr><td class="paramname">accept</td><td>String containing the set of characters to accept </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of initial characters not in set </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00212">212</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>References <a class="el" href="string_8h_source.html#l00153">strchr()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;{</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *d = s;</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">while</span>( *d &amp;&amp; <a class="code" href="string_8h.html#a12871ed234858ef0e363d2b8aa572fc1">strchr</a>(accept, *d) )</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    {</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        d++; <span class="comment">// check the next char     </span></div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    } </div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">return</span> d-s;</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div><div class="ttc" id="string_8h_html_a12871ed234858ef0e363d2b8aa572fc1"><div class="ttname"><a href="string_8h.html#a12871ed234858ef0e363d2b8aa572fc1">strchr</a></div><div class="ttdeci">char * strchr(const char *s, int c)</div><div class="ttdoc">Search for a character in a string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00153">string.h:153</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aeb6c449e5d77477c057abf00eaaf88fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> strcspn </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>reject</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of contiguous characters at the beginning of a string not in the reject set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to first byte of string </td></tr>
+    <tr><td class="paramname">reject</td><td>String containing the set of characters to reject </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of initial characters not in set </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00230">230</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>References <a class="el" href="string_8h_source.html#l00023">strlen()</a>, and <a class="el" href="string_8h_source.html#l00193">strpbrk()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;{</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *p = <a class="code" href="string_8h.html#a119f23a5dcb4eb5f1c1eed3cbf5cb0ed">strpbrk</a>(s, reject);</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    </div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">if</span>( p )</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">return</span> p-s;</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="string_8h.html#aa383452fe445bfae989358c9d7d96f4f">strlen</a>(s);</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div><div class="ttc" id="string_8h_html_aa383452fe445bfae989358c9d7d96f4f"><div class="ttname"><a href="string_8h.html#aa383452fe445bfae989358c9d7d96f4f">strlen</a></div><div class="ttdeci">size_t strlen(const char *s)</div><div class="ttdoc">Get length of string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00023">string.h:23</a></div></div>
+<div class="ttc" id="string_8h_html_a119f23a5dcb4eb5f1c1eed3cbf5cb0ed"><div class="ttname"><a href="string_8h.html#a119f23a5dcb4eb5f1c1eed3cbf5cb0ed">strpbrk</a></div><div class="ttdeci">char * strpbrk(const char *s, const char *accept)</div><div class="ttdoc">Search for one of a set of characters in a string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00193">string.h:193</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab11d86a2a3af0a355cad2337c6f4e9f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* strtok_r </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>delim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>saveptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Divide a sting into tokens; re-entrant version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Pointer to string to be scanned or NULL to continue scan. </td></tr>
+    <tr><td class="paramname">delim</td><td>String containing the set of characters </td></tr>
+    <tr><td class="paramname">saveptr</td><td>Algorithm state variable - maintain across a scan operation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Found token or NULL if none.</dd></dl>
+<p>Note: declare saveptr as char *; no initialisation required; pass in &amp;saveptr. Call repeatedly. Pass in the string to parse on first call then NULL on successive calls to continue parsing the same string. NULL is returned when there are no remainin tokens. </p>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00254">254</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>References <a class="el" href="stddef_8h_source.html#l00017">NULL</a>, <a class="el" href="string_8h_source.html#l00153">strchr()</a>, and <a class="el" href="string_8h_source.html#l00193">strpbrk()</a>.</p>
+
+<p>Referenced by <a class="el" href="string_8h_source.html#l00293">strtok()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;{</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">if</span>( str )</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        *saveptr = str; <span class="comment">// startup</span></div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( !*saveptr )</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;   <span class="comment">// shutdown</span></div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    </div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">char</span> *d = <a class="code" href="string_8h.html#a119f23a5dcb4eb5f1c1eed3cbf5cb0ed">strpbrk</a>(*saveptr, delim);</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    </div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">if</span>( d )</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        *d = 0; <span class="comment">// NULL-terminate</span></div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        </div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">do</span> </div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        {</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            d++; <span class="comment">// check the next char     </span></div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keywordflow">if</span>( *d==0 )</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            {</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                d = <a class="code" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            }</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        } <span class="keywordflow">while</span>( <a class="code" href="string_8h.html#a12871ed234858ef0e363d2b8aa572fc1">strchr</a>(delim, *d) );</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    </div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    str = *saveptr;</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    *saveptr = d;       </div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">return</span> str;</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div><div class="ttc" id="stddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="stddef_8h_source.html#l00017">stddef.h:17</a></div></div>
+<div class="ttc" id="string_8h_html_a12871ed234858ef0e363d2b8aa572fc1"><div class="ttname"><a href="string_8h.html#a12871ed234858ef0e363d2b8aa572fc1">strchr</a></div><div class="ttdeci">char * strchr(const char *s, int c)</div><div class="ttdoc">Search for a character in a string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00153">string.h:153</a></div></div>
+<div class="ttc" id="string_8h_html_a119f23a5dcb4eb5f1c1eed3cbf5cb0ed"><div class="ttname"><a href="string_8h.html#a119f23a5dcb4eb5f1c1eed3cbf5cb0ed">strpbrk</a></div><div class="ttdeci">char * strpbrk(const char *s, const char *accept)</div><div class="ttdoc">Search for one of a set of characters in a string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00193">string.h:193</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8cb460f64c449f2a9b9b7a40569ce0fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* strtok </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>delim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Divide a sting into tokens; unsafe version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Pointer to string to be scanned or NULL to continue scan. </td></tr>
+    <tr><td class="paramname">delim</td><td>String containing the set of characters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Found token or NULL if none.</dd></dl>
+<p>Note: Not thread- or coroutine-safe. Cannot nest parsing loops. </p>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00293">293</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>References <a class="el" href="string_8h_source.html#l00254">strtok_r()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;{</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> *saveptr;</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="string_8h.html#ab11d86a2a3af0a355cad2337c6f4e9f7">strtok_r</a>(str, delim, saveptr);</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;}</div><div class="ttc" id="string_8h_html_ab11d86a2a3af0a355cad2337c6f4e9f7"><div class="ttname"><a href="string_8h.html#ab11d86a2a3af0a355cad2337c6f4e9f7">strtok_r</a></div><div class="ttdeci">char * strtok_r(char *str, const char *delim, char **saveptr)</div><div class="ttdoc">Divide a sting into tokens; re-entrant version. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00254">string.h:254</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4a710d86541afc6b7dafddcdb4b1c94f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* strstr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>haystack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>needle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find a string within another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">haystack</td><td>Pointer to string to be searched. </td></tr>
+    <tr><td class="paramname">needle</td><td>Pointer to sub-string to search for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Start of found substring or NULL if not found.</dd></dl>
+<p>Note: Not thread- or coroutine-safe. Cannot nest parsing loops. </p>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00309">309</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>References <a class="el" href="stddef_8h_source.html#l00017">NULL</a>, <a class="el" href="string_8h_source.html#l00023">strlen()</a>, and <a class="el" href="string_8h_source.html#l00128">strncmp()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;{</div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">int</span> ofs = <a class="code" href="string_8h.html#aa383452fe445bfae989358c9d7d96f4f">strlen</a>(needle);</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordflow">if</span>( ofs==0 )</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordflow">return</span> haystack; <span class="comment">// 0-length substring is found immediately (empty AND-rule == true)</span></div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="string_8h.html#aa383452fe445bfae989358c9d7d96f4f">strlen</a>(haystack) &lt; ofs )</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordflow">while</span>( *(haystack+ofs-1) )</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    {</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">if</span>( <a class="code" href="string_8h.html#ab745ed93c0024648f33dc1d553e9fdcc">strncmp</a>(haystack, needle, ofs) == 0 )</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            <span class="keywordflow">return</span> haystack;</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        haystack++;</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;    </div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}</div><div class="ttc" id="string_8h_html_ab745ed93c0024648f33dc1d553e9fdcc"><div class="ttname"><a href="string_8h.html#ab745ed93c0024648f33dc1d553e9fdcc">strncmp</a></div><div class="ttdeci">int strncmp(const char *s1, const char *s2, int n)</div><div class="ttdoc">Compare sub-strings, upto n characters. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00128">string.h:128</a></div></div>
+<div class="ttc" id="string_8h_html_aa383452fe445bfae989358c9d7d96f4f"><div class="ttname"><a href="string_8h.html#aa383452fe445bfae989358c9d7d96f4f">strlen</a></div><div class="ttdeci">size_t strlen(const char *s)</div><div class="ttdoc">Get length of string. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00023">string.h:23</a></div></div>
+<div class="ttc" id="stddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="stddef_8h_source.html#l00017">stddef.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="abb6648d2c8dcebe0fbd21f349c5314dc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -323,7 +867,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
           <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
@@ -344,16 +888,201 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to destination string buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="string_8h_source.html#l00092">92</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+<p>Definition at line <a class="el" href="string_8h_source.html#l00334">334</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
 
-<p>Referenced by <a class="el" href="i2c__regmap_8h_source.html#l00072">sml_i2c_regmap_write()</a>, and <a class="el" href="i2c__regmap_8h_source.html#l00195">sml_i2c_regmap_writeL()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">char</span> *dp = dest;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">for</span>( i=0; i&lt;n; i++ ) </div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    </div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        *dp++ = *src++;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> dest;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div></div><!-- fragment -->
+<p>Referenced by <a class="el" href="string_8h_source.html#l00351">memmove()</a>, <a class="el" href="i2c__regmap_8h_source.html#l00072">sml_i2c_regmap_write()</a>, and <a class="el" href="i2c__regmap_8h_source.html#l00195">sml_i2c_regmap_writeL()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;{</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordtype">char</span> *dp = dest;</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">for</span>( i=0; i&lt;n; i++ )     </div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        *dp++ = *src++;</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">return</span> dest;</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="afb42afc8cb8481aa8b41e4d328117a83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* memmove </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move memory (src and dest buffers may overlap) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>Pointer to destination string buffer </td></tr>
+    <tr><td class="paramname">src</td><td>Pointer to source string buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to destination string buffer </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00351">351</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>References <a class="el" href="string_8h_source.html#l00334">memcpy()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;{</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordflow">if</span>( dest &lt; src )</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="string_8h.html#abb6648d2c8dcebe0fbd21f349c5314dc">memcpy</a>(dest, src, n);</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    </div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordtype">char</span> *dp = dest+n-1;</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    src = src+n-1;</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordflow">for</span>( i=0; i&lt;n; i++ )     </div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        *dp-- = *src--; </div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    </div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">return</span> dest;</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div><div class="ttc" id="string_8h_html_abb6648d2c8dcebe0fbd21f349c5314dc"><div class="ttname"><a href="string_8h.html#abb6648d2c8dcebe0fbd21f349c5314dc">memcpy</a></div><div class="ttdeci">char * memcpy(char *dest, const char *src, size_t n)</div><div class="ttdoc">Copy memory. </div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00334">string.h:334</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae84d761c39eb82ad47de0ab0738b64b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* memset </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fill a block of memory with a single character. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to destination memory block </td></tr>
+    <tr><td class="paramname">c</td><td>Character to write </td></tr>
+    <tr><td class="paramname">n</td><td>Size of destination memory block </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to destination memory block </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00374">374</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;{</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keywordflow">for</span>(i=0; i&lt;n; i++)</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        *s++ = c;</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordflow">return</span> s;</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a90c8b7e8990ae9291edb0e7f10f6f5e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* memchr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Search for a character in memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to first byte of memory area </td></tr>
+    <tr><td class="paramname">c</td><td>Byte value to search for </td></tr>
+    <tr><td class="paramname">n</td><td>Size of area </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to found character or NULL if not found </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00391">391</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+
+<p>References <a class="el" href="stddef_8h_source.html#l00017">NULL</a>.</p>
+<div class="fragment"><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;{</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">for</span>( i=0; i&lt;n; i++ )</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    {</div><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="keywordflow">if</span>( *s==c )</div><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            <span class="keywordflow">return</span> s;</div><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        s++;</div><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    }</div><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div><div class="ttc" id="stddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="stddef_8h_source.html#l00017">stddef.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab6fecf7e5b22aa2f9c9fe07565eb91df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int memcmp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare memory areas. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td>Pointer to first area </td></tr>
+    <tr><td class="paramname">s2</td><td>Pointer to second area </td></tr>
+    <tr><td class="paramname">n</td><td>Size of areas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Comparison value: negative when s1&lt;s2, zero when s1==s2 and positive when s1&gt;s2 </dd></dl>
+
+<p>Definition at line <a class="el" href="string_8h_source.html#l00412">412</a> of file <a class="el" href="string_8h_source.html">string.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;{</div><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordflow">for</span>( i=0; i&lt;n; i++ )</div><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    {</div><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">if</span>( *s1 != *s2 ) </div><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            <span class="keywordflow">return</span> *s1 - *s2;</div><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        s1++;</div><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        s2++;</div><div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    }</div><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 4 2017 21:19:57 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 24 2017 19:07:36 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

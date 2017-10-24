@@ -1,0 +1,20 @@
+<map id="resources/c/include/stdlib_math.h" name="resources/c/include/stdlib_math.h">
+<area shape="rect" id="node2" href="$stdlib_8h.html" title="Standard library. " alt="" coords="401,95,536,136"/>
+<area shape="rect" id="node3" href="$stdio_8h.html" title="Standard input/output functions. " alt="" coords="113,184,248,225"/>
+<area shape="rect" id="node5" href="$i2c__regmap_8h.html" title="Sub&#45;driver for I2C devices organised as regmaps. " alt="" coords="751,273,906,315"/>
+<area shape="rect" id="node14" href="$i2c_8h.html" title="Generic I2C bus driver using /dev and ioctl. " alt="" coords="349,184,484,225"/>
+<area shape="rect" id="node19" href="$spi_8h.html" title="Generic SPI bus driver using /dev and ioctl. " alt="" coords="560,184,695,225"/>
+<area shape="rect" id="node4" href="$ad5627_8h.html" title="AD562 DAC device driver. " alt="" coords="5,363,140,404"/>
+<area shape="rect" id="node6" href="$ad7091_8h.html" title="Quad channel 12 bit ADC. " alt="" coords="223,363,357,404"/>
+<area shape="rect" id="node7" href="$isl29023_8h.html" title="ISL29023 device driver. " alt="" coords="381,363,516,404"/>
+<area shape="rect" id="node8" href="$lm75b_8h.html" title="LM75B device driver. " alt="" coords="540,363,675,404"/>
+<area shape="rect" id="node9" href="$mpl115a2_8h.html" title="Miniature I2C Digital Barometer. " alt="" coords="699,363,841,404"/>
+<area shape="rect" id="node10" href="$mpu6050_8h.html" title="MPU6050 device driver. " alt="" coords="865,363,1005,404"/>
+<area shape="rect" id="node11" href="$pca9534_8h.html" title="GPIO Extender. " alt="" coords="1030,363,1166,404"/>
+<area shape="rect" id="node12" href="$pca9685_8h.html" title="16&#45;channel, 12&#45;bit PWM Fm+ I2C&#45;bus LED Controller " alt="" coords="1190,363,1326,404"/>
+<area shape="rect" id="node13" href="$pcf8563_8h.html" title="Real&#45;time clock. " alt="" coords="1351,363,1485,404"/>
+<area shape="rect" id="node15" href="$24lc64_8h.html" title="24LC64 EEPROM device driver. " alt="" coords="592,273,727,315"/>
+<area shape="rect" id="node16" href="$ad7991_8h.html" title="AD7991 8 bit Analogue to Digital Converter (ADC) " alt="" coords="111,273,245,315"/>
+<area shape="rect" id="node17" href="$max518_8h.html" title="MAX518 DAC device driver. " alt="" coords="269,273,404,315"/>
+<area shape="rect" id="node18" href="$pcf8574a_8h.html" title="pcf8574a IO extender device driver. " alt="" coords="428,273,568,315"/>
+</map>
