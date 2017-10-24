@@ -1,0 +1,16 @@
+<map id="resources/c/include/scriptml/i2c.h" name="resources/c/include/scriptml/i2c.h">
+<area shape="rect" id="node2" href="$24lc64_8h.html" title="24LC64 EEPROM device driver. " alt="" coords="343,95,477,136"/>
+<area shape="rect" id="node3" href="$ad5627_8h.html" title="AD562 DAC device driver. " alt="" coords="5,184,140,225"/>
+<area shape="rect" id="node4" href="$i2c__regmap_8h.html" title="Sub&#45;driver for I2C devices organised as regmaps. " alt="" coords="553,95,707,136"/>
+<area shape="rect" id="node13" href="$ad7991_8h.html" title="AD7991 8 bit Analogue to Digital Converter (ADC) " alt="" coords="732,95,867,136"/>
+<area shape="rect" id="node14" href="$max518_8h.html" title="MAX518 DAC device driver. " alt="" coords="891,95,1025,136"/>
+<area shape="rect" id="node15" href="$pcf8574a_8h.html" title="pcf8574a IO extender device driver. " alt="" coords="1049,95,1189,136"/>
+<area shape="rect" id="node5" href="$ad7091_8h.html" title="Quad channel 12 bit ADC. " alt="" coords="164,184,299,225"/>
+<area shape="rect" id="node6" href="$isl29023_8h.html" title="ISL29023 device driver. " alt="" coords="323,184,457,225"/>
+<area shape="rect" id="node7" href="$lm75b_8h.html" title="LM75B device driver. " alt="" coords="481,184,616,225"/>
+<area shape="rect" id="node8" href="$mpl115a2_8h.html" title="Miniature I2C Digital Barometer. " alt="" coords="640,184,783,225"/>
+<area shape="rect" id="node9" href="$mpu6050_8h.html" title="MPU6050 device driver. " alt="" coords="807,184,947,225"/>
+<area shape="rect" id="node10" href="$pca9534_8h.html" title="GPIO Extender. " alt="" coords="971,184,1107,225"/>
+<area shape="rect" id="node11" href="$pca9685_8h.html" title="16&#45;channel, 12&#45;bit PWM Fm+ I2C&#45;bus LED Controller " alt="" coords="1131,184,1267,225"/>
+<area shape="rect" id="node12" href="$pcf8563_8h.html" title="Real&#45;time clock. " alt="" coords="1292,184,1427,225"/>
+</map>

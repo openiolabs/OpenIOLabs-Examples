@@ -1,0 +1,10 @@
+<map id="resources/c/include/scriptml/i2c_regmap.h" name="resources/c/include/scriptml/i2c_regmap.h">
+<area shape="rect" id="node2" href="$i2c_8h.html" title="Generic I2C bus driver using /dev and ioctl. " alt="" coords="201,95,301,121"/>
+<area shape="rect" id="node6" href="$stdint_8h.html" title="Standard integer types. " alt="" coords="342,169,407,196"/>
+<area shape="rect" id="node7" href="$stdlib_8h.html" title="Standard library. " alt="" coords="5,169,69,196"/>
+<area shape="rect" id="node8" href="$string_8h.html" title="Standard string library. " alt="" coords="94,169,159,196"/>
+<area shape="rect" id="node9" href="$assert_8h.html" title="C Standard Library assertions. " alt="" coords="432,169,501,196"/>
+<area shape="rect" id="node3" href="$devsysfs_8h.html" title="Access to /dev and /sys nodes. " alt="" coords="183,169,319,196"/>
+<area shape="rect" id="node4" href="$unistd_8h.html" title="Miscellaneous C definitions. " alt="" coords="190,244,258,271"/>
+<area shape="rect" id="node5" href="$stddef_8h.html" title="Standard definitions. " alt="" coords="92,319,161,345"/>
+</map>

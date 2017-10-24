@@ -1,0 +1,4 @@
+<map id="sml_pcf8563_t" name="sml_pcf8563_t">
+<area shape="rect" id="node2" href="$i2c__regmap_8h.html#structsml__i2c__regmap__t" title="sml_i2c_regmap_t" alt="" coords="5,5,133,32"/>
+<area shape="rect" id="node3" href="$gpio_8h.html#structsml__gpio__handle" title="sml_gpio_handle" alt="" coords="158,5,277,32"/>
+</map>

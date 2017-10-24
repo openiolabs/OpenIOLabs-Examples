@@ -1,0 +1,12 @@
+<map id="resources/c/include/scriptml/pcf8563.h" name="resources/c/include/scriptml/pcf8563.h">
+<area shape="rect" id="node2" href="$i2c__regmap_8h.html" title="Sub&#45;driver for I2C devices organised as regmaps. " alt="" coords="272,95,372,121"/>
+<area shape="rect" id="node11" href="$gpio_8h.html" title="Drive GPIOs using the sysfs interface. " alt="" coords="79,169,136,196"/>
+<area shape="rect" id="node3" href="$i2c_8h.html" title="Generic I2C bus driver using /dev and ioctl. " alt="" coords="228,169,328,196"/>
+<area shape="rect" id="node7" href="$stdint_8h.html" title="Standard integer types. " alt="" coords="365,244,431,271"/>
+<area shape="rect" id="node8" href="$stdlib_8h.html" title="Standard library. " alt="" coords="455,244,519,271"/>
+<area shape="rect" id="node9" href="$string_8h.html" title="Standard string library. " alt="" coords="276,244,341,271"/>
+<area shape="rect" id="node10" href="$assert_8h.html" title="C Standard Library assertions. " alt="" coords="182,244,251,271"/>
+<area shape="rect" id="node4" href="$devsysfs_8h.html" title="Access to /dev and /sys nodes. " alt="" coords="22,244,158,271"/>
+<area shape="rect" id="node5" href="$unistd_8h.html" title="Miscellaneous C definitions. " alt="" coords="56,319,124,345"/>
+<area shape="rect" id="node6" href="$stddef_8h.html" title="Standard definitions. " alt="" coords="274,393,343,420"/>
+</map>
