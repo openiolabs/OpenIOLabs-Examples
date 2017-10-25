@@ -1,6 +1,9 @@
 #! /bin/bash -ex
 cd /home/ubuntu/github_repo/OpenIOLabs-Examples
 
+OUTPUT="$(ssh-keygen -lf ~/.ssh/id_rsa.pub)"
+echo "${OUTPUT}"
+
 OUTPUT="$(whoami)"
 echo "${OUTPUT}"
 
