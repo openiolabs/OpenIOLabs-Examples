@@ -12,7 +12,7 @@ env -i git --git-dir=/home/ubuntu/github_repo/OpenIOLabs-Examples/.git --work-tr
 
 
 
-#env -i git pull
+git pull
 
 
 env -i git add /home/ubuntu/github_repo/OpenIOLabs-Examples/*
