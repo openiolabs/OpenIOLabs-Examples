@@ -22,7 +22,7 @@ env -i git add /home/ubuntu/github_repo/OpenIOLabs-Examples/*
 
 env -i OUTPUT="$(git commit -am 'Doxygen update')"
 
-env -i OUTPUT="$(git push)"
+env -i OUTPUT="$(git push jenkins-openiolabs@github.com:openiolabs/OpenIOLabs-Examples.git)"
 #echo "${OUTPUT}"
 
 #env -i git push
