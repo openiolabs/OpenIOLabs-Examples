@@ -2,6 +2,7 @@
 
 cd /home/ubuntu/github_repo/OpenIOLabs-Examples
 
+
 OUTPUT="$(whoami)"
 echo "${OUTPUT}"
 
@@ -25,6 +26,6 @@ cp -r /home/ubuntu/manual_builds/openio/src/scriptml/docs/python-api/* /home/ubu
 git pull
 
 
-env -i git add /home/ubuntu/github_repo/OpenIOLabs-Examples/*
-
-env -i git push
+env git add /home/ubuntu/github_repo/OpenIOLabs-Examples/*
+git commit -am 'Doxygen update'
+env git push
