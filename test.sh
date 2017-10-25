@@ -2,6 +2,23 @@
 
 cd /home/ubuntu/github_repo/OpenIOLabs-Examples
 
+OUTPUT="$(whoami)"
+echo "${OUTPUT}"
+
+OUTPUT="$(git remote -v)"
+echo "${OUTPUT}"
+
+OUTPUT="$(pwd)"
+echo "${OUTPUT}"
+
+OUTPUT="$(git worktree list)"
+echo "${OUTPUT}"
+
+
+OUTPUT="$(git config --list)"
+echo "${OUTPUT}"
+
+
 cp -r /home/ubuntu/manual_builds/openio/src/scriptml/docs/c-api/* /home/ubuntu/github_repo/OpenIOLabs-Examples/documents/doxygen/c-api/.
 cp -r /home/ubuntu/manual_builds/openio/src/scriptml/docs/python-api/* /home/ubuntu/github_repo/OpenIOLabs-Examples/documents/doxygen/python-api/.
 
@@ -20,7 +37,7 @@ env -i git add /home/ubuntu/github_repo/OpenIOLabs-Examples/*
 #OUTPUT="$(git commit -am 'Doxygen update')"
 #echo "${OUTPUT}"
 
-env -i OUTPUT="$(git commit -am 'Doxygen update')"
+#env -i OUTPUT="$(git commit -am 'Doxygen update')"
 #env -i git remote set-url --push jenkins-openiolabs@github.com:openiolabs/OpenIOLabs-Examples.git
 #env -i OUTPUT="$(git push jenkins-openiolabs@github.com:openiolabs/OpenIOLabs-Examples.git)"
 #echo "${OUTPUT}"
