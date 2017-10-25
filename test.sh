@@ -20,9 +20,9 @@ env -i git add /home/ubuntu/github_repo/OpenIOLabs-Examples/*
 #OUTPUT="$(git commit -am 'Doxygen update')"
 #echo "${OUTPUT}"
 
-env -i git commit -am 'Doxygen update'
+env -i OUTPUT="$(git commit -am 'Doxygen update')"
 
-#OUTPUT="$(git push)"
+env -i OUTPUT="$(git push)"
 #echo "${OUTPUT}"
 
-env -i git push
+#env -i git push
