@@ -1,5 +1,4 @@
 #! /bin/bash -ex
-
 cd /home/ubuntu/github_repo/OpenIOLabs-Examples
 
 OUTPUT="$(whoami)"
