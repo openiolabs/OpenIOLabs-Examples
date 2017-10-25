@@ -1,7 +1,6 @@
 #! /bin/bash -ex
 cd /home/ubuntu/github_repo/OpenIOLabs-Examples
 
-
 eval $(ssh-agent)
 ssh-add /home/ubuntu/.ssh/id_rsa_github
 
