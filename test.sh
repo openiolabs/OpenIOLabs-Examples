@@ -22,7 +22,6 @@ cp -r /home/ubuntu/manual_builds/openio/src/scriptml/docs/c-api/* /home/ubuntu/g
 cp -r /home/ubuntu/manual_builds/openio/src/scriptml/docs/python-api/* /home/ubuntu/github_repo/OpenIOLabs-Examples/documents/doxygen/python-api/.
 
 git pull
-
 git add /home/ubuntu/github_repo/OpenIOLabs-Examples/*
 git commit -am 'Doxygen update'
 git push
