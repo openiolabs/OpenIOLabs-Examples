@@ -1,7 +1,11 @@
 #! /bin/bash -ex
 cd /home/ubuntu/github_repo/OpenIOLabs-Examples
 
-OUTPUT="$(ssh-keygen -lf ~/.ssh/id_rsa.pub)"
+
+eval $(ssh-agent)
+ssh-add /home/ubuntu/.ssh/id_rsa_github
+
+OUTPUT="$(ssh-keygen -lf ~/.ssh/id_rsa_github.pub)"
 echo "${OUTPUT}"
 
 OUTPUT="$(whoami)"
@@ -22,7 +26,7 @@ echo "${OUTPUT}"
 cp -r /home/ubuntu/manual_builds/openio/src/scriptml/docs/c-api/* /home/ubuntu/github_repo/OpenIOLabs-Examples/documents/doxygen/c-api/.
 cp -r /home/ubuntu/manual_builds/openio/src/scriptml/docs/python-api/* /home/ubuntu/github_repo/OpenIOLabs-Examples/documents/doxygen/python-api/.
 
-env -i git pull
+git pull
 git add /home/ubuntu/github_repo/OpenIOLabs-Examples/*
 git commit -am 'Doxygen update'
 git push
