@@ -5,10 +5,10 @@ cd /home/ubuntu/github_repo/OpenIOLabs-Examples
 cp -r /home/ubuntu/manual_builds/openio/src/scriptml/docs/c-api/* /home/ubuntu/github_repo/OpenIOLabs-Examples/documents/doxygen/c-api/.
 cp -r /home/ubuntu/manual_builds/openio/src/scriptml/docs/python-api/* /home/ubuntu/github_repo/OpenIOLabs-Examples/documents/doxygen/python-api/.
 
-env -i git config user.name jenkins-openiolabs
-env -i git config user.email jenkins@openiolabs.co.uk
+#env -i git config user.name jenkins-openiolabs
+#env -i git config user.email jenkins@openiolabs.co.uk
 
-env -i git --git-dir=/home/ubuntu/github_repo/OpenIOLabs-Examples/.git --work-tree=/home/ubuntu/github_repo/OpenIOLabs-Examples pull
+#env -i git --git-dir=/home/ubuntu/github_repo/OpenIOLabs-Examples/.git --work-tree=/home/ubuntu/github_repo/OpenIOLabs-Examples pull
 
 
 
