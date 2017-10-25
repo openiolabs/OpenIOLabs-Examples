@@ -2,7 +2,6 @@
 
 cd /home/ubuntu/github_repo/OpenIOLabs-Examples
 
-
 OUTPUT="$(whoami)"
 echo "${OUTPUT}"
 
