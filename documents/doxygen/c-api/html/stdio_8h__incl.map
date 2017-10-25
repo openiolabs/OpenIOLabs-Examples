@@ -1,7 +1,6 @@
 <map id="resources/c/include/stdio.h" name="resources/c/include/stdio.h">
 <area shape="rect" id="node2" href="$stdarg_8h.html" title="VarArgs functions. " alt="" coords="5,95,75,121"/>
-<area shape="rect" id="node4" href="$stdlib_8h.html" title="Standard library. " alt="" coords="192,95,256,121"/>
-<area shape="rect" id="node6" href="$unistd_8h.html" title="Miscellaneous C definitions. " alt="" coords="99,95,167,121"/>
-<area shape="rect" id="node3" href="$stddef_8h.html" title="Standard definitions. " alt="" coords="89,169,159,196"/>
-<area shape="rect" id="node5" href="$stdlib__math_8h.html" title="Standard library math functions. " alt="" coords="183,169,283,196"/>
+<area shape="rect" id="node4" href="$stdlib_8h.html" title="Standard library. " alt="" coords="99,95,163,121"/>
+<area shape="rect" id="node5" href="$unistd_8h.html" title="Miscellaneous C definitions. " alt="" coords="187,95,255,121"/>
+<area shape="rect" id="node3" href="$stddef_8h.html" title="Standard definitions. " alt="" coords="96,169,165,196"/>
 </map>

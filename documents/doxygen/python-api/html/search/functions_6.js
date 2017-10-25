@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['fabs',['fabs',['../namespacemath.html#a6b6779ac2542db0f0cd666eaf12bce57',1,'math']]],
-  ['filter',['filter',['../namespacebuiltins.html#ab5a87f09cf17c4fb38f45185ad89f990',1,'builtins']]],
-  ['float',['float',['../namespacebuiltins.html#a4ce84a108f8abb7faafefdfa5dbd63b5',1,'builtins']]],
-  ['floor',['floor',['../namespacemath.html#a96d588ab901d3911d8230c14f4c6f2a9',1,'math']]]
+  ['int',['int',['../namespacebuiltins.html#a15d9e037d05b1fd4320afacbced7f739',1,'builtins']]],
+  ['ioctl',['ioctl',['../classdevsysfs_1_1device.html#a4af2e1decc47fff464c61b9980f1c3e8',1,'devsysfs::device']]]
 ];

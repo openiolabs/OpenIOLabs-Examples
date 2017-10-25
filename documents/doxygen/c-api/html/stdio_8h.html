@@ -104,10 +104,9 @@ Include dependency graph for stdio.h:</div>
 <div class="center"><img src="stdio_8h__incl.png" border="0" usemap="#resources_2c_2include_2stdio_8h" alt=""/></div>
 <map name="resources_2c_2include_2stdio_8h" id="resources_2c_2include_2stdio_8h">
 <area shape="rect" id="node2" href="stdarg_8h.html" title="VarArgs functions. " alt="" coords="5,95,75,121"/>
-<area shape="rect" id="node4" href="stdlib_8h.html" title="Standard library. " alt="" coords="192,95,256,121"/>
-<area shape="rect" id="node6" href="unistd_8h.html" title="Miscellaneous C definitions. " alt="" coords="99,95,167,121"/>
-<area shape="rect" id="node3" href="stddef_8h.html" title="Standard definitions. " alt="" coords="89,169,159,196"/>
-<area shape="rect" id="node5" href="stdlib__math_8h.html" title="Standard library math functions. " alt="" coords="183,169,283,196"/>
+<area shape="rect" id="node4" href="stdlib_8h.html" title="Standard library. " alt="" coords="99,95,163,121"/>
+<area shape="rect" id="node5" href="unistd_8h.html" title="Miscellaneous C definitions. " alt="" coords="187,95,255,121"/>
+<area shape="rect" id="node3" href="stddef_8h.html" title="Standard definitions. " alt="" coords="96,169,165,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -206,12 +205,12 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of characters printed </dd></dl>
 
-<p>Definition at line <a class="el" href="stdio_8h_source.html#l00236">236</a> of file <a class="el" href="stdio_8h_source.html">stdio.h</a>.</p>
+<p>Definition at line <a class="el" href="stdio_8h_source.html#l00226">226</a> of file <a class="el" href="stdio_8h_source.html">stdio.h</a>.</p>
 
 <p>References <a class="el" href="stdarg_8h_source.html#l00023">va_list</a>, and <a class="el" href="stdarg_8h_source.html#l00027">va_start</a>.</p>
 
 <p>Referenced by <a class="el" href="devsysfs_8h_source.html#l00104">sml_devsysfs_close()</a>, <a class="el" href="devsysfs_8h_source.html#l00263">sml_devsysfs_ioctl()</a>, <a class="el" href="devsysfs_8h_source.html#l00083">sml_devsysfs_open()</a>, <a class="el" href="devsysfs_8h_source.html#l00168">sml_devsysfs_read()</a>, <a class="el" href="devsysfs_8h_source.html#l00216">sml_devsysfs_read_block()</a>, <a class="el" href="devsysfs_8h_source.html#l00240">sml_devsysfs_read_block_to_eof()</a>, <a class="el" href="devsysfs_8h_source.html#l00191">sml_devsysfs_read_to_eof()</a>, <a class="el" href="devsysfs_8h_source.html#l00124">sml_devsysfs_write()</a>, <a class="el" href="devsysfs_8h_source.html#l00146">sml_devsysfs_write_block()</a>, <a class="el" href="i2c__regmap_8h_source.html#l00123">sml_i2c_regmap_read()</a>, <a class="el" href="i2c__regmap_8h_source.html#l00262">sml_i2c_regmap_readL()</a>, <a class="el" href="i2c__regmap_8h_source.html#l00072">sml_i2c_regmap_write()</a>, and <a class="el" href="i2c__regmap_8h_source.html#l00195">sml_i2c_regmap_writeL()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;{</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <a class="code" href="stdarg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff">va_list</a> args;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        </div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <a class="code" href="stdarg_8h.html#ade24ac546ea93fde2353ed2db8e89c66">va_start</a>( args, format );</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">return</span> __print( 0, format, args );</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div><div class="ttc" id="stdarg_8h_html_a6e6fde95f2a221e9bcd58fa102bd90ff"><div class="ttname"><a href="stdarg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff">va_list</a></div><div class="ttdeci">#define va_list</div><div class="ttdef"><b>Definition:</b> <a href="stdarg_8h_source.html#l00023">stdarg.h:23</a></div></div>
+<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;{</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <a class="code" href="stdarg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff">va_list</a> args;</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        </div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <a class="code" href="stdarg_8h.html#ade24ac546ea93fde2353ed2db8e89c66">va_start</a>( args, format );</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">return</span> __print( 0, format, args );</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div><div class="ttc" id="stdarg_8h_html_a6e6fde95f2a221e9bcd58fa102bd90ff"><div class="ttname"><a href="stdarg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff">va_list</a></div><div class="ttdeci">#define va_list</div><div class="ttdef"><b>Definition:</b> <a href="stdarg_8h_source.html#l00023">stdarg.h:23</a></div></div>
 <div class="ttc" id="stdarg_8h_html_ade24ac546ea93fde2353ed2db8e89c66"><div class="ttname"><a href="stdarg_8h.html#ade24ac546ea93fde2353ed2db8e89c66">va_start</a></div><div class="ttdeci">#define va_start(ap, last)</div><div class="ttdef"><b>Definition:</b> <a href="stdarg_8h_source.html#l00027">stdarg.h:27</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -256,10 +255,10 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of characters written </dd></dl>
 
-<p>Definition at line <a class="el" href="stdio_8h_source.html#l00252">252</a> of file <a class="el" href="stdio_8h_source.html">stdio.h</a>.</p>
+<p>Definition at line <a class="el" href="stdio_8h_source.html#l00242">242</a> of file <a class="el" href="stdio_8h_source.html">stdio.h</a>.</p>
 
 <p>References <a class="el" href="stdarg_8h_source.html#l00023">va_list</a>, and <a class="el" href="stdarg_8h_source.html#l00027">va_start</a>.</p>
-<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;{</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <a class="code" href="stdarg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff">va_list</a> args;</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        </div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <a class="code" href="stdarg_8h.html#ade24ac546ea93fde2353ed2db8e89c66">va_start</a>( args, format );</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordflow">return</span> __print( &amp;out, format, args );</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div><div class="ttc" id="stdarg_8h_html_a6e6fde95f2a221e9bcd58fa102bd90ff"><div class="ttname"><a href="stdarg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff">va_list</a></div><div class="ttdeci">#define va_list</div><div class="ttdef"><b>Definition:</b> <a href="stdarg_8h_source.html#l00023">stdarg.h:23</a></div></div>
+<div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;{</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <a class="code" href="stdarg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff">va_list</a> args;</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        </div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="stdarg_8h.html#ade24ac546ea93fde2353ed2db8e89c66">va_start</a>( args, format );</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">return</span> __print( &amp;out, format, args );</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div><div class="ttc" id="stdarg_8h_html_a6e6fde95f2a221e9bcd58fa102bd90ff"><div class="ttname"><a href="stdarg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff">va_list</a></div><div class="ttdeci">#define va_list</div><div class="ttdef"><b>Definition:</b> <a href="stdarg_8h_source.html#l00023">stdarg.h:23</a></div></div>
 <div class="ttc" id="stdarg_8h_html_ade24ac546ea93fde2353ed2db8e89c66"><div class="ttname"><a href="stdarg_8h.html#ade24ac546ea93fde2353ed2db8e89c66">va_start</a></div><div class="ttdeci">#define va_start(ap, last)</div><div class="ttdef"><b>Definition:</b> <a href="stdarg_8h_source.html#l00027">stdarg.h:27</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -267,7 +266,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 24 2017 22:32:45 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 4 2017 21:19:57 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

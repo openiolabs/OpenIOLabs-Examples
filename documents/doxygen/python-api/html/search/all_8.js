@@ -46,9 +46,7 @@ var searchData=
   ['id_5fopenio_5fspi_5finterface',['id_OpenIO_SPI_Interface',['../namespacelwm2m.html#a3010881ae7c8f652377bba4945161ff9',1,'lwm2m']]],
   ['id_5fopenio_5fsurface_5fplotter',['id_OpenIO_Surface_Plotter',['../namespacelwm2m.html#a1199ecb6aa725997b399a121b812eebb',1,'lwm2m']]],
   ['id_5fopenio_5fuart_5finterface',['id_OpenIO_UART_Interface',['../namespacelwm2m.html#a812e67e59daecd4ed8966b73af3603e0',1,'lwm2m']]],
-  ['init',['init',['../osc_8py.html#aa729dba99fd88e76ff9772add26bc364',1,'osc']]],
   ['int',['int',['../namespacebuiltins.html#a15d9e037d05b1fd4320afacbced7f739',1,'builtins']]],
-  ['integer_5ftime',['integer_time',['../namespacetime.html#a60e723133394848b97fc659aa4db78bc',1,'time']]],
   ['ioctl',['ioctl',['../classdevsysfs_1_1device.html#a4af2e1decc47fff464c61b9980f1c3e8',1,'devsysfs::device']]],
   ['isl29023',['isl29023',['../namespaceisl29023.html',1,'']]],
   ['isl29023_2epy',['isl29023.py',['../isl29023_8py.html',1,'']]]

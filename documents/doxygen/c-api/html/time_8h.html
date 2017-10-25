@@ -88,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -116,17 +115,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:structtm"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time_8h.html#structtm">tm</a></td></tr>
 <tr class="separator:structtm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a3364eb8c173382cf152d7f163211b29e"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time_8h.html#a3364eb8c173382cf152d7f163211b29e">time_t</a></td></tr>
-<tr class="separator:a3364eb8c173382cf152d7f163211b29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a99ef1cb2c789827dd5db3886dccf9067"><td class="memItemLeft" align="right" valign="top"><a class="el" href="time_8h.html#a3364eb8c173382cf152d7f163211b29e">time_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time_8h.html#a99ef1cb2c789827dd5db3886dccf9067">time</a> (<a class="el" href="time_8h.html#a3364eb8c173382cf152d7f163211b29e">time_t</a> *tloc)</td></tr>
-<tr class="memdesc:a99ef1cb2c789827dd5db3886dccf9067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time in seconds since the epoch.  <a href="#a99ef1cb2c789827dd5db3886dccf9067">More...</a><br /></td></tr>
-<tr class="separator:a99ef1cb2c789827dd5db3886dccf9067"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70311f8aa60fc5ebbd76c55ea10bc899"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="time_8h.html#structtm">tm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time_8h.html#a70311f8aa60fc5ebbd76c55ea10bc899">localtime</a> (const <a class="el" href="time_8h.html#a3364eb8c173382cf152d7f163211b29e">time_t</a> *t)</td></tr>
+<tr class="memitem:a70311f8aa60fc5ebbd76c55ea10bc899"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="time_8h.html#structtm">tm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time_8h.html#a70311f8aa60fc5ebbd76c55ea10bc899">localtime</a> (const time_t *t)</td></tr>
 <tr class="memdesc:a70311f8aa60fc5ebbd76c55ea10bc899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seperate time into traditional fields.  <a href="#a70311f8aa60fc5ebbd76c55ea10bc899">More...</a><br /></td></tr>
 <tr class="separator:a70311f8aa60fc5ebbd76c55ea10bc899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae342f023222b75f6dafcde855411589c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time_8h.html#ae342f023222b75f6dafcde855411589c">asctime</a> (const struct <a class="el" href="time_8h.html#structtm">tm</a> *t)</td></tr>
@@ -156,7 +147,7 @@ struct <a class="el" href="time_8h.html#structtm">tm</a>&#160;</td><td class="me
 </div><div class="memdoc">
 <div class="textblock"><p>time seperated into the traditional fields </p>
 
-<p>Definition at line <a class="el" href="time_8h_source.html#l00043">43</a> of file <a class="el" href="time_8h_source.html">time.h</a>.</p>
+<p>Definition at line <a class="el" href="time_8h_source.html#l00023">23</a> of file <a class="el" href="time_8h_source.html">time.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -217,51 +208,7 @@ tm_isdst</td>
 
 </div>
 </div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a3364eb8c173382cf152d7f163211b29e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef unsigned int <a class="el" href="time_8h.html#a3364eb8c173382cf152d7f163211b29e">time_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>time in seconds since the epoch </p>
-
-<p>Definition at line <a class="el" href="time_8h_source.html#l00023">23</a> of file <a class="el" href="time_8h_source.html">time.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a99ef1cb2c789827dd5db3886dccf9067"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="time_8h.html#a3364eb8c173382cf152d7f163211b29e">time_t</a> time </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="time_8h.html#a3364eb8c173382cf152d7f163211b29e">time_t</a> *&#160;</td>
-          <td class="paramname"><em>tloc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the time in seconds since the epoch. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tloc</td><td>Filled in with the time if non-NULL </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The time </dd></dl>
-
-<p>Definition at line <a class="el" href="time_8h_source.html#l00032">32</a> of file <a class="el" href="time_8h_source.html">time.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ___ListType_T(element_type:___NULL(), size:___NULL()) l = ___GetTimeOfDay( args_list:___ArgsList(args:___ISeq() ) );</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="time_8h.html#a3364eb8c173382cf152d7f163211b29e">time_t</a> secs = l[0]; <span class="comment">// seconds</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    if( tloc )</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        *tloc = secs;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    return secs;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="ttc" id="time_8h_html_a3364eb8c173382cf152d7f163211b29e"><div class="ttname"><a href="time_8h.html#a3364eb8c173382cf152d7f163211b29e">time_t</a></div><div class="ttdeci">unsigned int time_t</div><div class="ttdef"><b>Definition:</b> <a href="time_8h_source.html#l00023">time.h:23</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
 <a class="anchor" id="a70311f8aa60fc5ebbd76c55ea10bc899"></a>
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +216,7 @@ tm_isdst</td>
         <tr>
           <td class="memname">struct <a class="el" href="time_8h.html#structtm">tm</a>* localtime </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="time_8h.html#a3364eb8c173382cf152d7f163211b29e">time_t</a> *&#160;</td>
+          <td class="paramtype">const time_t *&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
@@ -285,8 +232,8 @@ tm_isdst</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A struct tm filled in with the given time </dd></dl>
 
-<p>Definition at line <a class="el" href="time_8h_source.html#l00064">64</a> of file <a class="el" href="time_8h_source.html">time.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ___ListType_T(element_type:___NULL(), size:___NULL()) l = ___LocalTime( args_list:___ArgsList(args:___ISeq(*t) ) );</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    _tm.tm_sec = l[0];</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    _tm.tm_min = l[1];</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    _tm.tm_hour = l[2];</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    _tm.tm_mday = l[3];</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    _tm.tm_mon = l[4];</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    _tm.tm_year = l[5];</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    _tm.tm_wday = l[6];</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    _tm.tm_yday = l[7];</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    _tm.tm_isdst = l[8];</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    return &amp;_tm;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="time_8h_source.html#l00044">44</a> of file <a class="el" href="time_8h_source.html">time.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ___ListType_T(element_type:___NULL(), size:___NULL()) l = ___LocalTime( args_list:___ArgsList(args:___ISeq(*t) ) );</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    _tm.tm_sec = l[0];</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    _tm.tm_min = l[1];</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    _tm.tm_hour = l[2];</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    _tm.tm_mday = l[3];</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    _tm.tm_mon = l[4];</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    _tm.tm_year = l[5];</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    _tm.tm_wday = l[6];</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    _tm.tm_yday = l[7];</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    _tm.tm_isdst = l[8];</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    return &amp;_tm;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae342f023222b75f6dafcde855411589c"></a>
@@ -312,14 +259,14 @@ tm_isdst</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The same time as a human-readable string </dd></dl>
 
-<p>Definition at line <a class="el" href="time_8h_source.html#l00085">85</a> of file <a class="el" href="time_8h_source.html">time.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ___ListType_T(element_type:___NULL(), size:___NULL()) l = ___AscTime( args_list:___ArgsList(args:___ISeq(t-&gt;tm_sec, </div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                                                                             t-&gt;tm_min,</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                                                                             t-&gt;tm_hour,</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                                                                                             t-&gt;tm_mday,</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                                                                             t-&gt;tm_mon,</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                                                                             t-&gt;tm_year,</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                                                                             t-&gt;tm_wday,</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                                                                             t-&gt;tm_yday,</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                                                                             t-&gt;tm_isdst) ) );</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    return l[0];</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="time_8h_source.html#l00065">65</a> of file <a class="el" href="time_8h_source.html">time.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ___ListType_T(element_type:___NULL(), size:___NULL()) l = ___AscTime( args_list:___ArgsList(args:___ISeq(t-&gt;tm_sec, </div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                                                             t-&gt;tm_min,</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                                                                             t-&gt;tm_hour,</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                                                                             t-&gt;tm_mday,</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                                                                             t-&gt;tm_mon,</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                                                             t-&gt;tm_year,</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                                                                             t-&gt;tm_wday,</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                                                                             t-&gt;tm_yday,</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                                                                             t-&gt;tm_isdst) ) );</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    return l[0];</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 24 2017 22:32:45 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 4 2017 21:19:57 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

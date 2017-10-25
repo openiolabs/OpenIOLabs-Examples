@@ -95,12 +95,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a022d76c00ad1a30d24d32be4ca1a6eae"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetime.html#a022d76c00ad1a30d24d32be4ca1a6eae">time</a> ()</td></tr>
-<tr class="memdesc:a022d76c00ad1a30d24d32be4ca1a6eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time since the epoch in seconds.  <a href="#a022d76c00ad1a30d24d32be4ca1a6eae">More...</a><br /></td></tr>
-<tr class="separator:a022d76c00ad1a30d24d32be4ca1a6eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60e723133394848b97fc659aa4db78bc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetime.html#a60e723133394848b97fc659aa4db78bc">integer_time</a> ()</td></tr>
-<tr class="memdesc:a60e723133394848b97fc659aa4db78bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get time since the epoch as two integers.  <a href="#a60e723133394848b97fc659aa4db78bc">More...</a><br /></td></tr>
-<tr class="separator:a60e723133394848b97fc659aa4db78bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a9504c6a60cefd7bf8a496278c8d4d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetime.html#a71a9504c6a60cefd7bf8a496278c8d4d">sleep</a> (secs)</td></tr>
 <tr class="memdesc:a71a9504c6a60cefd7bf8a496278c8d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop execution for a period of time.  <a href="#a71a9504c6a60cefd7bf8a496278c8d4d">More...</a><br /></td></tr>
 <tr class="separator:a71a9504c6a60cefd7bf8a496278c8d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,52 +104,6 @@ Functions</h2></td></tr>
 <p>See <a href="https://docs.python.org/2/library/time.html">https://docs.python.org/2/library/time.html</a></p>
 <p>Copyright (c) Open IO Labs Ltd 2016 All Rights Reserved </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a022d76c00ad1a30d24d32be4ca1a6eae"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def time.time </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the time since the epoch in seconds. </p>
-<dl class="section return"><dt>Returns</dt><dd>time in seconds as a float - includes fractional part </dd></dl>
-
-<p>Definition at line <a class="el" href="time_8py_source.html#l00018">18</a> of file <a class="el" href="time_8py_source.html">time.py</a>.</p>
-
-<p>References <a class="el" href="builtins_8py_source.html#l00049">builtins.float()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespacetime.html#a022d76c00ad1a30d24d32be4ca1a6eae">   18</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacetime.html#a022d76c00ad1a30d24d32be4ca1a6eae">time</a>():</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    l = ___GetTimeOfDay( args_list=___ArgsList(args=___ISeq() ) )</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    secs = l[0]</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    microsecs = l[1]</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacebuiltins.html#a4ce84a108f8abb7faafefdfa5dbd63b5">float</a>(secs) + (<a class="code" href="namespacebuiltins.html#a4ce84a108f8abb7faafefdfa5dbd63b5">float</a>(microsecs)/1000000.0)</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="ttc" id="namespacebuiltins_html_a4ce84a108f8abb7faafefdfa5dbd63b5"><div class="ttname"><a href="namespacebuiltins.html#a4ce84a108f8abb7faafefdfa5dbd63b5">builtins.float</a></div><div class="ttdeci">def float(x=0.0)</div><div class="ttdoc">Convert to floating-point. </div><div class="ttdef"><b>Definition:</b> <a href="builtins_8py_source.html#l00049">builtins.py:49</a></div></div>
-<div class="ttc" id="namespacetime_html_a022d76c00ad1a30d24d32be4ca1a6eae"><div class="ttname"><a href="namespacetime.html#a022d76c00ad1a30d24d32be4ca1a6eae">time.time</a></div><div class="ttdeci">def time()</div><div class="ttdoc">Get the time since the epoch in seconds. </div><div class="ttdef"><b>Definition:</b> <a href="time_8py_source.html#l00018">time.py:18</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a60e723133394848b97fc659aa4db78bc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def time.integer_time </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get time since the epoch as two integers. </p>
-<dl class="section return"><dt>Returns</dt><dd>a tuple of the form (seconds, microseconds)</dd></dl>
-<p>Note: this is a ScriptML extension designed to permit the user to avoid error due to loss of precision in floating point representations (double is just about capable of microsecond precision in 2017; float cannot even get to the nearest minute) </p>
-
-<p>Definition at line <a class="el" href="time_8py_source.html#l00034">34</a> of file <a class="el" href="time_8py_source.html">time.py</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespacetime.html#a60e723133394848b97fc659aa4db78bc">   34</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacetime.html#a60e723133394848b97fc659aa4db78bc">integer_time</a>():</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> ___GetTimeOfDay( args_list=___ArgsList(args=___ISeq() ) )</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    </div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="ttc" id="namespacetime_html_a60e723133394848b97fc659aa4db78bc"><div class="ttname"><a href="namespacetime.html#a60e723133394848b97fc659aa4db78bc">time.integer_time</a></div><div class="ttdeci">def integer_time()</div><div class="ttdoc">Get time since the epoch as two integers. </div><div class="ttdef"><b>Definition:</b> <a href="time_8py_source.html#l00034">time.py:34</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
 <a class="anchor" id="a71a9504c6a60cefd7bf8a496278c8d4d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -179,18 +127,18 @@ Functions</h2></td></tr>
 </dl>
 <p>Fractional values may be used for the wait time, to obtain sub-second resolution down to an implementation-defined granularity. </p>
 
-<p>Definition at line <a class="el" href="time_8py_source.html#l00046">46</a> of file <a class="el" href="time_8py_source.html">time.py</a>.</p>
+<p>Definition at line <a class="el" href="time_8py_source.html#l00019">19</a> of file <a class="el" href="time_8py_source.html">time.py</a>.</p>
 
 <p>References <a class="el" href="builtins_8py_source.html#l00042">builtins.int()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="namespacetime.html#a71a9504c6a60cefd7bf8a496278c8d4d">   46</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacetime.html#a71a9504c6a60cefd7bf8a496278c8d4d">sleep</a>( secs ):</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ___Sleep( seconds=<a class="code" href="namespacebuiltins.html#a15d9e037d05b1fd4320afacbced7f739">int</a>(secs), useconds=<a class="code" href="namespacebuiltins.html#a15d9e037d05b1fd4320afacbced7f739">int</a>(1000000*secs)%1000000 )</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<div class="ttc" id="namespacebuiltins_html_a15d9e037d05b1fd4320afacbced7f739"><div class="ttname"><a href="namespacebuiltins.html#a15d9e037d05b1fd4320afacbced7f739">builtins.int</a></div><div class="ttdeci">def int(x=0)</div><div class="ttdoc">Convert to integer. </div><div class="ttdef"><b>Definition:</b> <a href="builtins_8py_source.html#l00042">builtins.py:42</a></div></div>
-<div class="ttc" id="namespacetime_html_a71a9504c6a60cefd7bf8a496278c8d4d"><div class="ttname"><a href="namespacetime.html#a71a9504c6a60cefd7bf8a496278c8d4d">time.sleep</a></div><div class="ttdeci">def sleep(secs)</div><div class="ttdoc">Stop execution for a period of time. </div><div class="ttdef"><b>Definition:</b> <a href="time_8py_source.html#l00046">time.py:46</a></div></div>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespacetime.html#a71a9504c6a60cefd7bf8a496278c8d4d">   19</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacetime.html#a71a9504c6a60cefd7bf8a496278c8d4d">sleep</a>( secs ):</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ___Sleep( seconds=<a class="code" href="namespacebuiltins.html#a15d9e037d05b1fd4320afacbced7f739">int</a>(secs), useconds=<a class="code" href="namespacebuiltins.html#a15d9e037d05b1fd4320afacbced7f739">int</a>(1000000*secs)%1000000 )</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<div class="ttc" id="namespacebuiltins_html_a15d9e037d05b1fd4320afacbced7f739"><div class="ttname"><a href="namespacebuiltins.html#a15d9e037d05b1fd4320afacbced7f739">builtins.int</a></div><div class="ttdeci">def int(x=0)</div><div class="ttdoc">Convert to integer. </div><div class="ttdef"><b>Definition:</b> <a href="builtins_8py_source.html#l00042">builtins.py:42</a></div></div>
+<div class="ttc" id="namespacetime_html_a71a9504c6a60cefd7bf8a496278c8d4d"><div class="ttname"><a href="namespacetime.html#a71a9504c6a60cefd7bf8a496278c8d4d">time.sleep</a></div><div class="ttdeci">def sleep(secs)</div><div class="ttdoc">Stop execution for a period of time. </div><div class="ttdef"><b>Definition:</b> <a href="time_8py_source.html#l00019">time.py:19</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 24 2017 22:32:46 for ScriptML Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 4 2017 21:19:58 for ScriptML Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
