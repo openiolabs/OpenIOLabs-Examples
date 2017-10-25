@@ -21,8 +21,8 @@ env -i git add /home/ubuntu/github_repo/OpenIOLabs-Examples/*
 #echo "${OUTPUT}"
 
 env -i OUTPUT="$(git commit -am 'Doxygen update')"
-env -i git remote set-url --push jenkins-openiolabs@github.com:openiolabs/OpenIOLabs-Examples.git
-env -i OUTPUT="$(git push jenkins-openiolabs@github.com:openiolabs/OpenIOLabs-Examples.git)"
+#env -i git remote set-url --push jenkins-openiolabs@github.com:openiolabs/OpenIOLabs-Examples.git
+#env -i OUTPUT="$(git push jenkins-openiolabs@github.com:openiolabs/OpenIOLabs-Examples.git)"
 #echo "${OUTPUT}"
 
-#env -i git push
+env -i git push
