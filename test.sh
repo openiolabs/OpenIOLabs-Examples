@@ -1,6 +1,9 @@
 #! /bin/bash -ex
 cd /home/ubuntu/github_repo/OpenIOLabs-Examples
 
+OUTPUT="$(ssh-add -L)"
+echo "${OUTPUT}"
+
 OUTPUT="$(ssh-keygen -lf ~/.ssh/id_rsa.pub)"
 echo "${OUTPUT}"
 
