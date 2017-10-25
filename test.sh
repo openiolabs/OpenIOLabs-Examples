@@ -15,7 +15,6 @@ echo "${OUTPUT}"
 OUTPUT="$(git worktree list)"
 echo "${OUTPUT}"
 
-
 OUTPUT="$(git config --list)"
 echo "${OUTPUT}"
 
