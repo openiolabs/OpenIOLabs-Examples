@@ -51,7 +51,7 @@ typedef ___ServerStreamType_T() **sml_server_stream_t;
  */
 sml_server_stream_t sml_server_stream_open( _str dest_ip, _str dest_path, int append )
 { 
-	return & &___Construct( object_type:___ServerStreamType(), args_list:___ArgsList(args:___ISeq(dest_ip, dest_path, append)), args_map:___ArgsMap(args:___IMap()) );
+	return & &___Construct( object_type:___ServerStreamType(), args_list:___ArgsList(args:___ISeq(dest_ip, dest_path, append)), args_map:___ArgsMap(args:___IMap()), variadic_arg:___NULL() );
 }
 
 

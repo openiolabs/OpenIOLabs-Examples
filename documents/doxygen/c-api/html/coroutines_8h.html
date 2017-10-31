@@ -211,7 +211,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coro
 <dl class="section return"><dt>Returns</dt><dd>Coroutine handle </dd></dl>
 
 <p>Definition at line <a class="el" href="coroutines_8h_source.html#l00032">32</a> of file <a class="el" href="coroutines_8h_source.html">coroutines.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> &amp;___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint)), args_map:___ArgsMap(args:___IMap()) );</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> &amp;___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint)), args_map:___ArgsMap(args:___IMap()), variadic_arg:___NULL() );</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af746faab9957872d6a396e33ca53a2d3"></a>
@@ -251,7 +251,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coro
 <p>Definition at line <a class="el" href="coroutines_8h_source.html#l00044">44</a> of file <a class="el" href="coroutines_8h_source.html">coroutines.h</a>.</p>
 
 <p>Referenced by <a class="el" href="pthread_8h_source.html#l00252">pthread_create()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> &amp;___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint, arg1)), args_map:___ArgsMap(args:___IMap()) );</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> &amp;___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint, arg1)), args_map:___ArgsMap(args:___IMap()), variadic_arg:___NULL() );</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab2441c93f3e3d27273f3aa1ab58fd937"></a>
@@ -296,7 +296,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coro
 <dl class="section return"><dt>Returns</dt><dd>Coroutine handle </dd></dl>
 
 <p>Definition at line <a class="el" href="coroutines_8h_source.html#l00058">58</a> of file <a class="el" href="coroutines_8h_source.html">coroutines.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> &amp;___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint, arg1, arg2)), args_map:___ArgsMap(args:___IMap()) );</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> &amp;___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint, arg1, arg2)), args_map:___ArgsMap(args:___IMap()), variadic_arg:___NULL() );</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a75039d1d91991f2578fc06eb1114e8ea"></a>
@@ -405,7 +405,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coro
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 30 2017 16:18:54 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 31 2017 03:27:19 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

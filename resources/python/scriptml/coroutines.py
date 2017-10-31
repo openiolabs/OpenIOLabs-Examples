@@ -25,16 +25,7 @@ class coroutine:
 	# @param args List of arguments for the entrypoint function (will be unpacked into separate arguments)
     #
 	def __init__(self, entrypoint, args):
-		if len(args)==0:
-			self.cob = ___Construct( object_type=___CoroutineType(), args_list=___ArgsList(args=___ISeq(entrypoint)), args_map=___ArgsMap(args=___IMap()) )
-		elif len(args)==1:
-			self.cob = ___Construct( object_type=___CoroutineType(), args_list=___ArgsList(args=___ISeq(entrypoint, args[0])), args_map=___ArgsMap(args=___IMap()) )
-		elif len(args)==2:
-			self.cob = ___Construct( object_type=___CoroutineType(), args_list=___ArgsList(args=___ISeq(entrypoint, args[0], args[1])), args_map=___ArgsMap(args=___IMap()) )
-		elif len(args)==3:
-			self.cob = ___Construct( object_type=___CoroutineType(), args_list=___ArgsList(args=___ISeq(entrypoint, args[0], args[1], args[2])), args_map=___ArgsMap(args=___IMap()) )
-		else:
-			assert False, "please add more args" # TODO refactor
+		self.cob = ___Construct( object_type=___CoroutineType(), args_list=___ArgsList(args=___ISeq(entrypoint)), args_map=___ArgsMap(args=___IMap()), variadic_arg=args )
 
 	##
 	#  @brief Wait for the coroutine to exit

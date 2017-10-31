@@ -49,7 +49,7 @@ struct timezone {
  */
 int gettimeofday(struct timeval *tv, struct timezone *tz)
 {
-	___ListType_T(element_type:___NULL(), size:___NULL()) l = ___GetTimeOfDay( args_list:___ArgsList(args:___ISeq() ) );	
+	___ListType_T(element_type:___NULL(), size:___NULL()) l = ___GetTimeOfDay( args_list:___ArgsList(args:___ISeq() ), variadic_arg:___NULL() );	
 	tv->tv_sec = l[0];
 	tv->tv_usec = l[1];
 	return 0;
@@ -65,7 +65,7 @@ int gettimeofday(struct timeval *tv, struct timezone *tz)
  */
 int settimeofday(const struct timeval *tv, const struct timezone *tz)
 {
-	___SetTimeOfDay( args_list:___ArgsList(args:___ISeq(tv->tv_sec, tv->tv_usec) ) );
+	___SetTimeOfDay( args_list:___ArgsList(args:___ISeq(tv->tv_sec, tv->tv_usec) ), variadic_arg:___NULL() );
 	return 0;
 }
 

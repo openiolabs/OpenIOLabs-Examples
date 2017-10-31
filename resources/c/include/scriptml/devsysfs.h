@@ -83,7 +83,7 @@ typedef int sml_devsysfs_t;
 sml_devsysfs_t sml_devsysfs_open( _str path )
 { 
 #ifdef __SCRIPTML
-	return ___Construct( object_type:___DevSysfsDeviceType(), args_list:___ArgsList(args:___ISeq(path)), args_map:___ArgsMap(args:___IMap()) );
+	return ___Construct( object_type:___DevSysfsDeviceType(), args_list:___ArgsList(args:___ISeq(path)), args_map:___ArgsMap(args:___IMap()), variadic_arg:___NULL() );
 #else
     int fd = open(path, O_RDWR);
     if( fd < 0 )

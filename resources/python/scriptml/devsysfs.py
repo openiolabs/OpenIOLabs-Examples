@@ -49,7 +49,7 @@ class device:
 	#  @param path path to device
 	#
 	def __init__( self, path ):
-		self.dev = ___Construct( object_type=___DevSysfsDeviceType(), args_list=___ArgsList(args=___ISeq(path)), args_map=___ArgsMap(args=___IMap()) )
+		self.dev = ___Construct( object_type=___DevSysfsDeviceType(), args_list=___ArgsList(args=___ISeq(path)), args_map=___ArgsMap(args=___IMap()), variadic_arg=___NULL() )
 
 	##
 	#  @brief Write to device

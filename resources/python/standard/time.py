@@ -16,7 +16,7 @@
 # @return time in seconds as a float - includes fractional part
 #
 def time():
-    l = ___GetTimeOfDay( args_list=___ArgsList(args=___ISeq() ) )
+    l = ___GetTimeOfDay( args_list=___ArgsList(args=___ISeq() ), variadic_arg=___NULL() )
     secs = l[0]
     microsecs = l[1]
     return float(secs) + (float(microsecs)/1000000.0)
@@ -32,7 +32,7 @@ def time():
 # precision in 2017; float cannot even get to the nearest minute)
 #
 def integer_time():
-    return ___GetTimeOfDay( args_list=___ArgsList(args=___ISeq() ) )
+    return ___GetTimeOfDay( args_list=___ArgsList(args=___ISeq() ), variadic_arg=___NULL() )
     
 
 ##

@@ -20,100 +20,51 @@
 #
 
 import osc	
-	
-def _handler( data, path, ints, floats, strings ):
-	# data is the instance of "device" class
-	data.handler( path, ints, floats, strings )
-	
+		
 class device:
 	##
 	# @brief Open NGIMU connection
 	#
-	# @param handler OSC message handler function
 	# @param my_port Handler is called for messages incoming on this port
 	# @param device_ip IP address of the device
 	# @param device_port Port on device to send messages to
-	# @param data A user data object that is passed to the handler
+	# @param user A user data object that is passed to the handler
 	#
 	def __init__( self, my_port, device_ip, device_port, user ):
 		self.device_ip = device_ip
 		self.user = user
 		self.acks = {}
-		self.acks["mute"] = False
-		self.acks["unmute"] = False
-		self.acks["reset"] = False
-		self.acks["sleep"] = False
-		self.acks["identify"] = False
-		self.acks["apply"] = False
-		self.acks["default"] = False
-		self.acks["ahrs_initialise"] = False
-		self.acks["ahrs_zero"] = False
-		self.acks["echo"] = False
+		self.acks["/mute"] = False
+		self.acks["/unmute"] = False
+		self.acks["/reset"] = False
+		self.acks["/sleep"] = False
+		self.acks["/identify"] = False
+		self.acks["/apply"] = False
+		self.acks["/default"] = False
+		self.acks["/ahrs/initialise"] = False
+		self.acks["/ahrs/zero"] = False
+		self.acks["/echo"] = False
+		self.inmap = {}
+		self.inmap["/buttons"] = handle_buttons
+		self.inmap["/sensors"] = handle_sensors
+		self.inmap["/magnitudes"] = handle_magnitudes
+		self.inmap["/quaternion"] = handle_quaternion
+		self.inmap["/matrix"] = handle_matrix
+		self.inmap["/euler"] = handle_euler
+		self.inmap["/linear"] = handle_linear
+		self.inmap["/earth"] = handle_earth
+		self.inmap["/altitude"] = handle_altitude
+		self.inmap["/temperature"] = handle_temperature
+		self.inmap["/humidity"] = handle_humidity
+		self.inmap["/battery"] = handle_battery
+		self.inmap["/analogue"] = handle_analogue
+		self.inmap["/rssi"] = handle_rssi
+		self.inmap["/auxserial"] = handle_auxserial
+		self.inmap["/auxserial/cts"] = handle_auxserial_cts
+		self.inmap["/serial/cts"] = handle_serial_cts
 		self.read_ack = False
 		self.read_path = None
 		osc.init( _handler, my_port, device_ip, device_port, self )
-
-	def handler( self, path, ints, floats, strings ):
-		if path == "/buttons":
-			handle_buttons( self.user )
-		elif path == "/sensors":
-			handle_sensors( self.user, floats[0], floats[1], floats[2], floats[3], floats[4], floats[5], floats[6], floats[7], floats[8], floats[9] )
-		elif path=="/magnitudes":
-			handle_magnitudes( self.user, floats[0], floats[1], floats[2] )
-		elif path=="/quaternion":
-			handle_quaternion( self.user, floats[0], floats[1], floats[2], floats[3] )
-		elif path=="/matrix":
-			handle_matrix( self.user, floats[0], floats[1], floats[2], floats[3], floats[4], floats[5], floats[6], floats[7], floats[8] )
-		elif path=="/euler":
-			handle_euler( self.user, floats[0], floats[1], floats[2] )
-		elif path=="/linear":
-			handle_linear( self.user, floats[0], floats[1], floats[2] )
-		elif path=="/earth":
-			handle_earth( self.user, floats[0], floats[1], floats[2] )
-		elif path=="/altitude":
-			handle_altitude( self.user, floats[0] )
-		elif path=="/temperature":
-			handle_temperature( self.user, floats[0], floats[1], floats[2] )
-		elif path=="/humidity":
-			handle_humidity( self.user, floats[0] )
-		elif path=="/battery":
-			handle_battery( self.user, floats[0], floats[1], floats[2], floats[3], strings[0] ) 
-		elif path=="/analogue":
-			handle_analogue( self.user, floats[0], floats[1], floats[2], floats[3], floats[4], floats[5], floats[6], floats[7] ) 
-		elif path=="/rssi":
-			handle_rssi( self.user, floats[0], floats[1] ) 
-		elif path=="/auxserial":
-			handle_auxserial( self.user, strings[0] ) 
-		elif path=="/auxserial/cts":
-			handle_auxserial_cts( self.user, ints[0] ) 
-		elif path=="/serial/cts":
-			handle_serial_cts( self.user, ints[0] ) 
-		elif path=="/mute":
-			self.acks["mute"] = True
-		elif path=="/unmute": 
-			self.acks["unmute"] = True
-		elif path=="/reset": 
-			self.acks["reset"] = True
-		elif path=="/sleep": 
-			self.acks["sleep"] = True
-		elif path=="/identify": 
-			self.acks["identify"] = True
-		elif path=="/apply": 
-			self.acks["apply"] = True
-		elif path=="/default": 
-			self.acks["default"] = True
-		elif path=="/ahrs/initialise": 
-			self.acks["ahrs_initialise"] = True
-		elif path=="/ahrs/zero": 
-			self.acks["ahrs_zero"] = True
-		elif path=="/echo": 
-			self.acks["echo"] = True
-		elif self.read_path is not None and path==self.read_path: 
-			self.read_ints =  ints
-			self.read_floats = floats
-			self.read_strings = strings
-			self.read_ack = True
-			self.read_path = None
 
 	##
 	# @brief Send a message to the NGIMU
@@ -137,11 +88,11 @@ class device:
 	# @param iargv Integer arguments referenced by types argument, in their own order
 	# @param fargv Floating-point arguments referenced by types argument, in their own order
 	#
-	def command( self, ack_flag, path, types, sargv, iargv, fargv ):
+	def command( self, path, types, sargv, iargv, fargv ):
 		self.send( path, types, sargv, iargv, fargv )
-		while self.acks[ack_flag] == False:
+		while self.acks[path] == False:
 			pass
-		self.acks[ack_flag] = False
+		self.acks[path] = False
 
 	##
 	# @brief Send a message to the NGIMU
@@ -161,55 +112,55 @@ class device:
 	# @brief Send "mute" command to NGIMU
 	#
 	def command_mute(self):
-		self.command( "mute", "/mute", "", [], [], [] )
+		self.command( "/mute", "", [], [], [] )
 
 	##
 	# @brief Send "unmute" command to NGIMU
 	#
 	def command_unmute(self):
-		self.command( "unmute", "/unmute", "", [], [], [] )
+		self.command( "/unmute", "", [], [], [] )
 
 	##
 	# @brief Send "reset" command to NGIMU
 	#
 	def command_reset(self):
-		self.command( "reset", "/reset", "", [], [], [] )
+		self.command( "/reset", "", [], [], [] )
 
 	##
 	# @brief Send "sleep" command to NGIMU
 	#
 	def command_sleep(self):
-		self.command( "sleep", "/sleep", "", [], [], [] )
+		self.command( "/sleep", "", [], [], [] )
 
 	##
 	# @brief Send "identify" command to NGIMU
 	#
 	def command_identify(self):
-		self.command( "identify", "/identify", "", [], [], [] )
+		self.command( "/identify", "", [], [], [] )
 
 	##
 	# @brief Send "apply" command to NGIMU
 	#
 	def command_apply(self):
-		self.command( "apply", "/apply", "", [], [], [] )
+		self.command( "/apply", "", [], [], [] )
 
 	##
 	# @brief Send "default" command to NGIMU
 	#
 	def command_default(self):
-		self.command( "default", "/default", "", [], [], [] )
+		self.command( "/default", "", [], [], [] )
 
 	##
 	# @brief Send "ahrs_initialise" command to NGIMU
 	#
 	def command_ahrs_initialise(self):
-		self.command( "ahrs_initialise", "/ahrs/initialise", "", [], [], [] )
+		self.command( "/ahrs/initialise", "", [], [], [] )
 
 	##
 	# @brief Send "ahrs_zero" command to NGIMU
 	#
 	def command_ahrs_zero(self):
-		self.command( "ahrs_zero", "/ahrs/zero", "", [], [], [] )
+		self.command( "/ahrs/zero", "", [], [], [] )
 
 	##
 	# @brief Send "echo" command to NGIMU
@@ -218,7 +169,7 @@ class device:
 	# @param farg Floating-point argument
 	#
 	def command_echo( self, sarg, iarg, farg ):
-		self.command( "echo", "/echo", "sif", [sarg], [iarg], [farg] )
+		self.command( "/echo", "sif", [sarg], [iarg], [farg] )
 
 	##
 	# @brief Set the update rate of a channel of data
@@ -227,3 +178,17 @@ class device:
 	#
 	def set_rate( self, channel, rate ):
 		self.send( "/rate/"+channel, "f", [], [], [rate] ) 
+		
+		
+def _handler( data, path, ints, floats, strings ):
+	if path in data.inmap:			
+		(data.inmap[path])( data.user, *(ints + floats + strings) )
+	elif path in data.acks:
+		data.acks[path] = True
+	elif data.read_path is not None and path==data.read_path: 
+		data.read_ints =  ints
+		data.read_floats = floats
+		data.read_strings = strings
+		data.read_ack = True
+		data.read_path = None
+		

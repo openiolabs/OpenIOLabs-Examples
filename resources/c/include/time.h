@@ -31,7 +31,7 @@ typedef unsigned int time_t;
  */
 time_t time(time_t *tloc)
 {
-   	___ListType_T(element_type:___NULL(), size:___NULL()) l = ___GetTimeOfDay( args_list:___ArgsList(args:___ISeq() ) );
+   	___ListType_T(element_type:___NULL(), size:___NULL()) l = ___GetTimeOfDay( args_list:___ArgsList(args:___ISeq() ), variadic_arg:___NULL() );
     time_t secs = l[0]; // seconds
     if( tloc )
         *tloc = secs;
@@ -63,7 +63,7 @@ struct tm _tm;
  */
 struct tm *localtime(const time_t *t)
 {
-	___ListType_T(element_type:___NULL(), size:___NULL()) l = ___LocalTime( args_list:___ArgsList(args:___ISeq(*t) ) );
+	___ListType_T(element_type:___NULL(), size:___NULL()) l = ___LocalTime( args_list:___ArgsList(args:___ISeq(*t) ), variadic_arg:___NULL() );
 	_tm.tm_sec = l[0];
 	_tm.tm_min = l[1];
 	_tm.tm_hour = l[2];
@@ -92,7 +92,8 @@ char *asctime(const struct tm *t)
 	                                                                                                         t->tm_year,
 	                                                                                                         t->tm_wday,
 	                                                                                                         t->tm_yday,
-	                                                                                                         t->tm_isdst) ) );
+	                                                                                                         t->tm_isdst) ), 
+	                                                                      variadic_arg:___NULL() );
 	return l[0];
 }
 

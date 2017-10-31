@@ -33,7 +33,7 @@ class server_stream:
 	# @param append 1 to append to object to dest_path, 0 to overwrite
     #
 	def __init__(self, dest_ip, dest_path, append):
-		self.obj = ___Construct( object_type=___ServerStreamType(), args_list=___ArgsList(args=___ISeq(dest_ip, dest_path, append)), args_map=___ArgsMap(args=___IMap()) )
+		self.obj = ___Construct( object_type=___ServerStreamType(), args_list=___ArgsList(args=___ISeq(dest_ip, dest_path, append)), args_map=___ArgsMap(args=___IMap()), variadic_arg=___NULL() )
 
 	##
 	# @brief Write a string to device

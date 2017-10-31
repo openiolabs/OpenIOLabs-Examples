@@ -31,7 +31,7 @@ typedef ___CoroutineType_T() *sml_coroutine_handle_t;
  */
 sml_coroutine_handle_t sml_coroutine_create_0( void (*entrypoint)() )
 {
-	return &___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint)), args_map:___ArgsMap(args:___IMap()) );
+	return &___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint)), args_map:___ArgsMap(args:___IMap()), variadic_arg:___NULL() );
 }
 
 /**
@@ -43,7 +43,7 @@ sml_coroutine_handle_t sml_coroutine_create_0( void (*entrypoint)() )
  */
 sml_coroutine_handle_t sml_coroutine_create_1( void (*entrypoint)(___NULL_T() arg1), ___NULL_T() arg1 )
 {
-	return &___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint, arg1)), args_map:___ArgsMap(args:___IMap()) );
+	return &___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint, arg1)), args_map:___ArgsMap(args:___IMap()), variadic_arg:___NULL() );
 }
 
 
@@ -57,7 +57,7 @@ sml_coroutine_handle_t sml_coroutine_create_1( void (*entrypoint)(___NULL_T() ar
  */
 sml_coroutine_handle_t sml_coroutine_create_2( void (*entrypoint)(___NULL_T() arg1, ___NULL_T() arg2), ___NULL_T() arg1, ___NULL_T() arg2 )
 {
-	return &___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint, arg1, arg2)), args_map:___ArgsMap(args:___IMap()) );
+	return &___Construct( object_type:___CoroutineType(), args_list:___ArgsList(args:___ISeq(*entrypoint, arg1, arg2)), args_map:___ArgsMap(args:___IMap()), variadic_arg:___NULL() );
 }
 
 
