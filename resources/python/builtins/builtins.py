@@ -192,5 +192,9 @@ def sorted(l0):
         nl = nl + [m]
     return nl
     
-    
+## @brief Stop the script
+#    
+# @param status The system status code, where 0 indicates success
+def exit( status=0 ):
+	___Exit( value=status );
     

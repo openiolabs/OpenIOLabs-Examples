@@ -20,6 +20,7 @@
 #
 
 import osc	
+import time
 		
 class device:
 	##
@@ -28,9 +29,10 @@ class device:
 	# @param my_port Handler is called for messages incoming on this port
 	# @param device_ip IP address of the device
 	# @param device_port Port on device to send messages to
-	# @param user A user data object that is passed to the handler
+	# @param user A user data object that is passed to the handlers
+	# @param timeout command ack timeout in seconds 
 	#
-	def __init__( self, my_port, device_ip, device_port, user ):
+	def __init__( self, my_port, device_ip, device_port, user, timeout ):
 		self.device_ip = device_ip
 		self.user = user
 		self.acks = {}
@@ -64,6 +66,7 @@ class device:
 		self.inmap["/serial/cts"] = handle_serial_cts
 		self.read_ack = False
 		self.read_path = None
+		self.timeout = timeout
 		osc.init( _handler, my_port, device_ip, device_port, self )
 
 	##
@@ -87,89 +90,112 @@ class device:
 	# @param sargv String arguments referenced by types argument, in their own order
 	# @param iargv Integer arguments referenced by types argument, in their own order
 	# @param fargv Floating-point arguments referenced by types argument, in their own order
+	# @return True if successful or False if timed out
 	#
 	def command( self, path, types, sargv, iargv, fargv ):
 		self.send( path, types, sargv, iargv, fargv )
-		while self.acks[path] == False:
+		time_limit = time.time() + self.timeout
+		while self.acks[path] == False and time.time() < time_limit:
 			pass
+		ok = self.acks[path]
 		self.acks[path] = False
+		return ok
 
 	##
 	# @brief Send a message to the NGIMU
 	#
 	# @param path OSC-defined path to the resource to read (a string separated by /)
-	# @return a tuple made up of (list of strings, list of integers, list of floats)
+	# @return a tuple made up of (list of strings, list of integers, list of floats) or None if timeout
 	#
 	def read_setting( self, path ):
 		self.read_path = path
 		self.send( path, "", [], [], [] )
-		while self.read_ack == False:
+		time_limit = time.time() + self.timeout
+		while self.read_ack == False and time.time() < time_limit:
 			pass
+		ok = self.read_ack
 		self.read_ack = False
-		return (self.read_strings, self.read_ints, self.read_floats)
+		return (self.read_strings, self.read_ints, self.read_floats) if ok else None
 
 	##
 	# @brief Send "mute" command to NGIMU
 	#
+	# @return True if successful or False if timed out
+	#
 	def command_mute(self):
-		self.command( "/mute", "", [], [], [] )
+		return self.command( "/mute", "", [], [], [] )
 
 	##
 	# @brief Send "unmute" command to NGIMU
 	#
+	# @return True if successful or False if timed out
+	#
 	def command_unmute(self):
-		self.command( "/unmute", "", [], [], [] )
+		return self.command( "/unmute", "", [], [], [] )
 
 	##
 	# @brief Send "reset" command to NGIMU
 	#
+	# @return True if successful or False if timed out
+	#
 	def command_reset(self):
-		self.command( "/reset", "", [], [], [] )
+		return self.command( "/reset", "", [], [], [] )
 
 	##
 	# @brief Send "sleep" command to NGIMU
 	#
+	# @return True if successful or False if timed out
+	#
 	def command_sleep(self):
-		self.command( "/sleep", "", [], [], [] )
+		return self.command( "/sleep", "", [], [], [] )
 
 	##
 	# @brief Send "identify" command to NGIMU
 	#
+	# @return True if successful or False if timed out
+	#
 	def command_identify(self):
-		self.command( "/identify", "", [], [], [] )
+		return self.command( "/identify", "", [], [], [] )
 
 	##
 	# @brief Send "apply" command to NGIMU
 	#
+	# @return True if successful or False if timed out
+	#
 	def command_apply(self):
-		self.command( "/apply", "", [], [], [] )
+		return self.command( "/apply", "", [], [], [] )
 
 	##
 	# @brief Send "default" command to NGIMU
 	#
+	# @return True if successful or False if timed out
+	#
 	def command_default(self):
-		self.command( "/default", "", [], [], [] )
+		return self.command( "/default", "", [], [], [] )
 
 	##
 	# @brief Send "ahrs_initialise" command to NGIMU
 	#
+	# @return True if successful or False if timed out
+	#
 	def command_ahrs_initialise(self):
-		self.command( "/ahrs/initialise", "", [], [], [] )
+		return self.command( "/ahrs/initialise", "", [], [], [] )
 
 	##
 	# @brief Send "ahrs_zero" command to NGIMU
 	#
+	# @return True if successful or False if timed out
+	#
 	def command_ahrs_zero(self):
-		self.command( "/ahrs/zero", "", [], [], [] )
+		return self.command( "/ahrs/zero", "", [], [], [] )
 
 	##
 	# @brief Send "echo" command to NGIMU
-	# @param sarg String argument
-	# @param iarg Integer argument 
-	# @param farg Floating-point argument
 	#
-	def command_echo( self, sarg, iarg, farg ):
-		self.command( "/echo", "sif", [sarg], [iarg], [farg] )
+	# @return True if successful or False if timed out
+	#
+	def command_echo( self ):
+		return self.command( "/echo", "", [], [], [] )
 
 	##
 	# @brief Set the update rate of a channel of data

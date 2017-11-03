@@ -7,7 +7,7 @@ var searchData=
   ['command_5fahrs_5fzero',['command_ahrs_zero',['../classngimu_1_1device.html#a9edf6fb205f9469ed70b4359231b9dcf',1,'ngimu::device']]],
   ['command_5fapply',['command_apply',['../classngimu_1_1device.html#a72114b7e3fcc5bd5dded54daa459cbb7',1,'ngimu::device']]],
   ['command_5fdefault',['command_default',['../classngimu_1_1device.html#a4288d037a76ce6f55a70f542dfe4faad',1,'ngimu::device']]],
-  ['command_5fecho',['command_echo',['../classngimu_1_1device.html#aaf75f806a8266cdb1c0b4274ad998a11',1,'ngimu::device']]],
+  ['command_5fecho',['command_echo',['../classngimu_1_1device.html#a98307825ac8a97d5bb1dfad97ff42e3d',1,'ngimu::device']]],
   ['command_5fidentify',['command_identify',['../classngimu_1_1device.html#a7a4a1ca86b36a24e985e51983c5b503d',1,'ngimu::device']]],
   ['command_5fmute',['command_mute',['../classngimu_1_1device.html#a9c9bd6f03ad425cd5a93c9c27bc15e5d',1,'ngimu::device']]],
   ['command_5freset',['command_reset',['../classngimu_1_1device.html#a67561b4899ad95e172cc8448e48f3d60',1,'ngimu::device']]],

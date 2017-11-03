@@ -156,6 +156,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a72416ebecf3623124028327f68e2dfad"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuiltins.html#a72416ebecf3623124028327f68e2dfad">sorted</a> (l0)</td></tr>
 <tr class="memdesc:a72416ebecf3623124028327f68e2dfad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a list.  <a href="#a72416ebecf3623124028327f68e2dfad">More...</a><br /></td></tr>
 <tr class="separator:a72416ebecf3623124028327f68e2dfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae11e19a0cdd8a386b647541ac20ef8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuiltins.html#acae11e19a0cdd8a386b647541ac20ef8">exit</a> (status=0)</td></tr>
+<tr class="memdesc:acae11e19a0cdd8a386b647541ac20ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the script.  <a href="#acae11e19a0cdd8a386b647541ac20ef8">More...</a><br /></td></tr>
+<tr class="separator:acae11e19a0cdd8a386b647541ac20ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -837,9 +840,36 @@ Variables</h2></td></tr>
 <p>References <a class="el" href="builtins_8py_source.html#l00016">len()</a>, and <a class="el" href="builtins_8py_source.html#l00025">range()</a>.</p>
 
 <p>Referenced by <a class="el" href="numpy_8py_source.html#l00045">numpy.median()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="namespacebuiltins.html#a72416ebecf3623124028327f68e2dfad">  179</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacebuiltins.html#a72416ebecf3623124028327f68e2dfad">sorted</a>(l0):</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    l = []</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">for</span> x <span class="keywordflow">in</span> l0:</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        l += [x]</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    nl = []</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">while</span> <a class="code" href="namespacebuiltins.html#ab4edde03f78eb03f3102d58d1acbe92b">len</a>(l) &gt; 0:</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        mi=0</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        m=l[0]</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespacebuiltins.html#aee530d00319521759c340ffc796a4d72">range</a>(1, <a class="code" href="namespacebuiltins.html#ab4edde03f78eb03f3102d58d1acbe92b">len</a>(l)):</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">if</span> l[i] &lt; m:</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                m = l[i]</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                mi = i</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        l = l[0:mi] + l[mi+1:<a class="code" href="namespacebuiltins.html#ab4edde03f78eb03f3102d58d1acbe92b">len</a>(l)]</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        nl = nl + [m]</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> nl</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    </div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    </div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <div class="ttc" id="namespacebuiltins_html_a72416ebecf3623124028327f68e2dfad"><div class="ttname"><a href="namespacebuiltins.html#a72416ebecf3623124028327f68e2dfad">builtins.sorted</a></div><div class="ttdeci">def sorted(l0)</div><div class="ttdoc">Sort a list. </div><div class="ttdef"><b>Definition:</b> <a href="builtins_8py_source.html#l00179">builtins.py:179</a></div></div>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="namespacebuiltins.html#a72416ebecf3623124028327f68e2dfad">  179</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacebuiltins.html#a72416ebecf3623124028327f68e2dfad">sorted</a>(l0):</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    l = []</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">for</span> x <span class="keywordflow">in</span> l0:</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        l += [x]</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    nl = []</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">while</span> <a class="code" href="namespacebuiltins.html#ab4edde03f78eb03f3102d58d1acbe92b">len</a>(l) &gt; 0:</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        mi=0</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        m=l[0]</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespacebuiltins.html#aee530d00319521759c340ffc796a4d72">range</a>(1, <a class="code" href="namespacebuiltins.html#ab4edde03f78eb03f3102d58d1acbe92b">len</a>(l)):</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">if</span> l[i] &lt; m:</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                m = l[i]</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                mi = i</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        l = l[0:mi] + l[mi+1:<a class="code" href="namespacebuiltins.html#ab4edde03f78eb03f3102d58d1acbe92b">len</a>(l)]</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        nl = nl + [m]</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> nl</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    </div><div class="ttc" id="namespacebuiltins_html_a72416ebecf3623124028327f68e2dfad"><div class="ttname"><a href="namespacebuiltins.html#a72416ebecf3623124028327f68e2dfad">builtins.sorted</a></div><div class="ttdeci">def sorted(l0)</div><div class="ttdoc">Sort a list. </div><div class="ttdef"><b>Definition:</b> <a href="builtins_8py_source.html#l00179">builtins.py:179</a></div></div>
 <div class="ttc" id="namespacebuiltins_html_ab4edde03f78eb03f3102d58d1acbe92b"><div class="ttname"><a href="namespacebuiltins.html#ab4edde03f78eb03f3102d58d1acbe92b">builtins.len</a></div><div class="ttdeci">def len(l)</div><div class="ttdoc">Get the number of elements in an iterable object. </div><div class="ttdef"><b>Definition:</b> <a href="builtins_8py_source.html#l00016">builtins.py:16</a></div></div>
 <div class="ttc" id="namespacebuiltins_html_aee530d00319521759c340ffc796a4d72"><div class="ttname"><a href="namespacebuiltins.html#aee530d00319521759c340ffc796a4d72">builtins.range</a></div><div class="ttdeci">def range(start, stop=0, step=1)</div><div class="ttdoc">Create an iterable object spanning a range of values. </div><div class="ttdef"><b>Definition:</b> <a href="builtins_8py_source.html#l00025">builtins.py:25</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="acae11e19a0cdd8a386b647541ac20ef8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def builtins.exit </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>status</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop the script. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>The system status code, where 0 indicates success </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="builtins_8py_source.html#l00198">198</a> of file <a class="el" href="builtins_8py_source.html">builtins.py</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="namespacebuiltins.html#acae11e19a0cdd8a386b647541ac20ef8">  198</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacebuiltins.html#acae11e19a0cdd8a386b647541ac20ef8">exit</a>( status=0 ):</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    ___Exit( value=status );</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <div class="ttc" id="namespacebuiltins_html_acae11e19a0cdd8a386b647541ac20ef8"><div class="ttname"><a href="namespacebuiltins.html#acae11e19a0cdd8a386b647541ac20ef8">builtins.exit</a></div><div class="ttdeci">def exit(status=0)</div><div class="ttdoc">Stop the script. </div><div class="ttdef"><b>Definition:</b> <a href="builtins_8py_source.html#l00198">builtins.py:198</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -864,7 +894,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 2 2017 03:26:24 for ScriptML Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 3 2017 03:26:26 for ScriptML Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
