@@ -8,7 +8,7 @@
 #  
 #  Program the the `conf` register then read the `temp` register
 #  
-#  Auto-generated 05 November 2017; do not edit
+#  Auto-generated 06 November 2017; do not edit
 #  
 #  Copyright (c) Open IO Labs Ltd 2017
 #  All Rights Reserved
