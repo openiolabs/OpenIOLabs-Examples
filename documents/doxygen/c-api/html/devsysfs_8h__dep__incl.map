@@ -1,7 +1,7 @@
 <map id="resources/c/include/scriptml/devsysfs.h" name="resources/c/include/scriptml/devsysfs.h">
 <area shape="rect" id="node2" href="$gpio_8h.html" title="Drive GPIOs using the sysfs interface. " alt="" coords="166,184,301,225"/>
 <area shape="rect" id="node8" href="$i2c_8h.html" title="Generic I2C bus driver using /dev and ioctl. " alt="" coords="645,95,779,136"/>
-<area shape="rect" id="node18" href="$serial_8h.html" title="Simple serial port driver. " alt="" coords="803,95,938,136"/>
+<area shape="rect" id="node18" href="$serial_8h.html" title="Serial port configuration. " alt="" coords="803,95,938,136"/>
 <area shape="rect" id="node19" href="$spi_8h.html" title="Generic SPI bus driver using /dev and ioctl. " alt="" coords="962,95,1097,136"/>
 <area shape="rect" id="node3" href="$isl29023_8h.html" title="ISL29023 device driver. " alt="" coords="325,273,459,315"/>
 <area shape="rect" id="node4" href="$lm75b_8h.html" title="LM75B device driver. " alt="" coords="483,273,618,315"/>

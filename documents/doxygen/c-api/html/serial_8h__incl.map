@@ -1,5 +1,5 @@
 <map id="resources/c/include/scriptml/serial.h" name="resources/c/include/scriptml/serial.h">
-<area shape="rect" id="node2" href="$devsysfs_8h.html" title="Access to /dev and /sys nodes. " alt="" coords="5,95,141,121"/>
-<area shape="rect" id="node3" href="$unistd_8h.html" title="Miscellaneous C definitions. " alt="" coords="91,169,159,196"/>
-<area shape="rect" id="node4" href="$stddef_8h.html" title="Standard definitions. " alt="" coords="91,244,160,271"/>
+<area shape="rect" id="node2" href="$devsysfs_8h.html" title="Access to /dev and /sys nodes. " alt="" coords="5,95,92,121"/>
+<area shape="rect" id="node4" href="$stddef_8h.html" title="Standard definitions. " alt="" coords="57,244,126,271"/>
+<area shape="rect" id="node3" href="$unistd_8h.html" title="Miscellaneous C definitions. " alt="" coords="19,169,87,196"/>
 </map>
