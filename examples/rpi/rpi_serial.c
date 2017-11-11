@@ -19,7 +19,7 @@ int main()
 
 	printstr( sml_serial_read( h ) );
 
-	sml_serial_close();
+	sml_serial_close(h);
 
 	printstr("done");
 	
