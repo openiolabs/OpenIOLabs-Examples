@@ -1,7 +1,7 @@
 var searchData=
 [
   ['range',['range',['../namespacebuiltins.html#aee530d00319521759c340ffc796a4d72',1,'builtins']]],
-  ['read',['read',['../classdevsysfs_1_1device.html#afb5fb52af41ab8dd0d69f5dbeb21952f',1,'devsysfs.device.read()'],['../classi2c_1_1device.html#a718c1cc4f0ff252a3cfd10dc101441cd',1,'i2c.device.read()'],['../classi2c__regmap_1_1i2c__regmap.html#a1ecbcad5491090988c192f1560f59dba',1,'i2c_regmap.i2c_regmap.read()'],['../classserial_1_1device.html#aa7f4f3dc9bd3a87959228396d1c158e0',1,'serial.device.read()'],['../classspi_1_1device.html#acb0511ed1560f5506051c4f2de0a963f',1,'spi.device.read()']]],
+  ['read',['read',['../classserial_1_1Serial.html#ada4cc5945d42f64017a9620297b4adf2',1,'serial.Serial.read()'],['../classdevsysfs_1_1device.html#afb5fb52af41ab8dd0d69f5dbeb21952f',1,'devsysfs.device.read()'],['../classi2c_1_1device.html#a718c1cc4f0ff252a3cfd10dc101441cd',1,'i2c.device.read()'],['../classi2c__regmap_1_1i2c__regmap.html#a1ecbcad5491090988c192f1560f59dba',1,'i2c_regmap.i2c_regmap.read()'],['../classspi_1_1device.html#acb0511ed1560f5506051c4f2de0a963f',1,'spi.device.read()']]],
   ['read_5fblock',['read_block',['../classdevsysfs_1_1device.html#aa5e0e91da4fc5c46563f10696babfde3',1,'devsysfs::device']]],
   ['read_5fblock_5fto_5feof',['read_block_to_eof',['../classdevsysfs_1_1device.html#af5bac9dce0574030658870533b0f4fb5',1,'devsysfs::device']]],
   ['read_5ffloat',['read_float',['../classpersistent_1_1flag.html#ae1f58943884ede786bfb948fd313c4a8',1,'persistent::flag']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ceil',['ceil',['../namespacemath.html#a2f5421d1476a7206ed22cb1dd1a36a03',1,'math']]],
-  ['close',['close',['../classserial_1_1device.html#a7d74877ddafa3fe384ef862bc0b19d32',1,'serial::device']]],
+  ['close',['close',['../classserial_1_1Serial.html#a45c41f4f0087f7ccc75c0de8e63aa330',1,'serial::Serial']]],
   ['command',['command',['../classngimu_1_1device.html#a8f0b0a72ab0416422255c17be0508c69',1,'ngimu::device']]],
   ['command_5fahrs_5finitialise',['command_ahrs_initialise',['../classngimu_1_1device.html#a849648ec278a3eb866ddab632edec4e9',1,'ngimu::device']]],
   ['command_5fahrs_5fzero',['command_ahrs_zero',['../classngimu_1_1device.html#a9edf6fb205f9469ed70b4359231b9dcf',1,'ngimu::device']]],

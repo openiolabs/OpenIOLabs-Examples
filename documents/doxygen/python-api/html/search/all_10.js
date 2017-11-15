@@ -2,6 +2,7 @@ var searchData=
 [
   ['send',['send',['../classngimu_1_1device.html#abca74c4d965be6881ed824e214d0b034',1,'ngimu::device']]],
   ['send_5fmessage',['send_message',['../osc_8py.html#a57f0b3012681e4ae91dcc95e99d2ad24',1,'osc']]],
+  ['serial',['Serial',['../classserial_1_1Serial.html',1,'serial']]],
   ['serial',['serial',['../namespaceserial.html',1,'']]],
   ['serial_2epy',['serial.py',['../serial_8py.html',1,'']]],
   ['server_5fstream',['server_stream',['../classstream_1_1server__stream.html',1,'stream']]],

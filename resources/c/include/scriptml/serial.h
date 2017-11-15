@@ -170,7 +170,7 @@ struct termios
 /* c_lflag bits */
 #define ISIG    0000001
 #define ICANON  0000002
-#define XCASE  0000004
+#define XCASE   0000004
 #define ECHO    0000010
 #define ECHOE   0000020
 #define ECHOK   0000040
@@ -212,6 +212,7 @@ struct termios
 # define CCEQ(val, c)   ((c) == (val) && (val) != _POSIX_VDISABLE)
 #endif
 
+/* Ioctl request codes */
 #define TCGETS          0x5401
 #define TCSETS          0x5402
 #define TCSETSW         0x5403
@@ -398,13 +399,11 @@ int tcsendbreak( sml_serial_handle_t dev,
     return 0;
 }
 
-/* Wait for pending output to be written on FD.
-
-   This function is a cancellation point and therefore not marked with
-  .  */
+/* Wait for pending output to be written on FD.  */
 int tcdrain( sml_serial_handle_t dev )
 {
-    sml_devsysfs_ioctl(dev, TCSBRK, 1);
+    int d = 1;
+    sml_devsysfs_ioctl(dev, TCSBRK, &d);
     return 0;
 }
 

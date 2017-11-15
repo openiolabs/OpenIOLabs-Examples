@@ -846,10 +846,10 @@ c_ospeed</td>
 <p>Initialise access to the serial port. </p>
 <dl class="section return"><dt>Returns</dt><dd>Device handle </dd></dl>
 
-<p>Definition at line <a class="el" href="serial_8h_source.html#l00264">264</a> of file <a class="el" href="serial_8h_source.html">serial.h</a>.</p>
+<p>Definition at line <a class="el" href="serial_8h_source.html#l00265">265</a> of file <a class="el" href="serial_8h_source.html">serial.h</a>.</p>
 
 <p>References <a class="el" href="devsysfs_8h_source.html#l00083">sml_devsysfs_open()</a>, and <a class="el" href="stdio_8h_source.html#l00252">sprintf()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordtype">char</span> dev_path[200];</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="code" href="stdio_8h.html#aa0649118bc3728b2a62af0b47606ff51">sprintf</a>(dev_path, <span class="stringliteral">&quot;/dev/ttyUSB%d&quot;</span>, portnum);</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="devsysfs_8h.html#aa343c5c9564ecefb5f50486c23de8d20">sml_devsysfs_open</a>( dev_path );</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div><div class="ttc" id="stdio_8h_html_aa0649118bc3728b2a62af0b47606ff51"><div class="ttname"><a href="stdio_8h.html#aa0649118bc3728b2a62af0b47606ff51">sprintf</a></div><div class="ttdeci">int sprintf(char *out, const char *format,...)</div><div class="ttdoc">Formatted print to string. </div><div class="ttdef"><b>Definition:</b> <a href="stdio_8h_source.html#l00252">stdio.h:252</a></div></div>
+<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;{</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordtype">char</span> dev_path[200];</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="stdio_8h.html#aa0649118bc3728b2a62af0b47606ff51">sprintf</a>(dev_path, <span class="stringliteral">&quot;/dev/ttyUSB%d&quot;</span>, portnum);</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="devsysfs_8h.html#aa343c5c9564ecefb5f50486c23de8d20">sml_devsysfs_open</a>( dev_path );</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div><div class="ttc" id="stdio_8h_html_aa0649118bc3728b2a62af0b47606ff51"><div class="ttname"><a href="stdio_8h.html#aa0649118bc3728b2a62af0b47606ff51">sprintf</a></div><div class="ttdeci">int sprintf(char *out, const char *format,...)</div><div class="ttdoc">Formatted print to string. </div><div class="ttdef"><b>Definition:</b> <a href="stdio_8h_source.html#l00252">stdio.h:252</a></div></div>
 <div class="ttc" id="devsysfs_8h_html_aa343c5c9564ecefb5f50486c23de8d20"><div class="ttname"><a href="devsysfs_8h.html#aa343c5c9564ecefb5f50486c23de8d20">sml_devsysfs_open</a></div><div class="ttdeci">sml_devsysfs_t sml_devsysfs_open(_str path)</div><div class="ttdoc">Open a device. Returns a handle. </div><div class="ttdef"><b>Definition:</b> <a href="devsysfs_8h_source.html#l00083">devsysfs.h:83</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -887,10 +887,10 @@ c_ospeed</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="serial_8h_source.html#l00287">287</a> of file <a class="el" href="serial_8h_source.html">serial.h</a>.</p>
+<p>Definition at line <a class="el" href="serial_8h_source.html#l00288">288</a> of file <a class="el" href="serial_8h_source.html">serial.h</a>.</p>
 
 <p>References <a class="el" href="devsysfs_8h_source.html#l00124">sml_devsysfs_write()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="devsysfs_8h.html#ae8bca2422a918ce00f75d889a54b57f5">sml_devsysfs_write</a>( dev, data );</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div><div class="ttc" id="devsysfs_8h_html_ae8bca2422a918ce00f75d889a54b57f5"><div class="ttname"><a href="devsysfs_8h.html#ae8bca2422a918ce00f75d889a54b57f5">sml_devsysfs_write</a></div><div class="ttdeci">void sml_devsysfs_write(sml_devsysfs_t dev, _data data)</div><div class="ttdoc">Write to device. </div><div class="ttdef"><b>Definition:</b> <a href="devsysfs_8h_source.html#l00124">devsysfs.h:124</a></div></div>
+<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;{</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="devsysfs_8h.html#ae8bca2422a918ce00f75d889a54b57f5">sml_devsysfs_write</a>( dev, data );</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;}</div><div class="ttc" id="devsysfs_8h_html_ae8bca2422a918ce00f75d889a54b57f5"><div class="ttname"><a href="devsysfs_8h.html#ae8bca2422a918ce00f75d889a54b57f5">sml_devsysfs_write</a></div><div class="ttdeci">void sml_devsysfs_write(sml_devsysfs_t dev, _data data)</div><div class="ttdoc">Write to device. </div><div class="ttdef"><b>Definition:</b> <a href="devsysfs_8h_source.html#l00124">devsysfs.h:124</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -917,17 +917,17 @@ c_ospeed</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Buffer for text read from port </dd></dl>
 
-<p>Definition at line <a class="el" href="serial_8h_source.html#l00299">299</a> of file <a class="el" href="serial_8h_source.html">serial.h</a>.</p>
+<p>Definition at line <a class="el" href="serial_8h_source.html#l00300">300</a> of file <a class="el" href="serial_8h_source.html">serial.h</a>.</p>
 
 <p>References <a class="el" href="stddef_8h_source.html#l00051">EINVAL</a>, <a class="el" href="devsysfs_8h_source.html#l00263">sml_devsysfs_ioctl()</a>, and <a class="el" href="devsysfs_8h_source.html#l00313">sml_devsysfs_mono_read_to_eof()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;{</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    _str stext = <a class="code" href="devsysfs_8h.html#a3e1b2638171cff48a5c969687ba66fb8">sml_devsysfs_mono_read_to_eof</a>( dev );      </div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">return</span> stext;</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;}</div><div class="ttc" id="devsysfs_8h_html_a3e1b2638171cff48a5c969687ba66fb8"><div class="ttname"><a href="devsysfs_8h.html#a3e1b2638171cff48a5c969687ba66fb8">sml_devsysfs_mono_read_to_eof</a></div><div class="ttdeci">_str sml_devsysfs_mono_read_to_eof(_str path)</div><div class="ttdoc">Monolithic read from device until EOF. </div><div class="ttdef"><b>Definition:</b> <a href="devsysfs_8h_source.html#l00313">devsysfs.h:313</a></div></div>
+<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;{</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    _str stext = <a class="code" href="devsysfs_8h.html#a3e1b2638171cff48a5c969687ba66fb8">sml_devsysfs_mono_read_to_eof</a>( dev );      </div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">return</span> stext;</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div><div class="ttc" id="devsysfs_8h_html_a3e1b2638171cff48a5c969687ba66fb8"><div class="ttname"><a href="devsysfs_8h.html#a3e1b2638171cff48a5c969687ba66fb8">sml_devsysfs_mono_read_to_eof</a></div><div class="ttdeci">_str sml_devsysfs_mono_read_to_eof(_str path)</div><div class="ttdoc">Monolithic read from device until EOF. </div><div class="ttdef"><b>Definition:</b> <a href="devsysfs_8h_source.html#l00313">devsysfs.h:313</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 14 2017 03:26:25 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 15 2017 03:26:36 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
