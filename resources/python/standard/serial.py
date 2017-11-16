@@ -29,12 +29,12 @@ STOPBITS_TWO = termios.CSTOPB
 #
 # Instantiate one of these for each serial port
 class Serial:
-	##
-	#  @brief Initialise access to the serial port
-	#
-	#  @return handle for the serial port
-	#
-	def __init__( self, 
+    ##
+    #  @brief Initialise access to the serial port
+    #
+    #  @return handle for the serial port
+    #
+    def __init__( self, 
                   port=None, 
                   baudrate=9600, 
                   bytesize=EIGHTBITS, 
@@ -57,9 +57,10 @@ class Serial:
         self.write_timeout = write_timeout        
         self.dsrdtr = dsrdtr        
         self.inter_byte_timeout = inter_byte_timeout  
+        self.dev = None
 
     def open( self ):                      
-        self.dev = devsysfs.device( port )
+        self.dev = devsysfs.device( self.port )
         self._reconfigure_port(True)
     
     def _reconfigure_port(self, force_update=False):
@@ -68,7 +69,7 @@ class Serial:
         iflag &= ~(termios.IUCLC)
         iflag &= ~(termios.PARMRK)
         if self.xonxoff:
-            iflag |= (termios.IXON | termios.IXOFF
+            iflag |= (termios.IXON | termios.IXOFF)
         else:
             iflag &= ~(termios.IXON | termios.IXOFF)
 
@@ -86,31 +87,31 @@ class Serial:
         lflag &= ~(termios.ISIG | termios.IEXTEN)        
 
         ispeed = ospeed = self.baudrate
-        termios.tcsetattr(self.dev, TCSANOW, [iflag, oflag, cflag, lflag, ispeed, ospeed, cc])
-		 		
-	##
-	#  @brief End access to the serial port
-	#
-	def close( self ):
-		pass
+        termios.tcsetattr(self.dev, termios.TCSANOW, [iflag, oflag, cflag, lflag, ispeed, ospeed, cc])
+                 
+    ##
+    #  @brief End access to the serial port
+    #
+    def close( self ):
+        pass
 
-	##
-	#  @brief Write to serial port
-	#
-	#  @param h serial port handle
-	#  @param text text to write to the port
-	#
-	def write( self, data ):
-		self.dev.write( data )
-		 
-	##
-	#  @brief Read from serial port
-	#
-	#  @param h serial port handle
-	#  @return buffer for text read from port
-	#
-	def read( self, size=1 ):
-		return self.dev.read( size )
+    ##
+    #  @brief Write to serial port
+    #
+    #  @param h serial port handle
+    #  @param text text to write to the port
+    #
+    def write( self, data ):
+        self.dev.write( data )
+         
+    ##
+    #  @brief Read from serial port
+    #
+    #  @param h serial port handle
+    #  @return buffer for text read from port
+    #
+    def read( self, size=1 ):
+        return self.dev.read( size )
 
     def flush( self ):
         termios.tcdrain(self.dev)

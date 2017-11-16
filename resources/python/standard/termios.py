@@ -8,6 +8,7 @@
 #
 
 import devsysfs
+from numpy import *
 
 # c_cc characters 
 VINTR = 0
@@ -55,56 +56,56 @@ ONLRET  = 0o000040
 OFILL   = 0o000100
 OFDEL   = 0o000200
 NLDLY  = 0o000400
-  NL0  = 0o000000
-  NL1  = 0o000400
+NL0  = 0o000000
+NL1  = 0o000400
 CRDLY  = 0o003000
-  CR0  = 0o000000
-  CR1  = 0o001000
-  CR2  = 0o002000
-  CR3  = 0o003000
+CR0  = 0o000000
+CR1  = 0o001000
+CR2  = 0o002000
+CR3  = 0o003000
 TABDLY = 0o014000
-  TAB0 = 0o000000
-  TAB1 = 0o004000
-  TAB2 = 0o010000
-  TAB3 = 0o014000
+TAB0 = 0o000000
+TAB1 = 0o004000
+TAB2 = 0o010000
+TAB3 = 0o014000
 BSDLY  = 0o020000
-  BS0  = 0o000000
-  BS1  = 0o020000
+BS0  = 0o000000
+BS1  = 0o020000
 FFDLY  = 0o100000
-  FF0  = 0o000000
-  FF1  = 0o100000
+FF0  = 0o000000
+FF1  = 0o100000
 
 VTDLY   = 0o040000
-  VT0   = 0o000000
-  VT1   = 0o040000
+VT0   = 0o000000
+VT1   = 0o040000
 
 XTABS  = 0o014000
 
 # c_cflag bit meaning 
 CBAUD  = 0o010017
- B0     = 0o000000         /* hang up */
- B50    = 0o000001
- B75    = 0o000002
- B110   = 0o000003
- B134   = 0o000004
- B150   = 0o000005
- B200   = 0o000006
- B300   = 0o000007
- B600   = 0o000010
- B1200  = 0o000011
- B1800  = 0o000012
- B2400  = 0o000013
- B4800  = 0o000014
- B9600  = 0o000015
- B19200 = 0o000016
- B38400 = 0o000017
-EXTA B19200
-EXTB B38400
+B0     = 0o000000         # hang up 
+B50    = 0o000001
+B75    = 0o000002
+B110   = 0o000003
+B134   = 0o000004
+B150   = 0o000005
+B200   = 0o000006
+B300   = 0o000007
+B600   = 0o000010
+B1200  = 0o000011
+B1800  = 0o000012
+B2400  = 0o000013
+B4800  = 0o000014
+B9600  = 0o000015
+B19200 = 0o000016
+B38400 = 0o000017
+EXTA = B19200
+EXTB = B38400
 CSIZE   = 0o000060
-  CS5   = 0o000000
-  CS6   = 0o000020
-  CS7   = 0o000040
-  CS8   = 0o000060
+CS5   = 0o000000
+CS6   = 0o000020
+CS7   = 0o000040
+CS8   = 0o000060
 CSTOPB  = 0o000100
 CREAD   = 0o000200
 PARENB  = 0o000400
@@ -112,22 +113,22 @@ PARODD  = 0o001000
 HUPCL   = 0o002000
 CLOCAL  = 0o004000
 CBAUDEX = 0o010000
- B57600   = 0o010001
- B115200  = 0o010002
- B230400  = 0o010003
- B460800  = 0o010004
- B500000  = 0o010005
- B576000  = 0o010006
- B921600  = 0o010007
- B1000000 = 0o010010
- B1152000 = 0o010011
- B1500000 = 0o010012
- B2000000 = 0o010013
- B2500000 = 0o010014
- B3000000 = 0o010015
- B3500000 = 0o010016
- B4000000 = 0o010017
-__MAX_BAUD B4000000
+B57600   = 0o010001
+B115200  = 0o010002
+B230400  = 0o010003
+B460800  = 0o010004
+B500000  = 0o010005
+B576000  = 0o010006
+B921600  = 0o010007
+B1000000 = 0o010010
+B1152000 = 0o010011
+B1500000 = 0o010012
+B2000000 = 0o010013
+B2500000 = 0o010014
+B3000000 = 0o010015
+B3500000 = 0o010016
+B4000000 = 0o010017
+__MAX_BAUD = B4000000
 CIBAUD   = 0o02003600000          # input baud rate (not used) 
 CMSPAR   = 0o10000000000          # mark or space (stick) parity 
 CRTSCTS  = 0o20000000000          # flow control 
@@ -195,7 +196,7 @@ TIOCMSET        = 0x5418
 TIOCGSOFTCAR    = 0x5419
 TIOCSSOFTCAR    = 0x541A
 FIONREAD        = 0x541B
-TIOCINQ         FIONREAD
+TIOCINQ         = FIONREAD
 TIOCLINUX       = 0x541C
 TIOCCONS        = 0x541D
 TIOCGSERIAL     = 0x541E
@@ -212,22 +213,22 @@ TIOCGSID        = 0x5429  # Return the session ID of FD
 
 def tcgetattr(dev):
     c_cc = []
-    for i in range(20)
+    for i in range(20):
         c_cc += [uint8(0)]
     data = [uint32(0), uint32(0), uint32(0), uint32(0), c_cc, uint32(0), uint32(0)]     
     dev.ioctl( TCGETS, devsysfs.block(data) )
-    return data[:4] + data[6:] + [data[5]] # slight re-ordering necessetated by the Python API
-    
+    return data[:4] + data[5:] + [data[4]] # slight re-ordering necessetated by the Python API
+  
 
 # When is a TCS... constant    
 def tcsetattr(dev, when, attributes):
     data = attributes[:4] + [attributes[6]] + attributes[4:6]
     request = {TCSANOW:TCSETS, TCSADRAIN:TCSETSW, TCSAFLUSH:TCSETSF}[when]
     dev.ioctl( request, devsysfs.block(data) )
-    
+  
 
 # Send zero bits on FD.  
-def tcsendbreak( duration ):
+def tcsendbreak( dev, duration ):
     dev.ioctl(TCSBRK, devsysfs.block(duration));
 
 
@@ -244,4 +245,4 @@ def tcflush( dev, queue_selector ):
 # Suspend or restart transmission on FD.
 def tcflow( dev, action ):
     dev.ioctl(TCXONC, devsysfs.block(action));
-    
+  

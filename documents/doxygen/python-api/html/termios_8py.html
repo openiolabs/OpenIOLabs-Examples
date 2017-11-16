@@ -111,9 +111,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>termios.tcgetattr</b> 
 <tr class="memitem:ae060dba99ec2813f77708e2682986624"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae060dba99ec2813f77708e2682986624"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>termios.tcsetattr</b> (dev, when, attributes)</td></tr>
 <tr class="separator:ae060dba99ec2813f77708e2682986624"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf29cc5fed7b71265923f60935d7eb27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf29cc5fed7b71265923f60935d7eb27"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>termios.tcsendbreak</b> (duration)</td></tr>
-<tr class="separator:acf29cc5fed7b71265923f60935d7eb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6641956d59deb2b0eb5ba7b49dad9d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6641956d59deb2b0eb5ba7b49dad9d0"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>termios.tcsendbreak</b> (dev, duration)</td></tr>
+<tr class="separator:ae6641956d59deb2b0eb5ba7b49dad9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99b148f947253d00680e33e34fd84728"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99b148f947253d00680e33e34fd84728"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>termios.tcdrain</b> (dev)</td></tr>
 <tr class="separator:a99b148f947253d00680e33e34fd84728"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -366,6 +366,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>termios.B19200</b> = 0
 <tr class="memitem:a8ee5f54f6ea068256c19e8f5364665a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ee5f54f6ea068256c19e8f5364665a7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>termios.B38400</b> = 0</td></tr>
 <tr class="separator:a8ee5f54f6ea068256c19e8f5364665a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe2b4df6e7c9a852306b2ce5113ba04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fe2b4df6e7c9a852306b2ce5113ba04"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>termios.EXTA</b> = B19200</td></tr>
+<tr class="separator:a3fe2b4df6e7c9a852306b2ce5113ba04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01313953705c1cc567e9bdcb7effd897"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01313953705c1cc567e9bdcb7effd897"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>termios.EXTB</b> = B38400</td></tr>
+<tr class="separator:a01313953705c1cc567e9bdcb7effd897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadbaae83778815aaf80a3e33d9e6a104"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadbaae83778815aaf80a3e33d9e6a104"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>termios.CSIZE</b> = 0</td></tr>
 <tr class="separator:aadbaae83778815aaf80a3e33d9e6a104"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -615,6 +621,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>termios.TIOCSSOFTCAR</
 <tr class="memitem:a50d90993862bcae24817720ddd606d7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50d90993862bcae24817720ddd606d7e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>termios.FIONREAD</b> = 0x541B</td></tr>
 <tr class="separator:a50d90993862bcae24817720ddd606d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3f1c2cc5ad77d0a97340e0cc7d4082"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f3f1c2cc5ad77d0a97340e0cc7d4082"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>termios.TIOCINQ</b> = FIONREAD</td></tr>
+<tr class="separator:a9f3f1c2cc5ad77d0a97340e0cc7d4082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3e07bc3610cf6557a07e3eb834e86b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3e07bc3610cf6557a07e3eb834e86b2"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>termios.TIOCLINUX</b> = 0x541C</td></tr>
 <tr class="separator:ab3e07bc3610cf6557a07e3eb834e86b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -658,7 +667,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>termios.TIOCGSID</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 15 2017 03:26:36 for ScriptML Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 16 2017 03:26:31 for ScriptML Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
