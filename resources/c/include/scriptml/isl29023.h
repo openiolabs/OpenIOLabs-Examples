@@ -8,7 +8,7 @@
  *  Program the two `command` registers and then read back from the `data` register.
  *  
  *  
- *  Auto-generated 31 December 2017; do not edit
+ *  Auto-generated 01 January 2018; do not edit
  *  
  *  Copyright (c) Open IO Labs Ltd 2017
  *  All Rights Reserved
