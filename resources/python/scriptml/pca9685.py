@@ -18,7 +18,7 @@
 #  
 #  Wakeup procedure: clear `sleep` bit of register `mode1`. Wait at least 500us for the clock to stabilise. set `restart` bit of `mode1` register.
 #  
-#  Auto-generated 06 January 2018; do not edit
+#  Auto-generated 07 January 2018; do not edit
 #  
 #  Copyright (c) Open IO Labs Ltd 2017
 #  All Rights Reserved
