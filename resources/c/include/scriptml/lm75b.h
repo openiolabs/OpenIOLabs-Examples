@@ -7,7 +7,7 @@
  *  
  *  Program the the `conf` register then read the `temp` register
  *  
- *  Auto-generated 18 January 2018; do not edit
+ *  Auto-generated 19 January 2018; do not edit
  *  
  *  Copyright (c) Open IO Labs Ltd 2017
  *  All Rights Reserved
