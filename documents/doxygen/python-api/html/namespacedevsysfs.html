@@ -120,9 +120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a22162aa27d5e2f54c742d7fbdb82dadd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedevsysfs.html#a22162aa27d5e2f54c742d7fbdb82dadd">mono_ioctl</a> (path, request, data)</td></tr>
 <tr class="memdesc:a22162aa27d5e2f54c742d7fbdb82dadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform monolithic ioctl on device.  <a href="#a22162aa27d5e2f54c742d7fbdb82dadd">More...</a><br /></td></tr>
 <tr class="separator:a22162aa27d5e2f54c742d7fbdb82dadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdf7d9f285d906650e4e2ee96da9a5f8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedevsysfs.html#afdf7d9f285d906650e4e2ee96da9a5f8">block</a> (x)</td></tr>
-<tr class="memdesc:afdf7d9f285d906650e4e2ee96da9a5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ioctl data block for CLib access.  <a href="#afdf7d9f285d906650e4e2ee96da9a5f8">More...</a><br /></td></tr>
-<tr class="separator:afdf7d9f285d906650e4e2ee96da9a5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a739451a0d8ac89f92307081c1944e1ff"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedevsysfs.html#a739451a0d8ac89f92307081c1944e1ff">pointer</a> (x)</td></tr>
+<tr class="memdesc:a739451a0d8ac89f92307081c1944e1ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pointer to an ioctl data block for CLib access.  <a href="#a739451a0d8ac89f92307081c1944e1ff">More...</a><br /></td></tr>
+<tr class="separator:a739451a0d8ac89f92307081c1944e1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Access to /dev and /sys nodes. </p>
@@ -132,7 +132,7 @@ Functions</h2></td></tr>
 <p>Read and write operations work with lists of byte data only (numpy.uint8 or numpy.int8). The variants containing _block are for intended for block devices and use pread() and pwrite(). The others use read() and write() are meant for character devices. This correspondance is not strict and some devices don't really correspond to block or character idioms.</p>
 <p>The ioctl can accept data structures made up of pointers, arrays and structs, and converts them to and from a memory-based form for use with the underlying ioctl operation. Alignment padding is generated consistent with the C++11 cross-compiler used to build the scriptml interpreter.</p>
 <p>Python:</p>
-<p>The python version of ioctl uses lists populated with numpy types such as numpy.uint8 and so on in lieu of structs. Free function <a class="el" href="namespacedevsysfs.html#afdf7d9f285d906650e4e2ee96da9a5f8" title="Create an ioctl data block for CLib access. ">block()</a> is provided to create a C pointer to a list. This should be used to seperate contiguous blocks of data (where the ioctl's data structure requirement is to use a pointer). Otherwise, nested lists are concatenated into a single block, as with C structures.</p>
+<p>The python version of ioctl uses lists populated with numpy types such as numpy.uint8 and so on in lieu of structs. Free function <a class="el" href="namespacedevsysfs.html#a739451a0d8ac89f92307081c1944e1ff" title="Create a pointer to an ioctl data block for CLib access. ">pointer()</a> is provided to create a C pointer to a list. This should be used to seperate contiguous blocks of data (where the ioctl's data structure requirement is to use a pointer). Otherwise, nested lists are concatenated into a single block, as with C structures.</p>
 <p>Copyright (c) Open IO Labs Ltd 2016 All Rights Reserved </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ae7ed7f6ad0b2909bdc75f6e691251a72"></a>
@@ -376,7 +376,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Output data block</dd></dl>
-<p>data is usually a data block returned by the <a class="el" href="namespacedevsysfs.html#afdf7d9f285d906650e4e2ee96da9a5f8" title="Create an ioctl data block for CLib access. ">block()</a> function, except in a few cases where a fundamental type such as "int" is used directly. </p>
+<p>data is usually a data block returned by the block() function, except in a few cases where a fundamental type such as "int" is used directly. </p>
 
 <p>Definition at line <a class="el" href="devsysfs_8py_source.html#l00195">195</a> of file <a class="el" href="devsysfs_8py_source.html">devsysfs.py</a>.</p>
 <div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="namespacedevsysfs.html#a22162aa27d5e2f54c742d7fbdb82dadd">  195</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacedevsysfs.html#a22162aa27d5e2f54c742d7fbdb82dadd">mono_ioctl</a>( path, request, data ):</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classdevsysfs_1_1device.html">device</a>( path ).ioctl( request, data )</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;         </div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;         </div><div class="ttc" id="classdevsysfs_1_1device_html"><div class="ttname"><a href="classdevsysfs_1_1device.html">devsysfs.device</a></div><div class="ttdoc">Dev node or sysfs node class. </div><div class="ttdef"><b>Definition:</b> <a href="devsysfs_8py_source.html#l00045">devsysfs.py:45</a></div></div>
@@ -384,12 +384,12 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="afdf7d9f285d906650e4e2ee96da9a5f8"></a>
+<a class="anchor" id="a739451a0d8ac89f92307081c1944e1ff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def devsysfs.block </td>
+          <td class="memname">def devsysfs.pointer </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -398,10 +398,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create an ioctl data block for CLib access. </p>
+<p>Create a pointer to an ioctl data block for CLib access. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The data structure to place in a block </td></tr>
+    <tr><td class="paramname">x</td><td>The data structure to point to </td></tr>
   </table>
   </dd>
 </dl>
@@ -411,14 +411,14 @@ Functions</h2></td></tr>
 <p>Definition at line <a class="el" href="devsysfs_8py_source.html#l00209">209</a> of file <a class="el" href="devsysfs_8py_source.html">devsysfs.py</a>.</p>
 
 <p>Referenced by <a class="el" href="spi_8py_source.html#l00097">spi.device.config()</a>, <a class="el" href="i2c_8py_source.html#l00115">i2c.device.msg()</a>, <a class="el" href="spi_8py_source.html#l00133">spi.device.read()</a>, <a class="el" href="i2c_8py_source.html#l00172">i2c.device.smbus_access()</a>, <a class="el" href="spi_8py_source.html#l00108">spi.device.sync_transfer()</a>, <a class="el" href="i2c_8py_source.html#l00099">i2c.device.transfer()</a>, and <a class="el" href="spi_8py_source.html#l00119">spi.device.write()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="namespacedevsysfs.html#afdf7d9f285d906650e4e2ee96da9a5f8">  209</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacedevsysfs.html#afdf7d9f285d906650e4e2ee96da9a5f8">block</a>(x):</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">if</span> x <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">return</span> ___PointerExpr( target=___NULL() )</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">else</span>:</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordflow">return</span> ___PointerExpr( target=x )</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        </div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<div class="ttc" id="namespacedevsysfs_html_afdf7d9f285d906650e4e2ee96da9a5f8"><div class="ttname"><a href="namespacedevsysfs.html#afdf7d9f285d906650e4e2ee96da9a5f8">devsysfs.block</a></div><div class="ttdeci">def block(x)</div><div class="ttdoc">Create an ioctl data block for CLib access. </div><div class="ttdef"><b>Definition:</b> <a href="devsysfs_8py_source.html#l00209">devsysfs.py:209</a></div></div>
+<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="namespacedevsysfs.html#a739451a0d8ac89f92307081c1944e1ff">  209</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacedevsysfs.html#a739451a0d8ac89f92307081c1944e1ff">pointer</a>(x):</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">if</span> x <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">return</span> ___PointerExpr( target=___NULL() )</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">else</span>:</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordflow">return</span> ___PointerExpr( target=x )</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        </div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<div class="ttc" id="namespacedevsysfs_html_a739451a0d8ac89f92307081c1944e1ff"><div class="ttname"><a href="namespacedevsysfs.html#a739451a0d8ac89f92307081c1944e1ff">devsysfs.pointer</a></div><div class="ttdeci">def pointer(x)</div><div class="ttdoc">Create a pointer to an ioctl data block for CLib access. </div><div class="ttdef"><b>Definition:</b> <a href="devsysfs_8py_source.html#l00209">devsysfs.py:209</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 6 2018 03:06:49 for ScriptML Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 7 2018 03:06:24 for ScriptML Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

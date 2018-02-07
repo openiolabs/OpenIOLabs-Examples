@@ -98,8 +98,8 @@ class device:
     # automatically from the supplied message list.
     def transfer( self, msgs ):
         # Create struct i2c_rdwr_ioctl_data
-        rdwr_arg = [devsysfs.block(msgs),uint32(len(msgs))]
-        self.dev.ioctl( I2C_RDWR, devsysfs.block(rdwr_arg) )
+        rdwr_arg = [devsysfs.pointer(msgs),uint32(len(msgs))]
+        self.dev.ioctl( I2C_RDWR, devsysfs.pointer(rdwr_arg) )
 
     ## @brief Create a single I2C message
     #
@@ -114,7 +114,7 @@ class device:
     # structure defined in the Linux kernel.
     def msg( self, addr, flags, buf ):
         # Create strcut i2c_msg
-        return [uint16(addr), uint16(flags), uint16(len(buf)), devsysfs.block(buf)]
+        return [uint16(addr), uint16(flags), uint16(len(buf)), devsysfs.pointer(buf)]
 
 
     ## @brief Write to I2C device
@@ -170,8 +170,8 @@ class device:
     # The size parameter chooses the kind of transaction (not the size). command is the first byte used
     # and additional bytes are in a block pointed to by data.
     def smbus_access( self, read_write, command, size, data ):
-        args = [uint8(read_write), uint8(command), uint32(size), devsysfs.block(data)]        
-        self.dev.ioctl( I2C_SMBUS, devsysfs.block(args) )        
+        args = [uint8(read_write), uint8(command), uint32(size), devsysfs.pointer(data)]        
+        self.dev.ioctl( I2C_SMBUS, devsysfs.pointer(args) )        
 
     ## SMBus Quick Command
     # ====================

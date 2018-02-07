@@ -56,9 +56,9 @@ SPI_IOC_WR_MODE32 = 0x40046b05
 # elements can then be filled in explicitly.
 def make_transfer():
     return [
-        devsysfs.block(None),  #  0:tx_buf
+        devsysfs.pointer(None),  #  0:tx_buf
         uint32(),  #  pad0 # struct reserves 64 bits but RPi is 32-bit
-        devsysfs.block(None),  #  2:rx_buf
+        devsysfs.pointer(None),  #  2:rx_buf
         uint32(),  #  pad1 # struct reserves 64 bits but RPi is 32-bit
         uint32(0),  #  4:len
         uint32(0),  #  5:speed_hz
@@ -95,10 +95,10 @@ class device:
     # to a char buffer containing bytes to read or write.
     #
     def config( self, mode, endian, speed_hz, bits_per_word ):
-        self.dev.ioctl( SPI_IOC_WR_MODE32, devsysfs.block(mode) )
-        self.dev.ioctl( SPI_IOC_WR_LSB_FIRST, devsysfs.block(endian) )
-        self.dev.ioctl( SPI_IOC_WR_MAX_SPEED_HZ, devsysfs.block(speed_hz) )
-        self.dev.ioctl( SPI_IOC_WR_BITS_PER_WORD, devsysfs.block(bits_per_word) )
+        self.dev.ioctl( SPI_IOC_WR_MODE32, devsysfs.pointer(mode) )
+        self.dev.ioctl( SPI_IOC_WR_LSB_FIRST, devsysfs.pointer(endian) )
+        self.dev.ioctl( SPI_IOC_WR_MAX_SPEED_HZ, devsysfs.pointer(speed_hz) )
+        self.dev.ioctl( SPI_IOC_WR_BITS_PER_WORD, devsysfs.pointer(bits_per_word) )
 
     ## @brief Generic synchronous SPI operation 
     # 
@@ -106,7 +106,7 @@ class device:
     # @param num_xfers Number of transfer structures
     #
     def sync_transfer(self, xfers, num_xfers):
-        self.dev.ioctl( SPI_IOC_MESSAGE(num_xfers), devsysfs.block(xfers) )
+        self.dev.ioctl( SPI_IOC_MESSAGE(num_xfers), devsysfs.pointer(xfers) )
 
 
     ## @brief Write to SPI device 
@@ -118,7 +118,7 @@ class device:
     #
     def write( self, buf, count ):
         xfer = make_transfer()
-        xfer[0] = devsysfs.block(buf)
+        xfer[0] = devsysfs.pointer(buf)
         xfer[4] = uint32(count)
         self.sync_transfer( xfer, 1 )
 
@@ -132,6 +132,6 @@ class device:
     #
     def read( self, buf, count ):
         xfer = make_transfer()
-        xfer[2] = devsysfs.block(buf)
+        xfer[2] = devsysfs.pointer(buf)
         xfer[4] = uint32(count)
         self.sync_transfer( xfer, 1 )

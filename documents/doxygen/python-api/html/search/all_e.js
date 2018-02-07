@@ -12,6 +12,7 @@ var searchData=
   ['pcf8591_2epy',['pcf8591.py',['../pcf8591_8py.html',1,'']]],
   ['persistent_2epy',['persistent.py',['../persistent_8py.html',1,'']]],
   ['pi',['pi',['../namespacemath.html#a6aea9c59e7aeaf89f50c50fb96723696',1,'math']]],
+  ['pointer',['pointer',['../namespacedevsysfs.html#a739451a0d8ac89f92307081c1944e1ff',1,'devsysfs']]],
   ['pow',['pow',['../namespacemath.html#a14bcf5eac5d29839f70b04fb8cf97be8',1,'math']]],
   ['power',['power',['../classad5242_1_1device.html#a3cc6d0856631cc5f627b4fde3736b539',1,'ad5242.device.power()'],['../classmax518_1_1device.html#a5532e9833246678f7638f906a8a348f2',1,'max518.device.power()']]],
   ['power_5fup',['power_up',['../classad5627_1_1device.html#a2bef491e0688609ce44390a0f760997f',1,'ad5627::device']]],

@@ -216,7 +216,7 @@ def tcgetattr(dev):
     for i in range(20):
         c_cc += [uint8(0)]
     data = [uint32(0), uint32(0), uint32(0), uint32(0), c_cc, uint32(0), uint32(0)]     
-    dev.ioctl( TCGETS, devsysfs.block(data) )
+    dev.ioctl( TCGETS, devsysfs.pointer(data) )
     return data[:4] + data[5:] + [data[4]] # slight re-ordering necessetated by the Python API
   
 
@@ -224,25 +224,25 @@ def tcgetattr(dev):
 def tcsetattr(dev, when, attributes):
     data = attributes[:4] + [attributes[6]] + attributes[4:6]
     request = {TCSANOW:TCSETS, TCSADRAIN:TCSETSW, TCSAFLUSH:TCSETSF}[when]
-    dev.ioctl( request, devsysfs.block(data) )
+    dev.ioctl( request, devsysfs.pointer(data) )
   
 
 # Send zero bits on FD.  
 def tcsendbreak( dev, duration ):
-    dev.ioctl(TCSBRK, devsysfs.block(duration));
+    dev.ioctl(TCSBRK, devsysfs.pointer(duration));
 
 
 # Wait for pending output to be written on FD.
 def tcdrain( dev ):
-    dev.ioctl(TCSBRK, devsysfs.block(1));
+    dev.ioctl(TCSBRK, devsysfs.pointer(1));
 
 
 # Flush pending data on FD.
 def tcflush( dev, queue_selector ):
-    dev.ioctl(TCFLSH, devsysfs.block(queue_selector));
+    dev.ioctl(TCFLSH, devsysfs.pointer(queue_selector));
 
 
 # Suspend or restart transmission on FD.
 def tcflow( dev, action ):
-    dev.ioctl(TCXONC, devsysfs.block(action));
+    dev.ioctl(TCXONC, devsysfs.pointer(action));
   

@@ -30,7 +30,7 @@
 #
 # The python version of ioctl uses lists populated with numpy types
 # such as numpy.uint8 and so on in lieu of structs. Free function
-# block() is provided to create a C pointer to a list. This should be 
+# pointer() is provided to create a C pointer to a list. This should be 
 # used to seperate contiguous blocks of data (where the ioctl's data 
 # structure requirement is to use a pointer). Otherwise, nested lists 
 # are concatenated into a single block, as with C structures. 
@@ -197,16 +197,16 @@ def mono_ioctl( path, request, data ):
 	 	 
 	 	 
 ##
-#  @brief Create an ioctl data block for CLib access
+#  @brief Create a pointer to an ioctl data block for CLib access
 #
-#  @param x The data structure to place in a block
+#  @param x The data structure to point to
 #  @return An object that may be embedded in other blocks or passed to CLib intrinsics
 #
 # The return value is in fact a C-style pointer, with automatic garbage collection.
 # Pass in None to produce a NULL pointer (the None object cannot be converted for
 # CLib access).
 #
-def block(x):
+def pointer(x):
     if x is None:
         return ___PointerExpr( target=___NULL() )
     else:
