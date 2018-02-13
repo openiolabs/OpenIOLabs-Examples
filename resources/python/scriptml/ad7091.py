@@ -5,7 +5,7 @@
 # 
 #  The ADI AD7091R quad channel ADC with 12 bits resolution, accessed via the I2C interface.
 #  
-#  Auto-generated 12 February 2018; do not edit
+#  Auto-generated 13 February 2018; do not edit
 #  
 #  Copyright (c) Open IO Labs Ltd 2017
 #  All Rights Reserved
