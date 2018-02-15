@@ -1,0 +1,10 @@
+<map id="resources/c/include/scriptml/bluetooth.h" name="resources/c/include/scriptml/bluetooth.h">
+<area shape="rect" id="node2" href="$assert_8h.html" title="C Standard Library assertions. " alt="" coords="5,95,75,121"/>
+<area shape="rect" id="node3" href="$string_8h.html" title="Standard string library. " alt="" coords="99,95,165,121"/>
+<area shape="rect" id="node5" href="$stdio_8h.html" title="Standard input/output functions. " alt="" coords="228,95,289,121"/>
+<area shape="rect" id="node4" href="$stddef_8h.html" title="Standard definitions. " alt="" coords="187,244,256,271"/>
+<area shape="rect" id="node6" href="$stdarg_8h.html" title="VarArgs functions. " alt="" coords="149,169,219,196"/>
+<area shape="rect" id="node7" href="$stdlib_8h.html" title="Standard library. " alt="" coords="336,169,400,196"/>
+<area shape="rect" id="node9" href="$unistd_8h.html" title="Miscellaneous C definitions. " alt="" coords="243,169,311,196"/>
+<area shape="rect" id="node8" href="$stdlib__math_8h.html" title="Standard library math functions. " alt="" coords="318,244,418,271"/>
+</map>

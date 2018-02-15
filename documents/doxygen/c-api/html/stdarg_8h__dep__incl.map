@@ -1,4 +1,5 @@
 <map id="resources/c/include/stdarg.h" name="resources/c/include/stdarg.h">
-<area shape="rect" id="node2" href="$stdio_8h.html" title="Standard input/output functions. " alt="" coords="5,95,140,136"/>
+<area shape="rect" id="node2" href="$stdio_8h.html" title="Standard input/output functions. " alt="" coords="85,95,220,136"/>
 <area shape="rect" id="node3" href="$ad5627_8h.html" title="AD562 DAC device driver. " alt="" coords="5,184,140,225"/>
+<area shape="rect" id="node4" href="$bluetooth_8h.html" title="ScriptML bluetooth support. " alt="" coords="164,184,304,225"/>
 </map>
