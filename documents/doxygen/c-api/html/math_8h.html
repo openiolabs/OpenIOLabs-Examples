@@ -208,10 +208,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a537296d1a8f9fb621676038b99ba7edf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="math_8h.html#a537296d1a8f9fb621676038b99ba7edf">fmod</a> (double x, double y)</td></tr>
 <tr class="memdesc:a537296d1a8f9fb621676038b99ba7edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Floating-point modulo.  <a href="#a537296d1a8f9fb621676038b99ba7edf">More...</a><br /></td></tr>
 <tr class="separator:a537296d1a8f9fb621676038b99ba7edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e041615ac931b4d848a7b173049301"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="math_8h.html#a35e041615ac931b4d848a7b173049301">fmax</a> (double x, double y)</td></tr>
+<tr class="memdesc:a35e041615ac931b4d848a7b173049301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Floating-point maximum value.  <a href="#a35e041615ac931b4d848a7b173049301">More...</a><br /></td></tr>
+<tr class="separator:a35e041615ac931b4d848a7b173049301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a18b3ac9e461ac48b4cfffb4945a84"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="math_8h.html#af0a18b3ac9e461ac48b4cfffb4945a84">fmin</a> (double x, double y)</td></tr>
+<tr class="memdesc:af0a18b3ac9e461ac48b4cfffb4945a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Floating-point minimum value.  <a href="#af0a18b3ac9e461ac48b4cfffb4945a84">More...</a><br /></td></tr>
+<tr class="separator:af0a18b3ac9e461ac48b4cfffb4945a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Math constants. </p>
-<p>Auto-generated 15 February 2018; do not edit</p>
+<p>Auto-generated 16 February 2018; do not edit</p>
 <p>Copyright (c) Open IO Labs Ltd 2017 All Rights Reserved </p>
 
 <p>Definition in file <a class="el" href="math_8h_source.html">math.h</a>.</p>
@@ -849,10 +855,86 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;{</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">return</span> ___FMod( param0:x, param1:y );</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;} </div></div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="a35e041615ac931b4d848a7b173049301"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double fmax </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Floating-point maximum value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Candidate </td></tr>
+    <tr><td class="paramname">y</td><td>Candidate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the largest value out of x and y </dd></dl>
+
+<p>Definition at line <a class="el" href="math_8h_source.html#l00304">304</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;{</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">return</span> ___FMax( param0:x, param1:y );</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;} </div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af0a18b3ac9e461ac48b4cfffb4945a84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double fmin </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Floating-point minimum value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Candidate </td></tr>
+    <tr><td class="paramname">y</td><td>Candidate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the smallest value out of x and y </dd></dl>
+
+<p>Definition at line <a class="el" href="math_8h_source.html#l00316">316</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;{</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">return</span> ___FMin( param0:x, param1:y );</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;} </div></div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 15 2018 03:06:15 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 16 2018 03:06:15 for ScriptML C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

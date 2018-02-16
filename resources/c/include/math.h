@@ -2,7 +2,7 @@
  * 
  *  @brief Math constants
  * 
- *  Auto-generated 15 February 2018; do not edit
+ *  Auto-generated 16 February 2018; do not edit
  *  
  *  Copyright (c) Open IO Labs Ltd 2017
  *  All Rights Reserved
@@ -292,6 +292,30 @@ double cbrt( double x )
 double fmod( double x, double y )
 {
     return ___FMod( param0:x, param1:y );
+} 
+
+/**
+ *  @brief Floating-point maximum value
+ * 
+ *  @param x Candidate
+ *  @param y Candidate
+ *  @return the largest value out of x and y
+ */
+double fmax( double x, double y )
+{
+    return ___FMax( param0:x, param1:y );
+} 
+
+/**
+ *  @brief Floating-point minimum value
+ * 
+ *  @param x Candidate
+ *  @param y Candidate
+ *  @return the smallest value out of x and y
+ */
+double fmin( double x, double y )
+{
+    return ___FMin( param0:x, param1:y );
 } 
 
 #endif /* MATH_H */
