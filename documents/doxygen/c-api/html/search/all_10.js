@@ -69,6 +69,7 @@ var searchData=
   ['sml_5fbluetooth_5fscan',['sml_bluetooth_scan',['../bluetooth_8h.html#aaf0ded5e3611177de47f50883066bf14',1,'bluetooth.h']]],
   ['sml_5fbluetooth_5fserial_5fbind',['sml_bluetooth_serial_bind',['../bluetooth_8h.html#a07c99c50e38dd2e4a33c1f9c4a56507f',1,'bluetooth.h']]],
   ['sml_5fbluetooth_5fserial_5frelease',['sml_bluetooth_serial_release',['../bluetooth_8h.html#a39beae356e4f2867f489463c87e509f7',1,'bluetooth.h']]],
+  ['sml_5fcoroutine_5fbackground',['sml_coroutine_background',['../coroutines_8h.html#a90e41c0f0180264645308a87f3a9a16d',1,'coroutines.h']]],
   ['sml_5fcoroutine_5fcreate_5f0',['sml_coroutine_create_0',['../coroutines_8h.html#a4aeecba2e0658409a53d0a9aa976b2e8',1,'coroutines.h']]],
   ['sml_5fcoroutine_5fcreate_5f1',['sml_coroutine_create_1',['../coroutines_8h.html#af746faab9957872d6a396e33ca53a2d3',1,'coroutines.h']]],
   ['sml_5fcoroutine_5fcreate_5f2',['sml_coroutine_create_2',['../coroutines_8h.html#ab2441c93f3e3d27273f3aa1ab58fd937',1,'coroutines.h']]],

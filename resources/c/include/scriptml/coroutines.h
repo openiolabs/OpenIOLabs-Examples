@@ -17,9 +17,6 @@
 #error "This header file can only be used with ScriptML" 
 #endif
 
-/// Id of the main coroutine
-#define MAIN_COROUTINE_ID 0
-
 /// Coroutine handle
 typedef ___CoroutineType_T() *sml_coroutine_handle_t;
 
@@ -125,6 +122,20 @@ void sml_coroutine_exit( ___NULL_T() result )
 int sml_coroutine_get_current_id() 
 {
 	return ___GetId( target:___CurrentCoroutine() );
+}
+
+
+/**
+ *  @brief Background all current coroutines
+ * 
+ * Note: this operation causes the script to exit as seen in the cloud-based user interface 
+ * but in fact all currently existant coroutines will be retained. This means that the user
+ * or system may run the script again and yields will still reach the previously existing 
+ * coroutines. Since the current coroutine is retained, this function returns.
+ */
+void sml_coroutine_background()
+{
+	___Background();
 }
 
 #endif

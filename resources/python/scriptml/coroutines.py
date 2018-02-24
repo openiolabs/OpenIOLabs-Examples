@@ -11,9 +11,6 @@
 # All Rights Reserved
 #
 
-# Id of the main coroutine
-MAIN_COROUTINE_ID=0
-
 ## @brief Coroutine class
 #
 # Instantiate one of these for each coroutine you wish to create
@@ -43,6 +40,7 @@ class coroutine:
 	#
 	def get_id( self ):
 		return ___GetId(target=self.cob)
+
 
 ##
 #  @brief Yield the current coroutine
@@ -83,3 +81,15 @@ def exit(result):
 #
 def get_current_id():
 	return ___GetId( target=___CurrentCoroutine() )
+
+##
+#  @brief Background all current coroutines
+# 
+# Note: this operation causes the script to exit as seen in the cloud-based user interface 
+# but in fact all currently existant coroutines will be retained. This means that the user
+# or system may run the script again and yields will still reach the previously existing 
+# coroutines. Since the current coroutine is retained, this function returns.
+#
+def background():
+	___Background()
+

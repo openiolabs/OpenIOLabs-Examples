@@ -85,8 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">coroutines Namespace Reference</div>  </div>
 </div><!--header-->
@@ -112,12 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa74ddf711c16fc3f00d62da3c6cbea9f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecoroutines.html#aa74ddf711c16fc3f00d62da3c6cbea9f">get_current_id</a> ()</td></tr>
 <tr class="memdesc:aa74ddf711c16fc3f00d62da3c6cbea9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get id of currently running coroutine.  <a href="#aa74ddf711c16fc3f00d62da3c6cbea9f">More...</a><br /></td></tr>
 <tr class="separator:aa74ddf711c16fc3f00d62da3c6cbea9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aa3c750eeb0cb6fcf652baaf24a1890db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3c750eeb0cb6fcf652baaf24a1890db"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>MAIN_COROUTINE_ID</b> = 0</td></tr>
-<tr class="separator:aa3c750eeb0cb6fcf652baaf24a1890db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc273512bc24bdbe86690afd92ea1b8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecoroutines.html#a3bc273512bc24bdbe86690afd92ea1b8">background</a> ()</td></tr>
+<tr class="memdesc:a3bc273512bc24bdbe86690afd92ea1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background all current coroutines.  <a href="#a3bc273512bc24bdbe86690afd92ea1b8">More...</a><br /></td></tr>
+<tr class="separator:a3bc273512bc24bdbe86690afd92ea1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Direct access to ScriptML coroutines. </p>
@@ -149,8 +145,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MAIN_COROUTINE_ID</b> 
 <p>coroutines.wait( lambda: &lt;expression to wait for&gt; )</p>
 <p>In this case, the lambda is required so that the implmentation of <a class="el" href="namespacecoroutines.html#af46d8fc32f5495baaa19efa0695eeab2" title="Wait for the given function or lambda to return true. ">wait()</a> can work on the expression itself, rather than the value it evaluated to when <a class="el" href="namespacecoroutines.html#af46d8fc32f5495baaa19efa0695eeab2" title="Wait for the given function or lambda to return true. ">wait()</a> was called. <a class="el" href="namespacecoroutines.html#af46d8fc32f5495baaa19efa0695eeab2" title="Wait for the given function or lambda to return true. ">wait()</a> can then evaluate the expression repeatedly and/or perform special spinless waiting operations. </p>
 
-<p>Definition at line <a class="el" href="coroutines_8py_source.html#l00068">68</a> of file <a class="el" href="coroutines_8py_source.html">coroutines.py</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="namespacecoroutines.html#af46d8fc32f5495baaa19efa0695eeab2">   68</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacecoroutines.html#af46d8fc32f5495baaa19efa0695eeab2">wait</a>( test ):</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    ___Wait( test=test() )</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="ttc" id="namespacecoroutines_html_af46d8fc32f5495baaa19efa0695eeab2"><div class="ttname"><a href="namespacecoroutines.html#af46d8fc32f5495baaa19efa0695eeab2">coroutines.wait</a></div><div class="ttdeci">def wait(test)</div><div class="ttdoc">Wait for the given function or lambda to return true. </div><div class="ttdef"><b>Definition:</b> <a href="coroutines_8py_source.html#l00068">coroutines.py:68</a></div></div>
+<p>Definition at line <a class="el" href="coroutines_8py_source.html#l00066">66</a> of file <a class="el" href="coroutines_8py_source.html">coroutines.py</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="namespacecoroutines.html#af46d8fc32f5495baaa19efa0695eeab2">   66</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacecoroutines.html#af46d8fc32f5495baaa19efa0695eeab2">wait</a>( test ):</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ___Wait( test=test() )</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="ttc" id="namespacecoroutines_html_af46d8fc32f5495baaa19efa0695eeab2"><div class="ttname"><a href="namespacecoroutines.html#af46d8fc32f5495baaa19efa0695eeab2">coroutines.wait</a></div><div class="ttdeci">def wait(test)</div><div class="ttdoc">Wait for the given function or lambda to return true. </div><div class="ttdef"><b>Definition:</b> <a href="coroutines_8py_source.html#l00066">coroutines.py:66</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -176,8 +172,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MAIN_COROUTINE_ID</b> 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="coroutines_8py_source.html#l00076">76</a> of file <a class="el" href="coroutines_8py_source.html">coroutines.py</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="namespacecoroutines.html#ad852afe0ae9371de7e1fab7c883cab3f">   76</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacecoroutines.html#ad852afe0ae9371de7e1fab7c883cab3f">exit</a>(result):</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ___CoroutineExit( value=result )</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="ttc" id="namespacecoroutines_html_ad852afe0ae9371de7e1fab7c883cab3f"><div class="ttname"><a href="namespacecoroutines.html#ad852afe0ae9371de7e1fab7c883cab3f">coroutines.exit</a></div><div class="ttdeci">def exit(result)</div><div class="ttdoc">Exit and delete the current coroutine. </div><div class="ttdef"><b>Definition:</b> <a href="coroutines_8py_source.html#l00076">coroutines.py:76</a></div></div>
+<p>Definition at line <a class="el" href="coroutines_8py_source.html#l00074">74</a> of file <a class="el" href="coroutines_8py_source.html">coroutines.py</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="namespacecoroutines.html#ad852afe0ae9371de7e1fab7c883cab3f">   74</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacecoroutines.html#ad852afe0ae9371de7e1fab7c883cab3f">exit</a>(result):</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    ___CoroutineExit( value=result )</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="ttc" id="namespacecoroutines_html_ad852afe0ae9371de7e1fab7c883cab3f"><div class="ttname"><a href="namespacecoroutines.html#ad852afe0ae9371de7e1fab7c883cab3f">coroutines.exit</a></div><div class="ttdeci">def exit(result)</div><div class="ttdoc">Exit and delete the current coroutine. </div><div class="ttdef"><b>Definition:</b> <a href="coroutines_8py_source.html#l00074">coroutines.py:74</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -197,15 +193,36 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MAIN_COROUTINE_ID</b> 
 <p>Get id of currently running coroutine. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current coroutine's id </dd></dl>
 
-<p>Definition at line <a class="el" href="coroutines_8py_source.html#l00084">84</a> of file <a class="el" href="coroutines_8py_source.html">coroutines.py</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="namespacecoroutines.html#aa74ddf711c16fc3f00d62da3c6cbea9f">   84</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacecoroutines.html#aa74ddf711c16fc3f00d62da3c6cbea9f">get_current_id</a>():</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> ___GetId( target=___CurrentCoroutine() )</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<div class="ttc" id="namespacecoroutines_html_aa74ddf711c16fc3f00d62da3c6cbea9f"><div class="ttname"><a href="namespacecoroutines.html#aa74ddf711c16fc3f00d62da3c6cbea9f">coroutines.get_current_id</a></div><div class="ttdeci">def get_current_id()</div><div class="ttdoc">Get id of currently running coroutine. </div><div class="ttdef"><b>Definition:</b> <a href="coroutines_8py_source.html#l00084">coroutines.py:84</a></div></div>
+<p>Definition at line <a class="el" href="coroutines_8py_source.html#l00082">82</a> of file <a class="el" href="coroutines_8py_source.html">coroutines.py</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="namespacecoroutines.html#aa74ddf711c16fc3f00d62da3c6cbea9f">   82</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacecoroutines.html#aa74ddf711c16fc3f00d62da3c6cbea9f">get_current_id</a>():</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> ___GetId( target=___CurrentCoroutine() )</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="ttc" id="namespacecoroutines_html_aa74ddf711c16fc3f00d62da3c6cbea9f"><div class="ttname"><a href="namespacecoroutines.html#aa74ddf711c16fc3f00d62da3c6cbea9f">coroutines.get_current_id</a></div><div class="ttdeci">def get_current_id()</div><div class="ttdoc">Get id of currently running coroutine. </div><div class="ttdef"><b>Definition:</b> <a href="coroutines_8py_source.html#l00082">coroutines.py:82</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a3bc273512bc24bdbe86690afd92ea1b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def coroutines.background </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Background all current coroutines. </p>
+<p>Note: this operation causes the script to exit as seen in the cloud-based user interface but in fact all currently existant coroutines will be retained. This means that the user or system may run the script again and yields will still reach the previously existing coroutines. Since the current coroutine is retained, this function returns. </p>
+
+<p>Definition at line <a class="el" href="coroutines_8py_source.html#l00093">93</a> of file <a class="el" href="coroutines_8py_source.html">coroutines.py</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="namespacecoroutines.html#a3bc273512bc24bdbe86690afd92ea1b8">   93</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacecoroutines.html#a3bc273512bc24bdbe86690afd92ea1b8">background</a>():</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    ___Background()</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<div class="ttc" id="namespacecoroutines_html_a3bc273512bc24bdbe86690afd92ea1b8"><div class="ttname"><a href="namespacecoroutines.html#a3bc273512bc24bdbe86690afd92ea1b8">coroutines.background</a></div><div class="ttdeci">def background()</div><div class="ttdoc">Background all current coroutines. </div><div class="ttdef"><b>Definition:</b> <a href="coroutines_8py_source.html#l00093">coroutines.py:93</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 23 2018 03:06:17 for ScriptML Python API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 24 2018 03:06:11 for ScriptML Python API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
