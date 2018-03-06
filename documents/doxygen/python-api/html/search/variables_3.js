@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pi',['pi',['../namespacemath.html#a6aea9c59e7aeaf89f50c50fb96723696',1,'math']]]
+  ['e',['e',['../namespacemath.html#a7f210a28647520bfad49e5d4f263d2e0',1,'math']]]
 ];

@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['serial_2epy',['serial.py',['../serial_8py.html',1,'']]],
-  ['spi_2epy',['spi.py',['../spi_8py.html',1,'']]],
-  ['stats_2epy',['stats.py',['../stats_8py.html',1,'']]],
-  ['stdlib_5fmath_2epy',['stdlib_math.py',['../stdlib__math_8py.html',1,'']]],
-  ['stream_2epy',['stream.py',['../stream_8py.html',1,'']]]
+  ['pca9534_2epy',['pca9534.py',['../pca9534_8py.html',1,'']]],
+  ['pca9685_2epy',['pca9685.py',['../pca9685_8py.html',1,'']]],
+  ['pcf8563_2epy',['pcf8563.py',['../pcf8563_8py.html',1,'']]],
+  ['pcf8574_2epy',['pcf8574.py',['../pcf8574_8py.html',1,'']]],
+  ['pcf8591_2epy',['pcf8591.py',['../pcf8591_8py.html',1,'']]],
+  ['persistent_2epy',['persistent.py',['../persistent_8py.html',1,'']]]
 ];

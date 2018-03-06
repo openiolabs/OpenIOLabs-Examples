@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lm75b_2epy',['lm75b.py',['../lm75b_8py.html',1,'']]],
-  ['lwm2m_2epy',['lwm2m.py',['../lwm2m_8py.html',1,'']]],
-  ['lwm2m_5fcore_2epy',['lwm2m_core.py',['../lwm2m__core_8py.html',1,'']]]
+  ['i2c_2epy',['i2c.py',['../i2c_8py.html',1,'']]],
+  ['i2c_5fregmap_2epy',['i2c_regmap.py',['../i2c__regmap_8py.html',1,'']]],
+  ['isl29023_2epy',['isl29023.py',['../isl29023_8py.html',1,'']]]
 ];
