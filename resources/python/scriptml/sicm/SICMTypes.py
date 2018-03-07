@@ -39,7 +39,8 @@ HS_STOPPED              = 0
 HS_STARTING             = 1
 HS_START_REQUESTED      = 2
 HS_MEASURING            = 3
-HS_COMPLETE             = 4
+HS_STOP_REQUESTED       = 4
+HS_COMPLETE             = 5
 
 ## Manual mode states enumeration 
 M_STOPPED               = 0
@@ -55,7 +56,8 @@ AC_TO_SAFE_HEIGHT      = 2
 AC_TO_XY_POSITION      = 3
 AC_APPROACH_DOWN       = 4
 AC_APPROACH_UP         = 5
-AC_COMPLETE            = 6
+AC_STOP_REQUESTED      = 6
+AC_COMPLETE            = 7
 
 
 class Range:
@@ -72,19 +74,19 @@ class FPGALimits:
 # SICM instrument status 
 class SICMStatus:
     def __init__():    
-        self.acceptedScanMode = HOPPING_SCAN_MODE          ##< SICM scan mode (used by system) 
+        self.acceptedScanMode = HOPPING_SCAN_MODE  ##< SICM scan mode (used by system) 
 
-        self.xPos = 0.0                       ##< X position 
-        self.yPos = 0.0                         ##< Y position 
+        self.xPos = 0.0                            ##< X position 
+        self.yPos = 0.0                            ##< Y position 
 
-        self.scanIndex = 0                  ##< Used during a scan to count the number of points scanned 
+        self.scanIndex = 0                         ##< Used during a scan to count the number of points scanned 
 
-        self.hoppingState = HS_STOPPED         ##< Hopping scan mode state 
+        self.hoppingState = HS_STOPPED             ##< Hopping scan mode state 
 
-        self.manualState = M_STOPPED           ##< Manual mode state 
-        self.manualStep = 0                ##< Manual mode step number 
+        self.manualState = M_STOPPED               ##< Manual mode state 
+        self.manualStep = 0                        ##< Manual mode step number 
 
-        self.approachCurveState = AC_STOPPED      ##< APPROACH curve mode state 
+        self.approachCurveState = AC_STOPPED       ##< APPROACH curve mode state 
         self.ZOfs = 0.0;
         self.stateCounter = 0;
 
@@ -92,42 +94,42 @@ class SICMStatus:
 ## SICM instrument configuration 
 class SICMConfig:
     def __init__():
-        self.scanMode = HOPPING_SCAN_MODE                 ##< SICM scan mode (at UI) 
+        self.scanMode = HOPPING_SCAN_MODE          ##< SICM scan mode (at UI) 
         
         #  Pipette Bias
-        self.vBias = 0.0                  ##< Pipette bias voltage 
-        self.vOffset = 0.0                ##< Pipette offset voltage 
+        self.vBias = 0.0                           ##< Pipette bias voltage 
+        self.vOffset = 0.0                         ##< Pipette offset voltage 
         
         #  Positioning Settings
-        self.zApproachSpeed = 0             ##< Speed of pipette while approaching 
-        self.zImmerseSpeed = 0              ##< Speed of pipette immersion 
-        self.xySpeed = 0                    ##< Speed at which X/Y coarse motors will move 
-        self.zWithdrawSpeed = 0             ##< Speed of pippette when withdrawing 
-        self.immerseThreshold = 0.0             ##< Immersion detection threshold 
-        self.immerseDepth = 0.0                  ##< Immersion depth 
-        self.zPiezoStopCriteria = 0.0            ##< ZP piezo stop criteria 
-        self.coarseMotorsStopCriteria = 0.0       ##< Coarse Motors stop criteria 
-        self.joystickEnable = False               ##< Joystick positioning enabled when true 
+        self.zApproachSpeed = 0                    ##< Speed of pipette while approaching 
+        self.zImmerseSpeed = 0                     ##< Speed of pipette immersion 
+        self.xySpeed = 0                           ##< Speed at which X/Y coarse motors will move 
+        self.zWithdrawSpeed = 0                    ##< Speed of pippette when withdrawing 
+        self.immerseThreshold = 0.0                ##< Immersion detection threshold 
+        self.immerseDepth = 0.0                    ##< Immersion depth 
+        self.zPiezoStopCriteria = 0.0              ##< ZP piezo stop criteria 
+        self.coarseMotorsStopCriteria = 0.0        ##< Coarse Motors stop criteria 
+        self.joystickEnable = False                ##< Joystick positioning enabled when true 
 
         #  Hopping Parameters
         self.hopHeight = 0                 ##< Minimum hop height 
         self.detectThreshold = 0           ##< Detection threshold 
         self.fallRate = 0                  ##< Fall rate 
         self.riseRate = 0                  ##< Rise rate 
-        self.xyDelay = 0.0                      ##< Pre-measurement pause 
+        self.xyDelay = 0.0                 ##< Pre-measurement pause 
         self.measureDelay = 0              ##< Ion current measurement time 
-        self.zBrakeOffset = 0.0                 ##< Z brake retract 
-        self.zHoppingLimits = Range()             ##< Z hopping distance limits 
-        self.xIdlePos = 0.0                     ##< Idling X position 
-        self.yIdlePos = 0.0                     ##< Idling Y position 
+        self.zBrakeOffset = 0.0            ##< Z brake retract 
+        self.zHoppingLimits = Range()      ##< Z hopping distance limits 
+        self.xIdlePos = 0.0                ##< Idling X position 
+        self.yIdlePos = 0.0                ##< Idling Y position 
 
         #  Scan Area
         self.xOrigin = 0.0                       ##< Scan X origin 
         self.yOrigin = 0.0                       ##< Scan Y origin 
         self.scanWidth = 0.0                     ##< Scan area width 
         self.scanHeight = 0.0                    ##< Scan area height 
-        self.widthPix = 0                   ##< Number of X measurement points 
-        self.heightPix = 0                  ##< Number of Y measurement points 
+        self.widthPix = 0                        ##< Number of X measurement points 
+        self.heightPix = 0                       ##< Number of Y measurement points 
         self.scanAngle = 0.0                     ##< Scan angle 
         self.pipetteLengthFactor = 0.0           ##< Pipette length ratio 
 
