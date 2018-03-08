@@ -13,10 +13,11 @@
 import sicm.SICMTypes
 import coroutines
 
+TRACE_DESTATE = False
 
 def Control_Initialise():
     if TRACE_DESTATE:
-        print "Enter Control_Initialise() in #%d\n", sml_coroutine_get_current_id()
+        print "Enter Control_Initialise() in #%d\n", coroutines.get_current_id()
           # Switch the client into scripted operation
     ___Send(request="SICM_Control_EnableScript", client_handle=___NULL(), str_payload=___NULL(), int_payload=___ISeq(1), float_payload=___ISeq())
     l = ___Receive()
@@ -25,13 +26,13 @@ def Control_Initialise():
     assert l[0]=="OK"
     
     if TRACE_DESTATE:
-        print "Control_Initialise() backgrounding in #%d\n", sml_coroutine_get_current_id()
+        print "Control_Initialise() backgrounding in #%d\n", coroutines.get_current_id()
           
     # yield locally; exit in client. Client will proceed into control loop, and the re-enter via ScanManager_Run()
-    sml_coroutine_background()
+    coroutines.background()
     
     if TRACE_DESTATE:
-        print "Exit Control_Initialise() in #%d\n", sml_coroutine_get_current_id()
+        print "Exit Control_Initialise() in #%d\n", coroutines.get_current_id()
             
 
 def Control_SetMode( mode ): 
@@ -102,22 +103,22 @@ def Control_Complete():
 
 def Control_Iterate():    
     if TRACE_DESTATE:
-        print "Enter Control_Iterate() in", sml_coroutine_get_current_id()
+        print "Enter Control_Iterate() in", coroutines.get_current_id()
       
-    sml_coroutine_yield() # yields to iterate_state_machine() which exits allowing client to proceed
+    coroutines._yield() # yields to iterate_state_machine() which exits allowing client to proceed
 
     if TRACE_DESTATE:
-        print "Exit Control_Iterate() in", sml_coroutine_get_current_id()
+        print "Exit Control_Iterate() in", coroutines.get_current_id()
                 
 
 def ScanManager_Run(): # invoked repeatedly by client (full invocation using RunToEnd())      
     if TRACE_DESTATE:
-        print "Enter ScanManager_Run() in", sml_coroutine_get_current_id()
+        print "Enter ScanManager_Run() in", coroutines.get_current_id()
       
-    sml_coroutine_yield() # yields to main() coroutine that backgrounded itself earlier
+    coroutines._yield() # yields to main() coroutine that backgrounded itself earlier
 
     if TRACE_DESTATE:
-        print "Exit ScanManager_Run() in", sml_coroutine_get_current_id()
+        print "Exit ScanManager_Run() in", coroutines.get_current_id()
       
     return # control returns to client when this coroutine exits (initial coroutine for the invocation)
       

@@ -47,6 +47,7 @@ var searchData=
   ['id_5fopenio_5fspi_5finterface',['id_OpenIO_SPI_Interface',['../namespacelwm2m.html#a3010881ae7c8f652377bba4945161ff9',1,'lwm2m']]],
   ['id_5fopenio_5fsurface_5fplotter',['id_OpenIO_Surface_Plotter',['../namespacelwm2m.html#a1199ecb6aa725997b399a121b812eebb',1,'lwm2m']]],
   ['id_5fopenio_5fuart_5finterface',['id_OpenIO_UART_Interface',['../namespacelwm2m.html#a812e67e59daecd4ed8966b73af3603e0',1,'lwm2m']]],
+  ['imean',['iMean',['../classSICMTypes_1_1SICMStatus.html#a4f6578310da7966ec436594cbaa681a0',1,'SICMTypes::SICMStatus']]],
   ['immersedepth',['immerseDepth',['../classSICMTypes_1_1SICMConfig.html#aac9d2ffd5163dd40756ee95b0533d9a1',1,'SICMTypes::SICMConfig']]],
   ['immersethreshold',['immerseThreshold',['../classSICMTypes_1_1SICMConfig.html#a9a7d20b3a4b691d84ef3fcdf6d84cb62',1,'SICMTypes::SICMConfig']]],
   ['init',['init',['../osc_8py.html#aa729dba99fd88e76ff9772add26bc364',1,'osc']]],
@@ -54,6 +55,8 @@ var searchData=
   ['integer_5ftime',['integer_time',['../namespacetime.html#a60e723133394848b97fc659aa4db78bc',1,'time']]],
   ['internal',['Internal',['../FPGA_8py.html#af0996cdfaa0ed1f725c7f280d6a518bf',1,'FPGA']]],
   ['ioctl',['ioctl',['../classdevsysfs_1_1device.html#a4af2e1decc47fff464c61b9980f1c3e8',1,'devsysfs::device']]],
+  ['irms',['iRMS',['../classSICMTypes_1_1SICMStatus.html#a3d2da281895c30400ee7d961cc650e97',1,'SICMTypes::SICMStatus']]],
   ['isl29023',['isl29023',['../namespaceisl29023.html',1,'']]],
-  ['isl29023_2epy',['isl29023.py',['../isl29023_8py.html',1,'']]]
+  ['isl29023_2epy',['isl29023.py',['../isl29023_8py.html',1,'']]],
+  ['istart',['iStart',['../classSICMTypes_1_1SICMStatus.html#ab1f9ed550a42716fe6b22668318006ff',1,'SICMTypes::SICMStatus']]]
 ];

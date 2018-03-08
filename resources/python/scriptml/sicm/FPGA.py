@@ -134,7 +134,7 @@ def FPGA_SetManualZp(manualZp):
 #  @return true on success, false on failure
 #
 def FPGA_GetManualZp():
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Manual_Zp, manualZp)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Manual_Zp)
       
 ##
 #  @brief Set Manual Zs register
@@ -152,7 +152,7 @@ def FPGA_SetManualZs(manualZs):
 #  @return true on success, false on failure
 #
 def FPGA_GetManualZs():
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Manual_Zs, manualZs)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Manual_Zs)
       
 ##
 #  @brief Set Manual Xs register
@@ -170,7 +170,7 @@ def FPGA_SetManualXs(manualXs):
 #  @return true on success, false on failure
 #
 def FPGA_GetManualXs():
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Manual_Xs, manualXs)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Manual_Xs)
       
 ##
 #  @brief Set Manual Ys register
@@ -188,7 +188,7 @@ def FPGA_SetManualYs(manualYs):
 #  @return true on success, false on failure
 #
 def FPGA_GetManualYs():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Manual_Ys, manualYs)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Manual_Ys)
       
 ##
 #  @brief Set Ion Current Out register
@@ -206,7 +206,7 @@ def FPGA_SetIonCurrentOut(ionCurrentOut):
 #  @return true on success, false on failure
 #
 def FPGA_GetIonCurrentOut():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Ion_Current_Out, ionCurrentOut)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Ion_Current_Out)
       
 ##
 #  @brief Set Rise Increment register
@@ -224,7 +224,7 @@ def FPGA_SetRiseIncrement(riseIncrement):
 #  @return true on success, false on failure
 #
 def FPGA_GetRiseIncrement():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Rise_Increment, riseIncrement)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Rise_Increment)
       
 ##
 #  @brief Set Fall Increment register
@@ -242,7 +242,7 @@ def FPGA_SetFallIncrement(fallIncrement):
 #  @return true on success, false on failure
 #
 def FPGA_GetFallIncrement():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Fall_Increment, fallIncrement)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Fall_Increment)
       
 ##
 #  @brief Set Threshold register
@@ -260,7 +260,7 @@ def FPGA_SetThreshold(threshold):
 #  @return true on success, false on failure
 #
 def FPGA_GetThreshold():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Threshold, threshold)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Threshold)
       
 ##
 #  @brief Set Zp Min register
@@ -278,7 +278,7 @@ def FPGA_SetZpMin(zpMin):
 #  @return true on success, false on failure
 #
 def FPGA_GetZpMin():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_ZP_Min, zpMin)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_ZP_Min)
       
 ##
 #  @brief Set Zp Max register
@@ -296,7 +296,7 @@ def FPGA_SetZpMax(zpMax):
 #  @return true on success, false on failure
 #
 def FPGA_GetZpMax():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_ZP_Max, zpMax)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_ZP_Max)
       
 ##
 #  @brief Set V Bias register
@@ -314,7 +314,7 @@ def FPGA_SetVbias(VBias):
 #  @return true on success, false on failure
 #
 def FPGA_GetVbias():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_V_BIAS, VBias)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_V_BIAS)
       
 ##
 #  @brief Set Xs register
@@ -332,7 +332,7 @@ def FPGA_SetXs(xs):
 #  @return true on success, false on failure
 #
 def FPGA_GetXs():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Xs, xs)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Xs)
       
 ##
 #  @brief Set Ys register
@@ -350,7 +350,7 @@ def FPGA_SetYs(ys):
 #  @return true on success, false on failure
 #
 def FPGA_GetYs():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Ys, ys)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Config_Ys)
       
 ##
 #  @brief Set Re-Config register
@@ -368,7 +368,7 @@ def FPGA_SetReConfig(reconfig):
 #  @return true on success, false on failure
 #
 def FPGA_GetReConfig():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Reconfig, reconfig)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Reconfig)
       
 ##
 #  @brief Set Config Done register
@@ -386,7 +386,7 @@ def FPGA_SetConfigDone(configDone):
 #  @return true on success, false on failure
 #
 def FPGA_GetConfigDone():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_ConfigDone, configDone)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_ConfigDone)
       
 ##
 #  @brief Set Start Scan register
@@ -404,7 +404,7 @@ def FPGA_SetStartScan(startScan):
 #  @return true on success, false on failure
 #
 def FPGA_GetStartScan():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Start, startScan)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Start)
       
 ##
 #  @brief Set Stop Scan register
@@ -422,7 +422,7 @@ def FPGA_SetStopScan(stopScan):
 #  @return true on success, false on failure
 #
 def FPGA_GetStopScan():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Stop, stopScan)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Stop)
       
 ##
 #  @brief Set Reset All register
@@ -440,7 +440,7 @@ def FPGA_SetResetAll(resetAll):
 #  @return true on success, false on failure
 #
 def FPGA_GetResetAll():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Reset_All, resetAll)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Reset_All)
       
 ##
 #  @brief Set Long Jump Indicator register
@@ -458,7 +458,7 @@ def FPGA_SetLongJumpIndicator(longJumpInd):
 #  @return true on success, false on failure
 #
 def FPGA_GetLongJumpIndicator():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Long_Jump_Indicator, longJumpInd)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Long_Jump_Indicator)
       
 ##
 #  @brief Set Ion Amplifier register
@@ -476,7 +476,7 @@ def FPGA_SetIonAmplifier(ionAmplifier):
 #  @return true on success, false on failure
 #
 def FPGA_GetIonAmplifier():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Ion_Amplifier, ionAmplifier)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Ion_Amplifier)
       
 ##
 #  @brief Set Z Control Mode register
@@ -494,7 +494,7 @@ def FPGA_SetZControlMode(zControlMode):
 #  @return true on success, false on failure
 #
 def FPGA_GetZControlMode():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Z_Control_Mode, zControlMode)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Z_Control_Mode)
       
 ##
 #  @brief Set Z Sense register
@@ -512,7 +512,7 @@ def FPGA_SetZSense(ZSense):
 #  @return true on success, false on failure
 #
 def FPGA_GetZSense():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Z_Sense, ZSense)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Z_Sense)
       
 ##
 #  @brief Set Hop Samples EOL register
@@ -530,7 +530,7 @@ def FPGA_SetHopSamplesEol(hopSamplesEol):
 #  @return true on success, false on failure
 #
 def FPGA_GetHopSamplesEol():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Hop_Samples_Eol, hopSamplesEol)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Hop_Samples_Eol)
       
 ##
 #  @brief Set Hop Samples register
@@ -548,7 +548,7 @@ def FPGA_SetHopSamples(hopSamples):
 #  @return true on success, false on failure
 #
 def FPGA_GetHopSamples():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Hop_Samples, hopSamples)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Hop_Samples)
       
 ##
 #  @brief Set Measure Samples register
@@ -566,7 +566,7 @@ def FPGA_SetMeasureSamples(measureSamples):
 #  @return true on success, false on failure
 #
 def FPGA_GetMeasureSamples():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Measure_Samples, measureSamples)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Measure_Samples)
       
 ##
 #  @brief Set Ion Filter register
@@ -584,7 +584,7 @@ def FPGA_SetIonFilter(ionFilter):
 #  @return true on success, false on failure
 #
 def FPGA_GetIonFilter():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Ion_Filter, ionFilter)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Ion_Filter)
       
 ##
 #  @brief Set EOL Repeat Count register
@@ -602,7 +602,7 @@ def FPGA_SetEolRepeatCount(eolRepeatCount):
 #  @return true on success, false on failure
 #
 def FPGA_GetEolRepeatCount():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Eol_Repeat_Count, eolRepeatCount)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_Eol_Repeat_Count)
       
 ##
 #  @brief Set X/Y Samples register
@@ -620,7 +620,7 @@ def FPGA_SetXYSamples(xySamples):
 #  @return true on success, false on failure
 #
 def FPGA_GetXySamples():      
-    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_XY_Samples, xySamples)
+    return _SICM_FPGA_GetIntegerRegister(_FPGA_Config_XY_Samples)
       
 ##
 #  @brief Get Measured Xs register
@@ -629,7 +629,7 @@ def FPGA_GetXySamples():
 #  @return true on success, false on failure
 #
 def FPGA_GetMeasured_Xs():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Xs, measured_xs)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Xs)
       
 ##
 #  @brief Get Measured Ys register
@@ -638,7 +638,7 @@ def FPGA_GetMeasured_Xs():
 #  @return true on success, false on failure
 #
 def FPGA_GetMeasured_Ys():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Ys, measured_ys)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Ys)
       
 ##
 #  @brief Get Measured Zp register
@@ -647,7 +647,7 @@ def FPGA_GetMeasured_Ys():
 #  @return true on success, false on failure
 #
 def FPGA_GetMeasured_Zp():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Zp, measured_zp)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Zp)
       
 ##
 #  @brief Get Measured I Mean register
@@ -656,7 +656,7 @@ def FPGA_GetMeasured_Zp():
 #  @return true on success, false on failure
 #
 def FPGA_GetMeasured_iMean():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Imean, imean)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Imean)
       
 ##
 #  @brief Get Measured Aux 1 In register
@@ -665,7 +665,7 @@ def FPGA_GetMeasured_iMean():
 #  @return true on success, false on failure
 #
 def FPGA_GetMeasured_Aux1in():      
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Aux1in, measured_aux1in)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Aux1in)
       
 ##
 #  @brief Get Measured Aux 2 In register
@@ -674,5 +674,5 @@ def FPGA_GetMeasured_Aux1in():
 #  @return true on success, false on failure
 #
 def FPGA_GetMeasured_Aux2in():
-    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Aux2in, measured_aux2in)
+    return _SICM_FPGA_GetFloatRegister(_FPGA_Measured_Aux2in)
       

@@ -6,7 +6,9 @@ var searchData=
   ['zhoppinglimits',['zHoppingLimits',['../classSICMTypes_1_1SICMConfig.html#ae657369fa3a4ab8a67d5404dbe38c9ac',1,'SICMTypes::SICMConfig']]],
   ['zimmersespeed',['zImmerseSpeed',['../classSICMTypes_1_1SICMConfig.html#ad0e2278ba6cb4545e199240f0ca687b6',1,'SICMTypes::SICMConfig']]],
   ['zofs',['ZOfs',['../classSICMTypes_1_1SICMStatus.html#abd0d7b1279b37863ca1454ee6eb4ba24',1,'SICMTypes::SICMStatus']]],
+  ['zp',['zp',['../classSICMTypes_1_1SICMConfig.html#a665a8bd20cc7bc1d5899011317c6e7fd',1,'SICMTypes::SICMConfig']]],
   ['zpiezostopcriteria',['zPiezoStopCriteria',['../classSICMTypes_1_1SICMConfig.html#a632b647f4e0a970473cf599f479e65bd',1,'SICMTypes::SICMConfig']]],
+  ['zs',['zs',['../classSICMTypes_1_1SICMConfig.html#a2b8eaa6c328dc37b89d1c65cb16736f8',1,'SICMTypes::SICMConfig']]],
   ['zsenseinvert_5fnormal',['ZSenseInvert_Normal',['../FPGA_8py.html#a260e68c4414e194ccba69a1a2098bec4',1,'FPGA']]],
   ['zwithdrawspeed',['zWithdrawSpeed',['../classSICMTypes_1_1SICMConfig.html#a2361a16940bf46771f522e079364c70c',1,'SICMTypes::SICMConfig']]]
 ];

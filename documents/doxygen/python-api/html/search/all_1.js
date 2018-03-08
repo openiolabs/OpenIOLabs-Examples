@@ -21,5 +21,6 @@ var searchData=
   ['atan',['atan',['../namespacemath.html#a827fc6e2a0452cc2fc8549c112ce7e84',1,'math']]],
   ['atan2',['atan2',['../namespacemath.html#a7599af5637ee26126f066c1ece3f62f1',1,'math']]],
   ['atanh',['atanh',['../namespacemath.html#a9b04b5b3e967ed7c97916268f1990cea',1,'math']]],
-  ['auto_5fstart_2epy',['auto_start.py',['../auto__start_8py.html',1,'']]]
+  ['auto_5fstart_2epy',['auto_start.py',['../auto__start_8py.html',1,'']]],
+  ['auxin',['auxIn',['../classSICMTypes_1_1SICMStatus.html#a5797f7e70c0fa425d5b0399a068bfe50',1,'SICMTypes::SICMStatus']]]
 ];

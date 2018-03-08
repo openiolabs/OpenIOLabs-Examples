@@ -61,19 +61,19 @@ AC_COMPLETE            = 7
 
 
 class Range:
-    def __init__():
-        min = 0.0
-        max = 0.0
+    def __init__(self):
+        self.min = 0.0
+        self.max = 0.0
         
 class FPGALimits:
-    def __init__():
-        volts = Range()
-        microns = Range()
+    def __init__(self):
+        self.volts = Range()
+        self.microns = Range()
         
 
 # SICM instrument status 
 class SICMStatus:
-    def __init__():    
+    def __init__(self):    
         self.acceptedScanMode = HOPPING_SCAN_MODE  ##< SICM scan mode (used by system) 
 
         self.xPos = 0.0                            ##< X position 
@@ -81,21 +81,32 @@ class SICMStatus:
 
         self.scanIndex = 0                         ##< Used during a scan to count the number of points scanned 
 
+        self.iMean = 0.0                           ##< The average current as calculated by the FPGA */
+        self.iRMS = 0.0                            ##< The current current as calculated by the FPGA */
+        self.iStart = 0.0						   ##< Approach curve mode starting current */
+        self.auxIn = 0.0                           ##< The aux input */
+
         self.hoppingState = HS_STOPPED             ##< Hopping scan mode state 
 
         self.manualState = M_STOPPED               ##< Manual mode state 
         self.manualStep = 0                        ##< Manual mode step number 
 
         self.approachCurveState = AC_STOPPED       ##< APPROACH curve mode state 
-        self.ZOfs = 0.0;
-        self.stateCounter = 0;
+        self.ZOfs = 0.0
+        self.stateCounter = 0
 
 
 ## SICM instrument configuration 
 class SICMConfig:
-    def __init__():
+    def __init__(self):
         self.scanMode = HOPPING_SCAN_MODE          ##< SICM scan mode (at UI) 
         
+        #  Hardware Settings
+        self.zp = FPGALimits()                          ##< Z pipette displacement and voltage limits 
+        self.xs = FPGALimits()                          ##< X sample displacement and voltage limits 
+        self.ys = FPGALimits()                          ##< Y sample displacement and voltage limits 
+        self.zs = FPGALimits()                          ##< Z sample displacement and voltage limits 
+
         #  Pipette Bias
         self.vBias = 0.0                           ##< Pipette bias voltage 
         self.vOffset = 0.0                         ##< Pipette offset voltage 
