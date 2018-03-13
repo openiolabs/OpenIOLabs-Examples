@@ -12,6 +12,14 @@
 # @{
 #
 
+#
+# Important note: these structures are updated via OMI, which assigns 
+# rather than rebinding. If constants like True and False are used, updates
+# will alias into the underlying variables, so True and False may cease to be 
+# 1 and 0, causing undesirable effects.
+#
+
+
 ## Sampling rate (samples per millisecond) 
 SICM_SAMPLING_RATE = 50
 
@@ -59,7 +67,79 @@ AC_APPROACH_UP         = 5
 AC_STOP_REQUESTED      = 6
 AC_COMPLETE            = 7
 
+## Z axis states enumeration 
+Undefined   = 0
+NotImmersed = 1
+Immersing   = 2
+Retracting  = 3
+Immersed    = 4
+Approaching = 5
+Withdrawing = 6
+InControl   = 7
 
+## Z axis commands enumeration 
+NO_COMMAND            = 0
+IMMERSE               = 1
+APPROACH              = 2
+IMMERSE_AND_APPROACH  = 3
+WITHDRAW              = 4
+STOP                  = 5
+
+## Coarse motor X axis commands enumeration 
+X_NoCommand     = 0
+X_MOVE_POS      = 1
+X_MOVE_NEG      = 2
+X_STOP          = 3
+X_Initialise    = 4
+X_Calibrate     = 5
+X_SetDI1        = 6
+X_SetDI2        = 7
+X_SetDI3        = 8
+X_SetDI4        = 9
+X_ClearDI1      = 10
+X_ClearDI2      = 11
+X_ClearDI3      = 12
+X_ClearDI4      = 13
+
+## Coarse motor Y axis commands enumeration 
+Y_NoCommand     = 0
+Y_MOVE_POS      = 1
+Y_MOVE_NEG      = 2
+Y_STOP          = 3
+Y_Initialise    = 4
+Y_Calibrate     = 5
+Y_SetDI1        = 6
+Y_SetDI2        = 7
+Y_SetDI3        = 8
+Y_SetDI4        = 9
+Y_ClearDI1      = 10
+Y_ClearDI2      = 11
+Y_ClearDI3      = 12
+Y_ClearDI4      = 13
+
+## Coarse motor Z axis commands enumeration 
+Z_NoCommand     = 0
+Z_MOVE_POS      = 1
+Z_MOVE_NEG      = 2
+Z_STOP          = 3
+Z_Initialise    = 4
+Z_Calibrate     = 5
+
+## Amplifier type enumeration
+Internal            = 0
+External            = 1
+
+## Scan head type enumeration
+ICNanoS2            = 0
+ICNano2043          = 1
+ICNano2223          = 2
+ICNano2243          = 3
+Manual              = 4
+
+## Measurement mode enumeration 
+UniDirectionalHopping   = 0
+BiDirectionalHopping    = 1
+    
 class Range:
     def __init__(self):
         self.min = 0.0
@@ -78,15 +158,25 @@ class SICMStatus:
 
         self.xPos = 0.0                            ##< X position 
         self.yPos = 0.0                            ##< Y position 
+        self.measuredXs = 0.0                      ##< Measured X sample
+        self.measuredYs = 0.0                      ##< Measured Y sample
+        self.measuredZp = 0.0                      ##< Measured Z sample
+        
+        self.isRunning = 0                         ##< Scan in progress flag
+        self.isPaused = 0                          ##< Measurement paused flag
+        self.isComplete = 0                        ##< Scan complete flag
 
         self.scanIndex = 0                         ##< Used during a scan to count the number of points scanned 
+        self.scanX = 0                             ##< Surface position in X-axis
+        self.scanY = 0                             ##< Scan complete flag
 
-        self.iMean = 0.0                           ##< The average current as calculated by the FPGA */
-        self.iRMS = 0.0                            ##< The current current as calculated by the FPGA */
-        self.iStart = 0.0						   ##< Approach curve mode starting current */
-        self.auxIn = 0.0                           ##< The aux input */
+        self.iMean = 0.0                           ##< The average current as calculated by the FPGA 
+        self.iRMS = 0.0                            ##< The current current as calculated by the FPGA 
+        self.iStart = 0.0						   ##< Approach curve mode starting current 
+        self.auxIn = 0.0                           ##< The aux input 
 
         self.hoppingState = HS_STOPPED             ##< Hopping scan mode state 
+        self.zState = Undefined                    ##< Z axis state
 
         self.manualState = M_STOPPED               ##< Manual mode state 
         self.manualStep = 0                        ##< Manual mode step number 
@@ -95,6 +185,10 @@ class SICMStatus:
         self.ZOfs = 0.0
         self.stateCounter = 0
 
+        self.zCommand = NO_COMMAND                 ##< Most recent Z axis command from user
+        self.coarseXCommand = X_NoCommand          ##< Most recent coarse motor X axis command from user
+        self.coarseYCommand = Y_NoCommand          ##< Most recent coarse motor Y axis command from user
+        self.coarseZCommand = Z_NoCommand          ##< Most recent coarse motor Z axis command from user
 
 ## SICM instrument configuration 
 class SICMConfig:
@@ -102,12 +196,14 @@ class SICMConfig:
         self.scanMode = HOPPING_SCAN_MODE          ##< SICM scan mode (at UI) 
         
         #  Hardware Settings
+        self.scanHeadType = ICNanoS2                    ##< Scan head type
         self.zp = FPGALimits()                          ##< Z pipette displacement and voltage limits 
         self.xs = FPGALimits()                          ##< X sample displacement and voltage limits 
         self.ys = FPGALimits()                          ##< Y sample displacement and voltage limits 
         self.zs = FPGALimits()                          ##< Z sample displacement and voltage limits 
 
         #  Pipette Bias
+        self.amplifier = Internal                  ##< Headstage amplifier selection
         self.vBias = 0.0                           ##< Pipette bias voltage 
         self.vOffset = 0.0                         ##< Pipette offset voltage 
         
@@ -120,7 +216,7 @@ class SICMConfig:
         self.immerseDepth = 0.0                    ##< Immersion depth 
         self.zPiezoStopCriteria = 0.0              ##< ZP piezo stop criteria 
         self.coarseMotorsStopCriteria = 0.0        ##< Coarse Motors stop criteria 
-        self.joystickEnable = False                ##< Joystick positioning enabled when true 
+        self.joystickEnable = bool(0)              ##< Joystick positioning enabled when true 
 
         #  Hopping Parameters
         self.hopHeight = 0                 ##< Minimum hop height 
@@ -142,6 +238,7 @@ class SICMConfig:
         self.widthPix = 0                        ##< Number of X measurement points 
         self.heightPix = 0                       ##< Number of Y measurement points 
         self.scanAngle = 0.0                     ##< Scan angle 
+        self.measurementMode = UniDirectionalHopping ##< Measurement mode (scan pattern)
         self.pipetteLengthFactor = 0.0           ##< Pipette length ratio 
 
         # Manual Control Parameters 
@@ -151,13 +248,13 @@ class SICMConfig:
         self.manualZOfs = 0.0                    ##< Manual mode Z height 
         self.manualZInc = 0.0                    ##< Manual mode Z step size 
         self.manualZRef = 0.0                    ##< Manual mode Zp-reference 
-        self.manualActive = True                 ##< Enable manual mode 
+        self.manualActive = bool(1)              ##< Enable manual mode 
 
         # APPROACH Curve Control Parameters 
         self.approachIMin = 0.0 
         self.approachZMin = 0.0 
         self.approachSamples = 0
 
-        self.hasChanged = False                ##< Set true after a config change 
+        self.hasChanged = bool(0)                ##< Set true after a config change 
 
 ## @}

@@ -13,6 +13,7 @@ var searchData=
   ['ad7991',['ad7991',['../namespacead7991.html',1,'']]],
   ['ad7991_2epy',['ad7991.py',['../ad7991_8py.html',1,'']]],
   ['all',['all',['../namespacebuiltins.html#aba91420bb3f329766bdd6b8b38e8918b',1,'builtins']]],
+  ['amplifier',['amplifier',['../classSICMTypes_1_1SICMConfig.html#a5a8c15cff770adb8f5a82f4af8b9b7be',1,'SICMTypes::SICMConfig']]],
   ['any',['any',['../namespacebuiltins.html#a0aee90e958b593de10d38f3cdc199d75',1,'builtins']]],
   ['approachcurvestate',['approachCurveState',['../classSICMTypes_1_1SICMStatus.html#a3723116364c157b4a7bdf8be4ac433fa',1,'SICMTypes::SICMStatus']]],
   ['approachimin',['approachIMin',['../classSICMTypes_1_1SICMConfig.html#ab82f295c1f13199ed9695c9ec3e35cdd',1,'SICMTypes::SICMConfig']]],

@@ -12,7 +12,7 @@ var searchData=
   ['i2c_5fregmap',['i2c_regmap',['../classi2c__regmap_1_1i2c__regmap.html',1,'i2c_regmap']]],
   ['i2c_5fregmap_2epy',['i2c_regmap.py',['../i2c__regmap_8py.html',1,'']]],
   ['i2c_5fsmbus_5fblock_5fmax',['I2C_SMBUS_BLOCK_MAX',['../namespacei2c.html#a9b4821a568e53bf86ea9a3e5cdee14de',1,'i2c']]],
-  ['icnanos2',['ICNanoS2',['../FPGA_8py.html#a0ad4fd3feb3431642ee67868b17d7ed4',1,'FPGA']]],
+  ['icnanos2',['ICNanoS2',['../FPGA_8py.html#a0ad4fd3feb3431642ee67868b17d7ed4',1,'FPGA.ICNanoS2()'],['../SICMTypes_8py.html#ab4669264a8631a68323b6861e6d2ba0e',1,'SICMTypes.ICNanoS2()']]],
   ['id_5fipso_5faccelerometer',['id_IPSO_Accelerometer',['../namespacelwm2m.html#a972751ee942b18b576512b543b1d80b3',1,'lwm2m']]],
   ['id_5fipso_5factuation',['id_IPSO_Actuation',['../namespacelwm2m.html#aed9ddaf3f6e4f9121804de8cad75d0f3',1,'lwm2m']]],
   ['id_5fipso_5faltitude',['id_IPSO_Altitude',['../namespacelwm2m.html#a1ae6862f88514643cddde0cfc013b054',1,'lwm2m']]],
@@ -53,10 +53,13 @@ var searchData=
   ['init',['init',['../osc_8py.html#aa729dba99fd88e76ff9772add26bc364',1,'osc']]],
   ['int',['int',['../namespacebuiltins.html#a15d9e037d05b1fd4320afacbced7f739',1,'builtins']]],
   ['integer_5ftime',['integer_time',['../namespacetime.html#a60e723133394848b97fc659aa4db78bc',1,'time']]],
-  ['internal',['Internal',['../FPGA_8py.html#af0996cdfaa0ed1f725c7f280d6a518bf',1,'FPGA']]],
+  ['internal',['Internal',['../FPGA_8py.html#af0996cdfaa0ed1f725c7f280d6a518bf',1,'FPGA.Internal()'],['../SICMTypes_8py.html#aaf3ed26b0c1f93bc9ab5386cf7e38906',1,'SICMTypes.Internal()']]],
   ['ioctl',['ioctl',['../classdevsysfs_1_1device.html#a4af2e1decc47fff464c61b9980f1c3e8',1,'devsysfs::device']]],
   ['irms',['iRMS',['../classSICMTypes_1_1SICMStatus.html#a3d2da281895c30400ee7d961cc650e97',1,'SICMTypes::SICMStatus']]],
+  ['iscomplete',['isComplete',['../classSICMTypes_1_1SICMStatus.html#ae897dab4cd7fc3bb07521df0f610df82',1,'SICMTypes::SICMStatus']]],
   ['isl29023',['isl29023',['../namespaceisl29023.html',1,'']]],
   ['isl29023_2epy',['isl29023.py',['../isl29023_8py.html',1,'']]],
+  ['ispaused',['isPaused',['../classSICMTypes_1_1SICMStatus.html#a8f427840efca507ca61b982575b8d145',1,'SICMTypes::SICMStatus']]],
+  ['isrunning',['isRunning',['../classSICMTypes_1_1SICMStatus.html#af78f0e0dbf21fa622bacfbdceb98a26f',1,'SICMTypes::SICMStatus']]],
   ['istart',['iStart',['../classSICMTypes_1_1SICMStatus.html#ab1f9ed550a42716fe6b22668318006ff',1,'SICMTypes::SICMStatus']]]
 ];

@@ -17,34 +17,35 @@ TRACE_DESTATE = False
 
 def Control_Initialise():
     if TRACE_DESTATE:
-        print "Enter Control_Initialise() in #%d\n", coroutines.get_current_id()
+        print "Enter Control_Initialise() in", coroutines.get_current_id()
           # Switch the client into scripted operation
-    ___Send(request="SICM_Control_EnableScript", client_handle=___NULL(), str_payload=___NULL(), int_payload=___ISeq(1), float_payload=___ISeq())
+    ___Send(request="SICM_Control_EnableScript", client_handle=-1, str_payload=___NULL(), int_payload=___ISeq(1), float_payload=___ISeq())
     l = ___Receive()
     
     # Check that the response message was as expected - we require OK
     assert l[0]=="OK"
     
     if TRACE_DESTATE:
-        print "Control_Initialise() backgrounding in #%d\n", coroutines.get_current_id()
+        print "Control_Initialise() backgrounding in", coroutines.get_current_id()
           
     # yield locally; exit in client. Client will proceed into control loop, and the re-enter via ScanManager_Run()
     coroutines.background()
     
     if TRACE_DESTATE:
-        print "Exit Control_Initialise() in #%d\n", coroutines.get_current_id()
+        print "Exit Control_Initialise() in", coroutines.get_current_id()
             
 
 def Control_SetMode( mode ): 
-    ___Send(request="SICM_Control_SetMode", client_handle=___NULL(), str_payload=___NULL(), int_payload=___ISeq(mode), float_payload=___ISeq())
+    ___Send(request="SICM_Control_SetMode", client_handle=-1, str_payload=___NULL(), int_payload=___ISeq(mode), float_payload=___ISeq())
     l = ___Receive()
+    print l
     
     # Check that the response message was as expected - we require OK
     assert l[0]=="OK"
       
 
 def Control_Start3D( width, height ):      
-    ___Send(request="SICM_Control_Start3D", client_handle=___NULL(), str_payload=___NULL(), int_payload=___ISeq(width, height), float_payload=___ISeq())
+    ___Send(request="SICM_Control_Start3D", client_handle=-1, str_payload=___NULL(), int_payload=___ISeq(width, height), float_payload=___ISeq())
     l = ___Receive()
     
     # Check that the response message was as expected - we require OK
@@ -52,7 +53,7 @@ def Control_Start3D( width, height ):
       
 
 def Control_Start2D( num_samples ):   
-    ___Send(request="SICM_Control_Start2D", client_handle=___NULL(), str_payload=___NULL(), int_payload=___ISeq(num_samples), float_payload=___ISeq())
+    ___Send(request="SICM_Control_Start2D", client_handle=-1, str_payload=___NULL(), int_payload=___ISeq(num_samples), float_payload=___ISeq())
     l = ___Receive()
     
     # Check that the response message was as expected - we require OK
@@ -60,7 +61,7 @@ def Control_Start2D( num_samples ):
       
 
 def Control_Sample3D( x, y ):   
-    ___Send(request="SICM_Control_Sample", client_handle=___NULL(), str_payload=___NULL(), int_payload=___ISeq(x, y), float_payload=___ISeq())
+    ___Send(request="SICM_Control_Sample", client_handle=-1, str_payload=___NULL(), int_payload=___ISeq(x, y), float_payload=___ISeq())
     l = ___Receive()
     
     # Check that the response message was as expected - we require OK
@@ -69,7 +70,7 @@ def Control_Sample3D( x, y ):
 
 
 def Control_SubSample3D( x, y ):     
-    ___Send(request="SICM_Control_SubSample", client_handle=___NULL(), str_payload=___NULL(), int_payload=___ISeq(x, y), float_payload=___ISeq())
+    ___Send(request="SICM_Control_SubSample", client_handle=-1, str_payload=___NULL(), int_payload=___ISeq(x, y), float_payload=___ISeq())
     l = ___Receive()
     
     # Check that the response message was as expected - we require OK
@@ -77,7 +78,7 @@ def Control_SubSample3D( x, y ):
       
 
 def Control_Sample2D():    
-    ___Send(request="SICM_Control_Sample", client_handle=___NULL(), str_payload=___NULL(), int_payload=___ISeq(0, 0), float_payload=___ISeq())
+    ___Send(request="SICM_Control_Sample", client_handle=-1, str_payload=___NULL(), int_payload=___ISeq(0, 0), float_payload=___ISeq())
     l = ___Receive()
     
     # Check that the response message was as expected - we require OK
@@ -86,7 +87,7 @@ def Control_Sample2D():
 
 
 def Control_SubSample2D():      
-    ___Send(request="SICM_Control_SubSample", client_handle=___NULL(), str_payload=___NULL(), int_payload=___ISeq(0, 0), float_payload=___ISeq())
+    ___Send(request="SICM_Control_SubSample", client_handle=-1, str_payload=___NULL(), int_payload=___ISeq(0, 0), float_payload=___ISeq())
     l = ___Receive()
     
     # Check that the response message was as expected - we require OK
@@ -94,7 +95,7 @@ def Control_SubSample2D():
       
 
 def Control_Complete():  
-    ___Send(request="SICM_Control_Complete", client_handle=___NULL(), str_payload=___NULL(), int_payload=___ISeq(), float_payload=___ISeq())
+    ___Send(request="SICM_Control_Complete", client_handle=-1, str_payload=___NULL(), int_payload=___ISeq(), float_payload=___ISeq())
     l = ___Receive()
     
     # Check that the response message was as expected - we require OK

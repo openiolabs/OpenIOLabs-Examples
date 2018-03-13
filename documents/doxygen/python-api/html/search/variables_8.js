@@ -10,5 +10,9 @@ var searchData=
   ['manualzinit',['manualZInit',['../classSICMTypes_1_1SICMConfig.html#a114c13b09a5d67e096886199d2f6205e',1,'SICMTypes::SICMConfig']]],
   ['manualzofs',['manualZOfs',['../classSICMTypes_1_1SICMConfig.html#a748518b12b1ffb1eaac384ddab707778',1,'SICMTypes::SICMConfig']]],
   ['manualzref',['manualZRef',['../classSICMTypes_1_1SICMConfig.html#a454c927c1b96c2a69e8b4d82dbdc235b',1,'SICMTypes::SICMConfig']]],
-  ['measuredelay',['measureDelay',['../classSICMTypes_1_1SICMConfig.html#a514c5600c95a54d20e5146e09fcf2289',1,'SICMTypes::SICMConfig']]]
+  ['measuredelay',['measureDelay',['../classSICMTypes_1_1SICMConfig.html#a514c5600c95a54d20e5146e09fcf2289',1,'SICMTypes::SICMConfig']]],
+  ['measuredxs',['measuredXs',['../classSICMTypes_1_1SICMStatus.html#a2ceb8efbb8dd4a5419e4dd6d727435c6',1,'SICMTypes::SICMStatus']]],
+  ['measuredys',['measuredYs',['../classSICMTypes_1_1SICMStatus.html#a69f6184a5058c6df2f30b1ef7ffb8858',1,'SICMTypes::SICMStatus']]],
+  ['measuredzp',['measuredZp',['../classSICMTypes_1_1SICMStatus.html#a9f456b484181bd3e42463b25d9f639ae',1,'SICMTypes::SICMStatus']]],
+  ['measurementmode',['measurementMode',['../classSICMTypes_1_1SICMConfig.html#a059956f12e8138ecc649d5777aff61b1',1,'SICMTypes::SICMConfig']]]
 ];

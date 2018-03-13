@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['zapproachspeed',['zApproachSpeed',['../classSICMTypes_1_1SICMConfig.html#ae2bcbbae6b68c7f4d2e3a9f9007bdf46',1,'SICMTypes::SICMConfig']]],
-  ['zbrakeoffset',['zBrakeOffset',['../classSICMTypes_1_1SICMConfig.html#ae85ea75740692809e5bd26bdd99b9422',1,'SICMTypes::SICMConfig']]],
-  ['zcontrol_5fhopping_5fmode',['ZCONTROL_HOPPING_MODE',['../SICMTypes_8py.html#ac1f869006cb84d230e8bfbcee3c3a54d',1,'SICMTypes']]],
-  ['zhoppinglimits',['zHoppingLimits',['../classSICMTypes_1_1SICMConfig.html#ae657369fa3a4ab8a67d5404dbe38c9ac',1,'SICMTypes::SICMConfig']]],
-  ['zimmersespeed',['zImmerseSpeed',['../classSICMTypes_1_1SICMConfig.html#ad0e2278ba6cb4545e199240f0ca687b6',1,'SICMTypes::SICMConfig']]],
-  ['zofs',['ZOfs',['../classSICMTypes_1_1SICMStatus.html#abd0d7b1279b37863ca1454ee6eb4ba24',1,'SICMTypes::SICMStatus']]],
-  ['zp',['zp',['../classSICMTypes_1_1SICMConfig.html#a665a8bd20cc7bc1d5899011317c6e7fd',1,'SICMTypes::SICMConfig']]],
-  ['zpiezostopcriteria',['zPiezoStopCriteria',['../classSICMTypes_1_1SICMConfig.html#a632b647f4e0a970473cf599f479e65bd',1,'SICMTypes::SICMConfig']]],
-  ['zs',['zs',['../classSICMTypes_1_1SICMConfig.html#a2b8eaa6c328dc37b89d1c65cb16736f8',1,'SICMTypes::SICMConfig']]],
-  ['zsenseinvert_5fnormal',['ZSenseInvert_Normal',['../FPGA_8py.html#a260e68c4414e194ccba69a1a2098bec4',1,'FPGA']]],
-  ['zwithdrawspeed',['zWithdrawSpeed',['../classSICMTypes_1_1SICMConfig.html#a2361a16940bf46771f522e079364c70c',1,'SICMTypes::SICMConfig']]]
+  ['y_5fnocommand',['Y_NoCommand',['../SICMTypes_8py.html#a9ad9134d98bde34968a6d599e4087a87',1,'SICMTypes']]],
+  ['yidlepos',['yIdlePos',['../classSICMTypes_1_1SICMConfig.html#aac83a21b513007a874ca1e41aa5711a8',1,'SICMTypes::SICMConfig']]],
+  ['yorigin',['yOrigin',['../classSICMTypes_1_1SICMConfig.html#ac5650de2e25a84783456cb9c1b9d2ffe',1,'SICMTypes::SICMConfig']]],
+  ['ypos',['yPos',['../classSICMTypes_1_1SICMStatus.html#a2c27026a5b87efa067d5af785e42e244',1,'SICMTypes::SICMStatus']]],
+  ['ys',['ys',['../classSICMTypes_1_1SICMConfig.html#a1d4eafdd52c21bb44cc3bdcb9a746977',1,'SICMTypes::SICMConfig']]]
 ];
