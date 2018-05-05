@@ -9,7 +9,7 @@
 #  Program the two `command` registers and then read back from the `data` register.
 #  
 #  
-#  Auto-generated 04 May 2018; do not edit
+#  Auto-generated 05 May 2018; do not edit
 #  
 #  Copyright (c) Open IO Labs Ltd 2017
 #  All Rights Reserved
