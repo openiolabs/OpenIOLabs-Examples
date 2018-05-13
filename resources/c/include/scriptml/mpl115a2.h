@@ -7,7 +7,7 @@
  *  
  *  Read out the constants `a0`, `b1`, `b2` and `c12`, then `convert` and finally read back `Padc` and `Tadc`
  *  
- *  Auto-generated 12 May 2018; do not edit
+ *  Auto-generated 13 May 2018; do not edit
  *  
  *  Copyright (c) Open IO Labs Ltd 2017
  *  All Rights Reserved
